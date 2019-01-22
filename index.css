@@ -3,25 +3,61 @@
   padding: 0;
 }
 
+/******* Selectors *******/
+
 h1 {
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-style: normal;
   size: 50pt;
   font-weight: 400;
   text-align: center;
+  color: #2B4257;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 h2 {
-
+  font-family: Futura, 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  size: 20pt;
+  color: #FFFFFF;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 h3 {
+  font-family: Baskerville, 'Libre Baskerville', Garamond, serif;
+  size: 25pt;
+  color: #0A2845;
+  text-align: center;
+  /* font-style: italic; */
+  display: block;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17pt;
+  color: #FFF;
+  text-align: center;
+  display: block;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo {
+  position:absolute;
+  left: 50%;
+  transform: translate(-92.5px, 54px);
 }
 
 .header__button {
   background-color: #4A4A4A;
-  border: none;
+  border: solid;
+  border-width: 2px;
+  border-color: orange;
   color: white;
   text-align: center;
   font-size: 14pt;
@@ -32,12 +68,14 @@ h3 {
   margin-top: 9px;
   margin-left: 5%;
   float: left;
-  box-shadow: 3px 3px 3px rgba(255,195,160,0.5);
-  transition: 0.3s;
+  box-shadow: 4px 4px 4px rgba(255,195,160,0.5);
+  transition-duration: 0.3s;
 }
 
 .header__button:hover {
   background-color: #313131;
+  box-shadow: 4px 4px 6px rgba(255,195,160,0.9);
+  transition-duration: 0.3s;
 }
 
 .header__nav {
@@ -51,6 +89,20 @@ h3 {
   margin-right: 5%;
 }
 
+.header__nav > div {
+  padding-top: 22px;
+  margin-left: 5%;
+  border-bottom: 2px rgba(30,144,255, 0);
+}
+
+.header__nav > div:hover {
+  text-decoration: none;
+  border-bottom: 2px solid rgba(30,144,255, 1);
+  transition: 0.3s;
+}
+
+/******* Grid Areas *******/
+
 .header {
   grid-area: header;
 }
@@ -58,6 +110,37 @@ h3 {
   grid-area: social;
   background: #F3F2F2;
 }
+
+.social__content {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 5%;
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  line-height: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  font-size: 11pt;
+  color: #0A2845;
+  white-space: nowrap;
+}
+
+#address, #hours {
+  padding-right: 3%;
+  justify-content: flex-start;
+}
+#facebook {
+  margin-left: auto;
+}
+#instagram {
+  margin-left: 5%;
+}
+#spotify {
+  margin-left: 5%;
+  margin-right: 5.2%;
+}
+
 .header__video {
   grid-area: video;
   right: 0;
@@ -113,13 +196,45 @@ h3 {
 .about__subheader {
   grid-area: abt_sh;
   background: #F3F2F2;
+  padding-top: 62px;
 }
 .about__body {
   grid-area: abt_bd;
+  background-image: url("media/photos/stone.png");
 }
 .about__video {
   grid-area: abt_vd;
+  width: 956px;
+  height: auto;
+  margin: 43px auto;
 }
+.resident__header {
+  grid-area: res_hd;
+  align-self: center;
+  text-align: center;
+}
+.resident__photo1 {
+  grid-area: res_p1;
+}
+.resident__photo2 {
+  grid-area: res_p2;
+}
+.resident__photo3 {
+  grid-area: res_p3;
+}
+.resident__body1 {
+  grid-area: resbd1;
+  align-self: center;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.resident__body2 {
+  grid-area: resbd2;
+  background-image: url("media/photos/stone.png");
+}
+
+/******* Screen-size Specific *******/
 
 @media screen and (min-width: 1200px) {
   .header__nav {
@@ -129,7 +244,8 @@ h3 {
     display: grid;
     justify-content: center;
     grid-template-columns: minmax(180px, 480px) minmax(180px, 480px) minmax(180px, 480px);
-    grid-template-rows: 60px 60px minmax(auto, auto) 330px 143px 143px 221px 953px;
+    grid-template-rows: 60px 60px minmax(auto, auto) 330px
+      143px 143px 221px 953px 143px 330px 311px 221px;
     grid-template-areas:
       "header header header"
       "social social social"
@@ -138,7 +254,15 @@ h3 {
       "abt_hd abt_hd abt_hd"
       "abt_sh abt_sh abt_sh"
       "abt_bd abt_bd abt_bd"
-      "abt_vd abt_vd abt_vd";
+      "abt_vd abt_vd abt_vd"
+      "res_hd res_hd res_hd"
+      "res_p1 res_p2 res_p3"
+      "resbd1 resbd1 resbd1"
+      "resbd2 resbd2 resbd2";
+  }
+
+  p {
+    font-size: 17pt;
   }
 }
 
@@ -150,7 +274,8 @@ h3 {
     display: grid;
     justify-content: center;
     grid-template-columns: minmax(180px, 480px) minmax(180px, 480px) minmax(180px, 480px);
-    grid-template-rows: 60px 60px minmax(auto, auto) 330px 143px 143px 221px 953px;
+    grid-template-rows: 60px 60px minmax(auto, auto) 330px
+      143px 143px 221px 953px 143px 330px 311px 221px;
     grid-template-areas:
       "header header header"
       "social social social"
@@ -159,7 +284,15 @@ h3 {
       "abt_hd abt_hd abt_hd"
       "abt_sh abt_sh abt_sh"
       "abt_bd abt_bd abt_bd"
-      "abt_vd abt_vd abt_vd";
+      "abt_vd abt_vd abt_vd"
+      "res_hd res_hd res_hd"
+      "res_p1 res_p2 res_p3"
+      "resbd1 resbd1 resbd1"
+      "resbd2 resbd2 resbd2";
+  }
+
+  p {
+    font-size: 14pt;
   }
 }
 
@@ -171,7 +304,8 @@ h3 {
     display: grid;
     justify-content: center;
     grid-template-columns: minmax(180px, 480px) minmax(180px, 480px) minmax(180px, 480px);
-    grid-template-rows: 60px 60px minmax(auto, auto) 330px 330px 330px 143px 143px 221px 953px;
+    grid-template-rows: 60px 60px minmax(auto, auto) 330px 330px 330px
+      143px 143px 221px 953px 143px 330px 330px 330px 311px 221px;
     grid-template-areas:
       "header header header"
       "social social social"
@@ -182,20 +316,18 @@ h3 {
       "abt_hd abt_hd abt_hd"
       "abt_sh abt_sh abt_sh"
       "abt_bd abt_bd abt_bd"
-      "abt_vd abt_vd abt_vd";
+      "abt_vd abt_vd abt_vd"
+      "res_hd res_hd res_hd"
+      "res_p1 res_p1 res_p1"
+      "res_p2 res_p2 res_p2"
+      "res_p3 res_p3 res_p3"
+      "resbd1 resbd1 resbd1"
+      "resbd2 resbd2 resbd2";
   }
-}
 
-.header__nav > div {
-  padding-top: 22px;
-  margin-left: 5%;
-  border-bottom: 2px rgba(30,144,255, 0);
-}
-
-.header__nav > div:hover {
-  text-decoration:none;
-  border-bottom: 2px solid rgba(30,144,255, 1);
-  transition: 0.3s;
+  p {
+    font-size: 11pt;
+  }
 }
 
 /* .grid > div:nth-child(even) {
