@@ -33,18 +33,31 @@ h3 {
   text-align: center;
   /* font-style: italic; */
   display: block;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
 }
 
 p {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 17pt;
+  font-size: 14pt;
   color: #FFF;
   text-align: center;
   display: block;
   padding-left: 10%;
   padding-right: 10%;
+  line-height: 1.3em;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+ul {
+  list-style-type: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12pt;
+  line-height: 1.5em;
 }
 
 .logo {
@@ -116,14 +129,16 @@ p {
   flex-wrap: nowrap;
   margin-left: 5%;
   position: relative;
-  top: 50%;
-  transform: perspective(1px) translateY(-50%);
+  /* top: 50%;
+  transform: perspective(1px) translateY(-50%); */
   line-height: 1.5em;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 200;
   font-size: 11pt;
   color: #0A2845;
   white-space: nowrap;
+  align-items: center;
+  align-self: center;
 }
 
 #address, #hours {
@@ -132,13 +147,16 @@ p {
 }
 #facebook {
   margin-left: auto;
+  margin-top: 5px;
 }
 #instagram {
   margin-left: 5%;
+  margin-top: 5px;
 }
 #spotify {
   margin-left: 5%;
   margin-right: 5.2%;
+  margin-top: 5px;
 }
 
 .header__video {
@@ -234,6 +252,178 @@ p {
   background-image: url("media/photos/stone.png");
 }
 
+.current__header {
+  grid-area: cntrst;
+  margin-bottom: 99px;
+}
+
+.current__ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 160px;
+  padding-left: 5%;
+}
+
+@media screen and (min-width: 1200px) {
+  .current__body {
+    grid-area: cr_bdy;
+    display: grid;
+    grid-template-columns: minmax(auto, auto) minmax(auto, auto) 1fr 1fr 1fr;
+    grid-rows: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-areas:
+    "left left top top top"
+    "left left mid mid mid"
+    "left left btm btm btm";
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .current__body {
+    grid-area: cr_bdy;
+    display: grid;
+    grid-template-columns: minmax(auto, auto) minmax(auto, auto) 1fr 1fr 1fr;
+    grid-rows: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-areas:
+    "left left left left left"
+    "top top top top top"
+    "mid mid mid mid mid"
+    "btm btm btm btm btm";
+  }
+}
+
+      .nested_left {
+        grid-area: left;
+        align-self: center;
+      }
+      .nested_top {
+        grid-area: top;
+        display: inline-block;
+      }
+      .nested_mid {
+        grid-area: mid;
+        display: inline-block;
+      }
+      .nested_bottem {
+        grid-area: btm;
+        display: inline-block;
+      }
+      /* .current__body > div:nth-child(even) {
+        background-color: pink;
+      }
+      .current__body > div:nth-child(odd) {
+        background-color: lightblue;
+      } */
+
+
+.past__header {
+  grid-area: pstrst;
+}
+
+.past__body {
+  grid-area: pr_bdy;
+}
+
+    /* Subdiv because the grid is rendered by React */
+    /* React adds its own data-reactroot node */
+    .past__body {
+      display: grid;
+      grid-template-columns: 160px 160px 160px 160px;
+      grid-template-rows: 210px 210px 210px;
+      grid-gap: 2em;
+      margin-left: 20%;
+    }
+
+    .past__body > div:nth-child(even) {
+      background-color: pink;
+    }
+    .past__body > div:nth-child(odd) {
+      background-color: lightblue;
+    }
+
+.past__form {
+  grid-area: pr_frm;
+}
+
+.purveyors__header {
+  grid-area: prvyrs;
+}
+
+.purveyors__body {
+  grid-area: prv_bd;
+}
+
+.contact__header {
+  grid-area: contct;
+}
+
+.contact__body {
+  grid-area: ctctbd;
+}
+
+.footer1, .footer2, .footer3 {
+  background-color: #2B4257;
+}
+
+.footer1 > p, .footer2 > p {
+  color: #FFF;
+  padding: 10px 0 0 0;
+  text-align: left;
+  align-self: left;
+  justify-content: left;
+  -moz-text-align-last: left;
+  text-align-last: left;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 1.6em;
+}
+
+.footer1 > p {
+  margin-left: 40%;
+}
+
+.footer2 > p {
+  margin-left: 0;
+}
+
+.footer1 > h2, .footer2 > h2 {
+  color: #E8E8E8;
+  font-size: 14pt;
+  padding: 20px 0 0 0;
+  text-align: left;
+  align-self: left;
+  justify-content: left;
+  -moz-text-align-last: left;
+  text-align-last: left;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.footer1 > h2 {
+  margin-left: 40%;
+}
+
+.footer2 > h2 {
+  margin-left: 0;
+}
+
+.footer1 {
+  grid-area: footer1;
+}
+.footer2 {
+  grid-area: footer2;
+}
+
+
+
 /******* Screen-size Specific *******/
 
 @media screen and (min-width: 1200px) {
@@ -244,25 +434,89 @@ p {
     display: grid;
     justify-content: center;
     grid-template-columns: minmax(180px, 480px) minmax(180px, 480px) minmax(180px, 480px);
-    grid-template-rows: 60px 60px minmax(auto, auto) 330px
-      143px 143px 221px 953px 143px 330px 311px 221px;
+    grid-template-rows:
+    /* HEADER */
+    60px
+
+    /* SOCIAL */
+    60px
+
+    /* ABOUT */
+    minmax(auto, auto)
+    330px
+    143px
+    143px
+    221px
+    953px
+
+    /*** RESIDENT ROASTER ***/
+    143px
+    330px
+    311px
+    221px
+
+    /*** CURRENT ROASTER ***/
+    minmax(auto, auto)
+    minmax(auto, auto)
+
+    /*** PAST ROASTERS ***/
+    minmax(auto, auto)
+    minmax(auto, auto)
+
+    /*** PURVEYORS ***/
+    143px
+    minmax(auto, auto)
+
+    /*** CONTACT ***/
+    143px
+    minmax(auto, auto)
+
+    /*** FOOTER ***/
+    260px;
+
     grid-template-areas:
+      /*** HEADER ***/
       "header header header"
+
+      /*** SOCIAL ***/
       "social social social"
       "video  video  video"
       "photo1 photo2 photo3"
+
+      /*** ABOUT ***/
       "abt_hd abt_hd abt_hd"
       "abt_sh abt_sh abt_sh"
       "abt_bd abt_bd abt_bd"
       "abt_vd abt_vd abt_vd"
+
+      /*** RESIDENT ROASTER ***/
       "res_hd res_hd res_hd"
       "res_p1 res_p2 res_p3"
       "resbd1 resbd1 resbd1"
-      "resbd2 resbd2 resbd2";
+      "resbd2 resbd2 resbd2"
+
+      /*** CURRENT ROASTER ***/
+      "cntrst cntrst cntrst"
+      "cr_bdy cr_bdy cr_bdy"
+
+      /*** PAST ROASTERS ***/
+      "pstrst pstrst pstrst"
+      "pr_bdy pr_bdy pr_frm"
+
+      /*** PURVEYORS ***/
+      "prvyrs prvyrs prvyrs"
+      "prv_bd prv_bd prv_bd"
+
+      /*** CONTACT ***/
+      "contct contct contct"
+      "ctctbd ctctbd ctctbd"
+
+      /*** FOOTER ***/
+      "footer1 footer2 footer2";
   }
 
   p {
-    font-size: 17pt;
+    font-size: 14pt;
   }
 }
 
@@ -277,22 +531,48 @@ p {
     grid-template-rows: 60px 60px minmax(auto, auto) 330px
       143px 143px 221px 953px 143px 330px 311px 221px;
     grid-template-areas:
+      /*** HEADER ***/
       "header header header"
+
+      /*** SOCIAL ***/
       "social social social"
       "video  video  video "
       "photo1 photo2 photo3"
+
+      /*** ABOUT ***/
       "abt_hd abt_hd abt_hd"
       "abt_sh abt_sh abt_sh"
       "abt_bd abt_bd abt_bd"
       "abt_vd abt_vd abt_vd"
+
+      /*** RESIDENT ROASTER ***/
       "res_hd res_hd res_hd"
       "res_p1 res_p2 res_p3"
       "resbd1 resbd1 resbd1"
-      "resbd2 resbd2 resbd2";
+      "resbd2 resbd2 resbd2"
+
+      /*** CURRENT ROASTER ***/
+      "cntrst cntrst cntrst"
+      "cr_bdy cr_bdy cr_bdy"
+
+      /*** PAST ROASTERS ***/
+      "pstrst pstrst pstrst"
+      "pr_bdy pr_bdy pr_frm"
+
+      /*** PURVEYORS ***/
+      "prvyrs prvyrs prvyrs"
+      "prv_bd prv_bd prv_bd"
+
+      /*** CONTACT ***/
+      "contct contct contct"
+      "ctctbd ctctbd ctctbd"
+
+      /*** FOOTER ***/
+      "footer1 footer2 footer2";
   }
 
   p {
-    font-size: 14pt;
+    font-size: 12pt;
   }
 }
 
@@ -307,26 +587,54 @@ p {
     grid-template-rows: 60px 60px minmax(auto, auto) 330px 330px 330px
       143px 143px 221px 953px 143px 330px 330px 330px 311px 221px;
     grid-template-areas:
+
+      /*** HEADER ***/
       "header header header"
+
+      /*** SOCIAL ***/
       "social social social"
       "video  video  video "
       "photo1 photo1 photo1"
       "photo2 photo2 photo2"
       "photo3 photo3 photo3"
+
+      /*** ABOUT ***/
       "abt_hd abt_hd abt_hd"
       "abt_sh abt_sh abt_sh"
       "abt_bd abt_bd abt_bd"
       "abt_vd abt_vd abt_vd"
+
+      /*** RESIDENT ROASTER ***/
       "res_hd res_hd res_hd"
       "res_p1 res_p1 res_p1"
       "res_p2 res_p2 res_p2"
       "res_p3 res_p3 res_p3"
       "resbd1 resbd1 resbd1"
-      "resbd2 resbd2 resbd2";
+      "resbd2 resbd2 resbd2"
+
+      /*** CURRENT ROASTER ***/
+      "cntrst cntrst cntrst"
+      "cr_bdy cr_bdy cr_bdy"
+
+      /*** PAST ROASTERS ***/
+      "pstrst pstrst pstrst"
+      "pr_bdy pr_bdy pr_bdy"
+      "pr_frm pr_frm pr_frm"
+
+      /*** PURVEYORS ***/
+      "prvyrs prvyrs prvyrs"
+      "prv_bd prv_bd prv_bd"
+
+      /*** CONTACT ***/
+      "contct contct contct"
+      "ctctbd ctctbd ctctbd"
+
+      /*** FOOTER ***/
+      "footer1 footer2 footer2";
   }
 
   p {
-    font-size: 11pt;
+    font-size: 10pt;
   }
 }
 

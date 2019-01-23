@@ -7,6 +7,12 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+  <script src="js/autoplayVideo.js"></script>
+  <script src="js/cards.js"></script>
+  <script type="text/babel" src="js/main.jsx"></script>
   <title>Seabird Coffee Co.</title>
 </head>
 
@@ -31,16 +37,25 @@
       <div class="social__content">
         <div id="address">24 South Main St.<br>Cohasset, MA 02025</div>
         <div id="hours"><b>Mo-Fr</b> 6:30a-3:30p<br><b>Sa-Su</b> 7a-3:30p</div>
-        <div id="facebook"><img src="media/photos/facebook.png"></img></div>
-        <div id="instagram"><img src="media/photos/instagram.png"></img></div>
-        <div id="spotify"><img src="media/photos/spotify.png"></img></div>
+        <div id="facebook"><a href="http://google.com">
+          <img src="media/photos/facebook.png"
+          alt="facebook social media icon"></a></img>
+        </div>
+        <div id="instagram"><a href="http://google.com">
+          <img src="media/photos/instagram.png"
+          alt="instagram social media icon"></a></img>
+        </div>
+        <div id="spotify"><a href="http://google.com">
+          <img src="media/photos/spotify.png"
+          alt="spotify social media icon"></a></img>
+        </div>
       </div>
     </div>
 
     <div class="header__video">
       <video class="header__video" id="myVideo" loop autoplay muted>
-        <source src="ocean.mp4" type="video/mp4">
-        <source src="ocean.ogg" type="video/ogg">
+        <source src="media/video/ocean.mp4" type="video/mp4">
+        <source src="media/video/ocean.ogg" type="video/ogg">
         Your browser does not support HTML5 video.
       </video>
     </div>
@@ -74,8 +89,8 @@
 
     <div class="about__video">
         <video class="about__video" id="aboutVideo" loop autoplay muted>
-          <source src="ocean.mp4" type="video/mp4">
-          <source src="ocean.ogg" type="video/ogg">
+          <source src="media/video/ocean.mp4" type="video/mp4">
+          <source src="media/video/ocean.ogg" type="video/ogg">
           Your browser does not support HTML5 video.
         </video>
         <div style="margin: 43px">
@@ -110,7 +125,8 @@
     </div>
 
     <div class="resident__body1">
-      <h3 style="font-weight: normal; margin-bottom: 10px; margin-bottom: 0.4em;">
+      <h3 style="font-weight: normal; margin-bottom: 10px;
+        margin-bottom: 0.4em;">
         He decided that each month, a new
         Resident Roaster would be showcased for two reasons:</h3>
         <h3 style="font-weight: bold; margin-bottom: 0.4em;">To keep the teams
@@ -121,47 +137,102 @@
   </div>
 
     <div class="resident__body2">
-      <div style="position: relative; top: 50%; transform: perspective(1px) translateY(-50%);">
-        <p style="margin-bottom: 0.4em;">Together, the team curates a lineup of delicious coffees to highlight their unique
-          style. We connect New England's artisanal roasters, bakers and purveyors to the
-          coastal communities south of Boston. And in the process, we've created a contagious
-          spirit and style that is inclusive and fun.</p><p>We have been open a little over a
-          year and though it seems the time went by so quickly, it also feels like we've been
-          here all along. Nestled into the hillside beneath the church sipping away with family
-          and friends.</p>
+      <div style="position: relative; top: 50%;
+      transform: perspective(1px) translateY(-50%);">
+        <p style="margin-bottom: 0.4em;">Together, the team curates a lineup of
+          delicious coffees to highlight their uniquestyle. We connect New
+          England's artisanal roasters, bakers and purveyors to thecoastal
+          communities south of Boston. And in the process, we've created a
+          contagious spirit and style that is inclusive and fun.</p><p>We have
+          been open a little over a year and though it seems the time went by so
+          quickly, it also feels like we've been here all along. Nestled into
+          the hillside beneath the church sipping away with family and friends.
+        </p>
       </div>
     </div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+
+    <div class="current__header">
+      <h1 style="margin-top: 131px">Current Roaster</h1><br>
+      <p style="color:#9D9D9D;">We work with local roasters and purveyors to
+        provide you with the best possible product. Starting your morning with
+        fresh, high-quality coffee and finely crafted pastries will set the tone
+        for the rest of your day.</p>
+    </div>
+
+    <div class="current__body">
+      <div class="nested_left">
+        <img src="media/photos/bolt.png" alt="bolt coffee logo"></img>
+      </div>
+      <div class="nested_top">
+        <img src="media/photos/coffees/top.png" alt="bolt coffee logo"
+          style="float:left;"></img>
+          <div class="current__ul">
+            <ul>
+              <li><b>Espresso:</b> Colombia Consaca</li>
+              <li><b>Varietal:</b> Castillo, Colombia Variedad</li>
+              <li><b>Process:</b> Washed</li>
+              <li><b>Farmer/Coop:</b> Cafe Occidente Nariño</li>
+              <li><b>Tasting Notes:</b> Cherry, Chocolate, Orange</li>
+            </ul>
+          </div>
+      </div>
+      <div class="nested_mid">
+        <img src="media/photos/coffees/mid.png" alt="bolt coffee logo"
+          style="float:left;"></img>
+          <div class="current__ul">
+            <ul>
+              <li><b>Drip Coffee:</b> Tanzania Mara AB</li>
+              <li><b>Varietal:</b> N39 Hybrid, KP432, K7, K9</li>
+              <li><b>Altitude:</b> 2000 MASL</li>
+              <li><b>Process:</b> Washed</li>
+              <li><b>Roast Level:</b> Medium</li>
+              <li><b>Tasting Notes:</b> Lime, Malt, Floral</li>
+            </ul>
+          </div>
+      </div>
+      <div class="nested_bottem">
+        <img src="media/photos/coffees/bot.png" alt="bolt coffee logo"
+          style="float:left"></img>
+          <div class="current__ul">
+            <ul>
+              <li><b>Decaf Coffee:</b> Kenya Ngurueri AA</li>
+              <li><b>Region:</b> Embu Process: Washed</li>
+              <li><b>Farmer/Coop:</b> Murue Farmers Society</li>
+              <li><b>Tasting Notes:</b> Blackberry, Cherry, Lime, Plum</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <div class="past__header">
+      <h1 style="margin: 163px 0 25px 0">Past Roasters</h1><br>
+    </div>
+    <div class="past__body" id="js-past__body">
+      <div></div>
+    </div>
+    <div class="past__form"></div>
+    <div class="purveyors__header"></div>
+    <div class="purveyors__body"></div>
+    <div class="contact__header"></div>
+    <div class="contact__body"></div>
+    <div class="footer1">
+        <h2>Cafe</h2>
+        <p>24 South Main St.<br>
+        Cohasset, MA 02025<br>
+        <b>Mo-Fr</b> 6:30a-3:330px<br>
+        <b>Sa-Su</b> 7a-3:30p<br>
+        781-383-0592
+      </p>
+    </div>
+    <div class="footer2">
+        <h2>Follow</h2>
+        <p>Facebook<br>
+        Instagram<br>
+        Spotify
+      </p>
+    </div>
 
   </div>
-
-  <script>
-  var vid = document.getElementById("myVideo");
-  function enableAutoplay() {
-    vid.autoplay = true;
-    vid.load();
-  }
-
-  function disableAutoplay() {
-    vid.autoplay = false;
-    vid.load();
-  }
-
-  function checkAutoplay() {
-    alert(vid.autoplay);
-  }
-  </script>
 
 </body>
 
