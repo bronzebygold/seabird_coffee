@@ -359,7 +359,53 @@ ul {
 
 .purveyors__body {
   grid-area: prv_bd;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 210px 210px 210px 210px;
+  grid-gap: 2em;
+  margin-left: 13%;
+  margin-right: 13%;
+  grid-template-areas:
+  "one one three three"
+  "two two three three"
+  "four four five five"
+  "four four six seven";
 }
+    .one {
+      grid-area: one;
+      box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    }
+    .two {
+      grid-area: two;
+      box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    }
+    .three {
+      grid-area: three;
+      box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    }
+    .four {
+      grid-area: four;
+      box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    }
+    .five {
+      grid-area: five;
+      box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    }
+    .six {
+      grid-area: six;
+      box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    }
+    .seven {
+      grid-area: seven;
+      box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    }
+
+    .purveyors__body > div:nth-child(even) {
+      background-color: pink;
+    }
+    .purveyors__body > div:nth-child(odd) {
+      background-color: lightblue;
+    }
 
 .contact__header {
   grid-area: contct;
@@ -375,6 +421,7 @@ ul {
 
 .footer1 > p, .footer2 > p {
   color: #FFF;
+  font-size: 10pt;
   padding: 10px 0 0 0;
   text-align: left;
   align-self: left;
@@ -396,7 +443,7 @@ ul {
 
 .footer1 > h2, .footer2 > h2 {
   color: #E8E8E8;
-  font-size: 14pt;
+  font-size: 12pt;
   padding: 20px 0 0 0;
   text-align: left;
   align-self: left;
@@ -528,8 +575,46 @@ ul {
     display: grid;
     justify-content: center;
     grid-template-columns: minmax(180px, 480px) minmax(180px, 480px) minmax(180px, 480px);
-    grid-template-rows: 60px 60px minmax(auto, auto) 330px
-      143px 143px 221px 953px 143px 330px 311px 221px;
+    grid-template-rows:
+    /* HEADER */
+    60px
+
+    /* SOCIAL */
+    60px
+
+    /* ABOUT */
+    minmax(auto, auto)
+    330px
+    143px
+    143px
+    221px
+    953px
+
+    /*** RESIDENT ROASTER ***/
+    143px
+    330px
+    311px
+    221px
+
+    /*** CURRENT ROASTER ***/
+    minmax(auto, auto)
+    minmax(auto, auto)
+
+    /*** PAST ROASTERS ***/
+    minmax(auto, auto)
+    minmax(auto, auto)
+
+    /*** PURVEYORS ***/
+    143px
+    minmax(auto, auto)
+
+    /*** CONTACT ***/
+    143px
+    minmax(auto, auto)
+
+    /*** FOOTER ***/
+    260px;
+
     grid-template-areas:
       /*** HEADER ***/
       "header header header"
@@ -584,8 +669,46 @@ ul {
     display: grid;
     justify-content: center;
     grid-template-columns: minmax(180px, 480px) minmax(180px, 480px) minmax(180px, 480px);
-    grid-template-rows: 60px 60px minmax(auto, auto) 330px 330px 330px
-      143px 143px 221px 953px 143px 330px 330px 330px 311px 221px;
+    grid-template-rows:
+    /* HEADER */
+    60px
+
+    /* SOCIAL */
+    60px
+
+    /* ABOUT */
+    minmax(auto, auto)
+    330px 330px 330px
+    143px
+    143px
+    221px
+    953px
+
+    /*** RESIDENT ROASTER ***/
+    143px
+    330px 330px 330px
+    311px
+    221px
+
+    /*** CURRENT ROASTER ***/
+    minmax(auto, auto)
+    minmax(auto, auto)
+
+    /*** PAST ROASTERS ***/
+    minmax(auto, auto)
+    minmax(auto, auto)
+
+    /*** PURVEYORS ***/
+    143px
+    minmax(auto, auto)
+
+    /*** CONTACT ***/
+    143px
+    minmax(auto, auto)
+
+    /*** FOOTER ***/
+    260px;
+
     grid-template-areas:
 
       /*** HEADER ***/
