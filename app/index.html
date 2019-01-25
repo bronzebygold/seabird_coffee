@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../stylesheets/screen.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
-  <script src="js/autoplayVideo.js"></script>
-  <script src="js/cards.js"></script>
-  <script type="text/babel" src="js/main.jsx"></script>
+  <script src="../assets/js/autoplayVideo.js"></script>
+  <script src="../assets/js/cards.js"></script>
+  <script type="text/babel" src="assets/js/main.jsx"></script>
   <title>Seabird Coffee Co.</title>
+  <base href="/" />
 </head>
 
 <body>
 
-  <div class="logo"><img src="media/photos/seabird_logo.png"
+  <div class="logo"><img src="assets/media/photos/seabird_logo.png"
     alt="Seabird logo"></div>
 
   <div class="grid">
@@ -38,15 +39,15 @@
         <div id="address">24 South Main St.<br>Cohasset, MA 02025</div>
         <div id="hours"><b>Mo-Fr</b> 6:30a-3:30p<br><b>Sa-Su</b> 7a-3:30p</div>
         <div id="facebook"><a href="http://google.com">
-          <img src="media/photos/facebook.png"
+          <img src="assets/media/photos/facebook.png"
           alt="facebook social media icon"></a></img>
         </div>
         <div id="instagram"><a href="http://google.com">
-          <img src="media/photos/instagram.png"
+          <img src="assets/media/photos/instagram.png"
           alt="instagram social media icon"></a></img>
         </div>
         <div id="spotify"><a href="http://google.com">
-          <img src="media/photos/spotify.png"
+          <img src="assets/media/photos/spotify.png"
           alt="spotify social media icon"></a></img>
         </div>
       </div>
@@ -54,19 +55,19 @@
 
     <div class="header__video">
       <video class="header__video" id="myVideo" loop autoplay muted>
-        <source src="media/video/ocean.mp4" type="video/mp4">
-        <source src="media/video/ocean.ogg" type="video/ogg">
+        <source src="assets/media/video/ocean.mp4" type="video/mp4">
+        <source src="assets/media/video/ocean.ogg" type="video/ogg">
         Your browser does not support HTML5 video.
       </video>
     </div>
 
-    <div class="photo1"><img src="media/photos/photo1.png"
+    <div class="photo1"><img src="assets/media/photos/photo1.png"
       alt="Coffee beans spilling out of a bag"></img></div>
 
-    <div class="photo2"><img src="media/photos/photo2.png"
+    <div class="photo2"><img src="assets/media/photos/photo2.png"
       alt="Mug with latte art"></img></div>
 
-    <div class="photo3"><img src="media/photos/photo3.png"
+    <div class="photo3"><img src="assets/media/photos/photo3.png"
       alt="Closeup of mug with latte art"></img></div>
 
     <div class="about__header">
@@ -89,12 +90,12 @@
 
     <div class="about__video">
         <video class="about__video" id="aboutVideo" loop autoplay muted>
-          <source src="media/video/ocean.mp4" type="video/mp4">
-          <source src="media/video/ocean.ogg" type="video/ogg">
+          <source src="assets/media/video/ocean.mp4" type="video/mp4">
+          <source src="assets/media/video/ocean.ogg" type="video/ogg">
           Your browser does not support HTML5 video.
         </video>
         <div style="margin: 43px">
-          <p style="color: #9D9D9D; padding-bottom: 10em;">He started by finding the perfect spot
+          <p style="color: #9D9D9D; padding-bottom: 5em;">He started by finding the perfect spot
             perched in downtown Cohasset, MA and began assembling a team of
             people with the same love for high quality coffee and the passion to
             connect with the community.
@@ -107,19 +108,19 @@
     </div>
 
     <div class="resident__photo1">
-      <img src="media/photos/photo1.png"
+      <img src="assets/media/photos/photo1.png"
       alt="Coffee beans spilling out of a bag">
       </img>
     </div>
 
     <div class="resident__photo2">
-      <img src="media/photos/photo2.png"
+      <img src="assets/media/photos/photo2.png"
       alt="Mug with latte art">
       </img>
     </div>
 
     <div class="resident__photo3">
-      <img src="media/photos/photo3.png"
+      <img src="assets/media/photos/photo3.png"
       alt="Closeup of mug with latte art">
       </img>
     </div>
@@ -160,11 +161,13 @@
     </div>
 
     <div class="current__body">
-      <div class="nested_left">
-        <img src="media/photos/bolt.png" alt="bolt coffee logo"></img>
+      <div class="nested_left" id="current__highlight">
+        <div>
+          <img src="assets/media/photos/bolt.png" alt="bolt coffee logo"></img>
+        </div>
       </div>
       <div class="nested_top">
-        <img src="media/photos/coffees/top.png" alt="bolt coffee logo"
+        <img src="assets/media/photos/coffees/top.png" alt="bolt coffee logo"
           style="float:left;"></img>
           <div class="current__ul">
             <ul>
@@ -177,7 +180,7 @@
           </div>
       </div>
       <div class="nested_mid">
-        <img src="media/photos/coffees/mid.png" alt="bolt coffee logo"
+        <img src="assets/media/photos/coffees/mid.png" alt="bolt coffee logo"
           style="float:left;"></img>
           <div class="current__ul">
             <ul>
@@ -191,7 +194,7 @@
           </div>
       </div>
       <div class="nested_bottem">
-        <img src="media/photos/coffees/bot.png" alt="bolt coffee logo"
+        <img src="assets/media/photos/coffees/bot.png" alt="bolt coffee logo"
           style="float:left"></img>
           <div class="current__ul">
             <ul>

@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
     flex1.appendChild(a);
 
     let dom_img = document.createElement("img");
-    dom_img.src = `media/photos/past_roasters/${card.img}.png`;
+    dom_img.src = `assets/media/photos/past_roasters/${card.img}.png`;
     a.appendChild(dom_img);
 
     let flex2 = document.createElement("div");
