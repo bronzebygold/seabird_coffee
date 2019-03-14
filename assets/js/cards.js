@@ -85,38 +85,110 @@ const cards = [
   }
 ]
 
-document.addEventListener("DOMContentLoaded", function() {
-  for (let card of cards) {
-    let divtest = document.createElement("div");
-    let node = document.getElementById("js-past__body");
-    node.appendChild(divtest);
+$(document).ready(function() {
+  $('.past__body').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});
+
+window.onload = function(){
+  // for (let card of cards) {
+  //   let divtest = document.createElement("div");
+  //   let node = document.getElementById("js-past__body");
+  //   node.appendChild(divtest);
+  //
+  //   let flex1 = document.createElement("div");
+  //   divtest.appendChild(flex1);
+  //
+  //   let a = document.createElement("a");
+  //   a.href = `${card.link}`;
+  //   flex1.appendChild(a);
+  //
+  //   let dom_img = document.createElement("img");
+  //   dom_img.src = `assets/media/photos/past_roasters/${card.img}.png`;
+  //   a.appendChild(dom_img);
+  //
+  //   let flex2 = document.createElement("div");
+  //   flex2.setAttribute("id", "text-flex")
+  //   divtest.appendChild(flex2);
+  //
+  //   let subdiv = document.createElement("div");
+  //   flex2.appendChild(subdiv);
+  //
+  //   subdiv.innerHTML = `<b>${card.title}</b>`;
+  //
+  //   const dts = card.dates;
+  //   dts.forEach(function(d) {
+  //     subdiv.insertAdjacentHTML('beforeend', `<br>${d}`);
+  //   });
+  // }
+
+  for (let i = 0; i < Object.keys(cards).length; ++i) {
+
+    let nodeId = `${i}`.padStart((i<10) ? 2 : 3, '0');
+
+    console.log(nodeId);
+
+    let childNode =  document.getElementById(`slick-slide${nodeId}`);
+    console.log(childNode);
 
     let flex1 = document.createElement("div");
-    divtest.appendChild(flex1);
+    childNode.appendChild(flex1);
 
     let a = document.createElement("a");
-    a.href = `${card.link}`;
+    a.href = `${cards[i].link}`;
     flex1.appendChild(a);
 
     let dom_img = document.createElement("img");
-    dom_img.src = `assets/media/photos/past_roasters/${card.img}.png`;
+    dom_img.src = `assets/media/photos/past_roasters/${cards[i].img}.png`;
     a.appendChild(dom_img);
 
     let flex2 = document.createElement("div");
     flex2.setAttribute("id", "text-flex")
-    divtest.appendChild(flex2);
+    childNode.appendChild(flex2);
 
     let subdiv = document.createElement("div");
     flex2.appendChild(subdiv);
 
-    subdiv.innerHTML = `<b>${card.title}</b>`;
+    subdiv.innerHTML = `<b>${cards[i].title}</b>`;
 
-    const dts = card.dates;
+    const dts = cards[i].dates;
     dts.forEach(function(d) {
       subdiv.insertAdjacentHTML('beforeend', `<br>${d}`);
     });
+
   }
-});
+
+};
 
 
 

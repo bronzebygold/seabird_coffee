@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="../stylesheets/screen.css">
+
+  <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+
+
+  <!-- React -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+
+  <!-- JS ASSETS -->
   <script src="../assets/js/autoplayVideo.js"></script>
   <script src="../assets/js/cards.js"></script>
   <script type="text/babel" src="assets/js/main.jsx"></script>
+
   <title>Seabird Coffee Co.</title>
+
   <base href="/" />
+
 </head>
 
 <body>
@@ -56,20 +74,19 @@
 
     <div class="header__video">
       <video class="header__video" id="myVideo" loop autoplay muted>
-        <source src="assets/media/video/ocean.mp4" type="video/mp4">
-        <source src="assets/media/video/ocean.ogg" type="video/ogg">
+        <source src="assets/media/video/video1.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
     </div>
 
     <div class="photo1"><img src="assets/media/photos/photo1.png"
-      alt="Coffee beans spilling out of a bag"></img></div>
+      alt="Coffee beans spilling out of a bag"></div>
 
     <div class="photo2"><img src="assets/media/photos/photo2.png"
-      alt="Mug with latte art"></img></div>
+      alt="Mug with latte art"></div>
 
     <div class="photo3"><img src="assets/media/photos/photo3.png"
-      alt="Closeup of mug with latte art"></img></div>
+      alt="Closeup of mug with latte art"></div>
 
     <div class="about__header">
       <h1>Community Curators of Specialty Coffee</h1>
@@ -90,9 +107,8 @@
     </div>
 
     <div class="about__video">
-        <video class="about__video" id="aboutVideo" loop autoplay muted>
-          <source src="assets/media/video/ocean.mp4" type="video/mp4">
-          <source src="assets/media/video/ocean.ogg" type="video/ogg">
+        <video class="about__video" id="aboutVideo" controls>
+          <source src="assets/media/video/video2.mov" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
         <div style="margin: 43px">
@@ -164,12 +180,12 @@
     <div class="current__body">
       <div class="nested_left" id="current__highlight">
         <div>
-          <img src="assets/media/photos/bolt.png" alt="bolt coffee logo"></img>
+          <img src="assets/media/photos/bolt.png" alt="bolt coffee logo">
         </div>
       </div>
       <div class="nested_top">
         <img src="assets/media/photos/coffees/top.png" alt="bolt coffee logo"
-          style="float:left;"></img>
+          style="float:left;">
           <div class="current__ul">
             <ul>
               <li><b>Espresso:</b> Colombia Consaca</li>
@@ -182,7 +198,7 @@
       </div>
       <div class="nested_mid">
         <img src="assets/media/photos/coffees/mid.png" alt="bolt coffee logo"
-          style="float:left;"></img>
+          style="float:left;">
           <div class="current__ul">
             <ul>
               <li><b>Drip Coffee:</b> Tanzania Mara AB</li>
@@ -196,7 +212,7 @@
       </div>
       <div class="nested_bottem">
         <img src="assets/media/photos/coffees/bot.png" alt="bolt coffee logo"
-          style="float:left"></img>
+          style="float:left">
           <div class="current__ul">
             <ul>
               <li><b>Decaf Coffee:</b> Kenya Ngurueri AA</li>
@@ -213,6 +229,20 @@
     </div>
 
     <div class="past__body" id="js-past__body">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
 
     <div class="past__form"></div>
@@ -226,49 +256,49 @@
         <div>
           <img src="assets/media/photos/purveyors/one.png"
           alt="Pain D'Avignon logo" style="width: 80%; height: auto;
-          margin: 0 auto;"></img>
+          margin: 0 auto;">
         </div>
       </div>
       <div class="two">
         <div>
           <img src="assets/media/photos/purveyors/two.png"
           alt="Rickaroons logo" style="width: 80%; height: auto;
-          margin: 0 auto;"></img>
+          margin: 0 auto;">
         </div>
       </div>
       <div class="three">
         <div>
           <img src="assets/media/photos/purveyors/three.png"
           alt="muffins on a rustic wooden table" style="width: 100%; height: 100%;
-          margin: 0 auto;"></img>
+          margin: 0 auto;">
         </div>
       </div>
       <div class="four">
         <div>
           <img src="assets/media/photos/purveyors/four.png"
           alt="cookies stacked on a plate on a stool" style="width: 100%; height: 100%;
-          margin: 0 auto;"></img>
+          margin: 0 auto;">
         </div>
       </div>
       <div class="five">
         <div>
           <img src="assets/media/photos/purveyors/five.png"
           alt="Laird Superfood logo" style="width: auto; height: 80%;
-          margin: 0 auto;"></img>
+          margin: 0 auto;">
         </div>
       </div>
       <div class="six">
         <div>
           <img src="assets/media/photos/purveyors/six.png"
           alt="Taza Chocolate logo" style="width: 80%; height: auto;
-          margin: 0 auto;"></img>
+          margin: 0 auto;">
         </div>
       </div>
       <div class="seven">
         <div>
           <img src="assets/media/photos/purveyors/seven.png"
           alt="One Cookie Nation logo" style="width: 80%; height: auto;
-          margin: 0 auto;"></img>
+          margin: 0 auto;">
         </div>
       </div>
 
@@ -301,7 +331,7 @@
         </div>
         <div>
           <img src="assets/media/photos/seabird_team.png"
-          alt="The Seabird team"></img>
+          alt="The Seabird team">
         </div>
       </div>
     </div>
@@ -319,14 +349,8 @@
       </p>
     </div>
     <div class="footer2">
-        <h2>Follow</h2>
-        <p>Facebook<br>
-        Instagram<br>
-        Spotify
-      </p>
+        <h2>Follow</h2><p>Facebook<br>Instagram<br>Spotify</p>
     </div>
-
-
 
 </body>
 

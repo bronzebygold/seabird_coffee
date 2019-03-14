@@ -22,9 +22,8 @@ html {
 /******* Selectors *******/
 
 h1 {
-  font-family: Helvetica, 'Karla', sans-serif;
+  font-family: 'Karla', Helvetica, sans-serif;
   font-style: normal;
-  font-size: 1.8rem;
   font-weight: 400;
   text-align: center;
   color: $header-blue;
@@ -34,7 +33,6 @@ h2 {
   font-family: Futura, 'Nunito', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.8rem;
   color: #FFFFFF;
   padding-left: 10%;
   padding-right: 10%;
@@ -42,10 +40,9 @@ h2 {
 
 h3 {
   font-family: 'Libre Baskerville', Baskerville, Garamond, serif;
-  font-size: 0.8rem;
   color: #0A2845;
   text-align: center;
-  /* font-style: italic; */
+  font-style: italic;
   display: block;
   padding-left: 1%;
   padding-right: 1%;
@@ -56,13 +53,11 @@ h3 {
 
 p {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 0.7rem;
   color: #FFF;
   text-align: center;
   display: block;
   padding-left: 10%;
   padding-right: 10%;
-  line-height: 1.3em;
   text-align: justify;
   -moz-text-align-last: center;
   text-align-last: center;
@@ -123,12 +118,14 @@ input {
   margin-top: 9px;
   margin-left: 5%;
   float: left;
-  box-shadow: 4px 4px 4px rgba(255, 195, 160, 0.5);
   transition-duration: 0.3s;
   &:hover {
-    background-color: #313131;
-    box-shadow: 4px 4px 6px rgba(255, 195, 160, 0.9);
-    transition-duration: 0.3s;
+    // background-color: #313131;
+    box-shadow: 0px 1px 16px 1px rgba(255, 195, 60, 0.5);
+    transition-duration: 0.1s;
+  }
+  &:active {
+    box-shadow: none;
   }
 }
 
@@ -147,7 +144,7 @@ input {
     border-bottom: 2px rgba(30, 144, 255, 0);
     &:hover {
       text-decoration: none;
-      border-bottom: 2px solid rgba(30, 144, 255, 1);
+      border-bottom: 2px solid $header-nav-grey;
       transition: 0.3s;
     }
   }
@@ -184,6 +181,7 @@ input {
 #address, #hours {
   padding-right: 3%;
   justify-content: flex-start;
+  font-weight: bold;
 }
 
 #facebook {
@@ -279,8 +277,8 @@ input {
   grid-area: resbd1;
   align-self: center;
   text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .resident__body2 {
@@ -306,7 +304,7 @@ input {
     grid-area: cr_bdy;
     display: grid;
     grid-template-columns: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
-    grid-rows: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
     grid-column-gap: 25px;
     grid-row-gap: 25px;
     margin-left: 5em;
@@ -324,7 +322,7 @@ input {
     grid-area: cr_bdy;
     display: grid;
     grid-template-columns: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
-    grid-rows: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
     grid-column-gap: 25px;
     grid-row-gap: 25px;
     margin-left: 5em;
@@ -332,27 +330,31 @@ input {
     font-size: 1rem;
     grid-template-areas:
     "left left left left left"
-    "top top top top top"
-    "mid mid mid mid mid"
-    "btm btm btm btm btm";
+    ".    top top top top"
+    ".    mid mid mid mid"
+    ".    btm btm btm btm";
   }
   #current__highlight {
     justify-self: center;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .current__body {
     grid-area: cr_bdy;
     display: grid;
     grid-template-columns: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
-    grid-rows: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
     grid-column-gap: 25px;
     grid-row-gap: 25px;
     margin-left: 5em;
     margin-right: 5em;
     font-size: 1rem;
-    grid-template-areas: "left left left left left" "top top top top top" "mid mid mid mid mid" "btm btm btm btm btm";
+    grid-template-areas:
+            "left left left left left"
+            "top top top top top"
+            "mid mid mid mid mid"
+            "btm btm btm btm btm";
   }
 }
 
@@ -389,30 +391,31 @@ input {
 
 .past__body {
   grid-area: pr_bdy;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 160px);;
-  grid-template-rows: 210px 210px 210px 210px;
-  grid-gap: 2em;
-  margin-left: 20%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 12pt;
-  color: #000;
-  line-height: 1.5em;
-  border: 0.2;
-  border-color: #ccc;
-  > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-    justify-content: flex-end;
-    > div {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-    }
-  }
+  //display: grid;
+  //grid-template-columns: repeat(auto-fill, 160px);;
+  //grid-template-rows: 210px 210px 210px 210px;
+  //grid-gap: 2em;
+  //margin-left: 20%;
+  //display: inline-block;
+  //font-family: 'Source Sans Pro', sans-serif;
+  //font-size: 12pt;
+  //color: #000;
+  //line-height: 1.5em;
+  //border-color: #ccc;
+  //width: 160px;
+  //> div {
+  //  display: flex;
+  //  flex-direction: column;
+  //  align-items: center;
+  //  box-shadow: 0px 1px 30px 1px rgba(0, 0, 0, 0.3);
+  //  justify-content: flex-end;
+  //  > div {
+  //    flex-grow: 1;
+  //    display: flex;
+  //    flex-direction: column;
+  //    justify-content: space-evenly;
+  //  }
+  //}
 }
 
 #text-flex {
@@ -451,7 +454,7 @@ input {
   text-align: center;
   vertical-align: middle;
   > div {
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 30px 1px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -519,7 +522,7 @@ input {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .purveyors__body {
     grid-template-areas:
     "one one"
@@ -556,7 +559,7 @@ input {
   font-size: 10pt;
   padding: 10px 0 0 0;
   text-align: left;
-  align-self: left;
+  align-self: flex-start;
   justify-content: left;
   -moz-text-align-last: left;
   text-align-last: left;
@@ -578,7 +581,7 @@ input {
   font-size: 12pt;
   padding: 20px 0 0 0;
   text-align: left;
-  align-self: left;
+  align-self: flex-start;
   justify-content: left;
   -moz-text-align-last: left;
   text-align-last: left;
@@ -605,13 +608,30 @@ input {
 /******* Screen-size Specific *******/
 
 @media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 30pt;
+    line-height: 1.2em;
+  }
+  h2 {
+    font-size: 25pt;
+    line-height: 1.2em;
+  }
+  h3 {
+    font-size: 16pt;
+    line-height: 1.2em;
+  }
+  p {
+    font-size: 14pt;
+    line-height: 1.3em;
+  }
+
   .header__nav {
     font-size: 17px;
   }
   .grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: minmax(180px, 480px) minmax(180px, 480px) minmax(180px, 480px);
+    grid-template-columns: minmax(180px, 640px) minmax(180px, 640px) minmax(180px, 640px);
     grid-template-rows:
     /* HEADER */
     60px
@@ -628,7 +648,7 @@ input {
     minmax(auto, auto)
 
     /*** RESIDENT ROASTER ***/
-    143px
+    200px
     330px
     311px
     221px
@@ -679,7 +699,8 @@ input {
 
       /*** PAST ROASTERS ***/
       "pstrst pstrst pstrst"
-      "pr_bdy pr_bdy pr_frm"
+      "pr_bdy pr_bdy pr_bdy"
+      "pr_frm pr_frm pr_frm"
 
       /*** PURVEYORS ***/
       "prvyrs prvyrs prvyrs"
@@ -704,7 +725,7 @@ input {
   .grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: minmax(180px, 480px) minmax(180px, 480px) minmax(180px, 480px);
+    grid-template-columns: minmax(180px, 640px) minmax(180px, 640px) minmax(180px, 640px);
     grid-template-rows:
     /* HEADER */
     60px
@@ -721,7 +742,7 @@ input {
     minmax(auto, auto)
 
     /*** RESIDENT ROASTER ***/
-    143px
+    200px
     330px
     311px
     221px
@@ -792,14 +813,14 @@ input {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .header__nav {
     font-size: 14px;
   }
   .grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: minmax(180px, 480px) minmax(180px, 480px) minmax(180px, 480px);
+    grid-template-columns: minmax(180px, 640px) minmax(180px, 640px) minmax(180px, 640px);
     grid-template-rows:
     /* HEADER */
     60px
@@ -816,7 +837,7 @@ input {
     minmax(auto, auto)
 
     /*** RESIDENT ROASTER ***/
-    143px
+    200px
     330px 330px 330px
     311px
     221px

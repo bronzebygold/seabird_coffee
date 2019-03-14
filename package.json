@@ -1,0 +1,14 @@
+{
+  "name": "seabird",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass -o stylesheets/screen"
+  },
+  "author": "Daniel Miller",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
