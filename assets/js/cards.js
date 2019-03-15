@@ -152,6 +152,10 @@ window.onload = function(){
   //   });
   // }
 
+  // > nodeId
+  // > > childNode
+  // > > >
+
   for (let i = 0; i < Object.keys(cards).length; ++i) {
 
     let nodeId = `${i}`.padStart((i<10) ? 2 : 3, '0');
@@ -173,7 +177,7 @@ window.onload = function(){
     a.appendChild(dom_img);
 
     let flex2 = document.createElement("div");
-    flex2.setAttribute("id", "text-flex")
+    flex2.setAttribute("id", "text-flex");
     childNode.appendChild(flex2);
 
     let subdiv = document.createElement("div");
