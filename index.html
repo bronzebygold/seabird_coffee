@@ -1,12 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0" url="https://pleatherstarfish.github.io/seabird_coffee/app/index.html" />
-    <title>Page Redirection</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="stylesheets/screen.css">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+  <!-- JS ASSETS -->
+  <script src="assets/js/autoplayVideo.js"></script>
+  <script src="assets/js/cards.js"></script>
+  <script type="text/babel" src="assets/js/main.jsx"></script>
+
+  <title>Seabird Coffee Co.</title>
+
+  <base href="/" />
+
 </head>
+
 <body>
-If you are not redirected automatically,
-follow the <a href="https://pleatherstarfish.github.io/seabird_coffee/app/index.html">link to the documentation</a>
+
+  <div class="logo"><img src="/assets/media/photos/seabird_logo.png"
+    alt="Seabird logo"></div>
+
+  <div class="grid">
+
+    <div class="header">
+      <button class="header__button">APPAREL</button>
+      <div class="header__nav">
+        <div><a href="app#about">ABOUT US</a></div>
+        <div><a href="app#roasters">ROASTERS</a></div>
+        <div><a href="app#purveyors">PURVEYORS</a></div>
+        <div><a href="app#contact">CONTACT</a></div>
+      </div>
+    </div>
+
+    <div class="social">
+      <div class="social__content">
+        <div id="address">24 South Main St.<br>Cohasset, MA 02025</div>
+        <div id="hours"><b>Mo-Fr</b> 6:30a-3:30p<br><b>Sa-Su</b> 7a-3:30p</div>
+        <div id="facebook"><a href="http://google.com">
+          <img src="assets/media/photos/facebook.png"
+          alt="facebook social media icon"></a></img>
+        </div>
+        <div id="instagram"><a href="http://google.com">
+          <img src="assets/media/photos/instagram.png"
+          alt="instagram social media icon"></a></img>
+        </div>
+        <div id="spotify"><a href="http://google.com">
+          <img src="assets/media/photos/spotify.png"
+          alt="spotify social media icon"></a></img>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__video">
+
+      <div id="teaser">
+        <span style="color: white; text-align: left;
+        font-family: 'Libre Baskerville', Baskerville, Garamond, serif;">
+          come and<br>share a<br>cup with<br>us</span>
+      </div>
+
+      <video class="header__video" id="myVideo" loop autoplay muted>
+        <source src="assets/media/video/video1.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+    </div>
+
+    <div class="photo1"><img src="assets/media/photos/photo1.png"
+      alt="Coffee beans spilling out of a bag"></div>
+
+    <div class="photo2"><img src="assets/media/photos/photo2.png"
+      alt="Mug with latte art"></div>
+
+    <div class="photo3"><img src="assets/media/photos/photo3.png"
+      alt="Closeup of mug with latte art"></div>
+
+    <div class="about__header" id="about">
+      <h1>Community Curators of Specialty Coffee</h1>
+    </div>
+
+    <div class="about__subheader">
+      <h3>The concept of Seabird came over time.</h3>
+    </div>
+
+    <div class="about__body">
+      <div style="position: relative;top: 50%;transform: perspective(1px) translateY(-50%);">
+        <p>Brian, the owner, spent the last seven years as a stay at home dad. Whether the kids
+          were awake or quietly snoozing, his mornings were always spent with a cup of coffee in
+          hand gazing out at the horizon. As the sun came up the gulls would fly above the house
+          and his imagination would soar with them as to what was possible for his growing family.
+          This is where Seabird began.</p>
+      </div>
+    </div>
+
+    <div class="about__video">
+        <video class="about__video" id="aboutVideo" controls>
+          <source src="assets/media/video/video2.mov" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div style="margin: 43px">
+          <p style="color: #9D9D9D; padding-bottom: 50px;">He started by finding the perfect spot
+            perched in downtown Cohasset, MA and began assembling a team of
+            people with the same love for high quality coffee and the passion to
+            connect with the community.
+          </p>
+        </div>
+    </div>
+    <div class="resident__header" id="roaster">
+      <h1>Resident Roaster</h1><br>
+      <h2 style="color:#9D9D9D">Why a resident roaster?</h2>
+    </div>
+
+    <div class="resident__photo1">
+      <img src="assets/media/photos/photo1.png"
+      alt="Coffee beans spilling out of a bag">
+      </img>
+    </div>
+
+    <div class="resident__photo2">
+      <img src="assets/media/photos/photo2.png"
+      alt="Mug with latte art">
+      </img>
+    </div>
+
+    <div class="resident__photo3">
+      <img src="assets/media/photos/photo3.png"
+      alt="Closeup of mug with latte art">
+      </img>
+    </div>
+
+    <div class="resident__body1">
+      <h3 style="font-weight: normal; margin-bottom: 10px;
+        margin-bottom: 0.4em;">
+        He decided that each month, a new
+        Resident Roaster would be showcased for two reasons:
+      </h3>
+      <h3 style="font-weight: bold; margin-bottom: 0.4em;">To keep the teams
+          ever growing curiosity alive and to bring the latest coffee
+          happenings into the store.
+      </h3>
+  </div>
+
+    <div class="resident__body2">
+      <div style="position: relative; top: 50%;
+      transform: perspective(1px) translateY(-50%);">
+        <p style="margin-bottom: 0.4em;">Together, the team curates a lineup of
+          delicious coffees to highlight their uniquestyle. We connect New
+          England's artisanal roasters, bakers and purveyors to thecoastal
+          communities south of Boston. And in the process, we've created a
+          contagious spirit and style that is inclusive and fun.</p><p>We have
+          been open a little over a year and though it seems the time went by so
+          quickly, it also feels like we've been here all along. Nestled into
+          the hillside beneath the church sipping away with family and friends.
+        </p>
+      </div>
+    </div>
+
+    <div class="current__header" id="roasters">
+      <h1 style="margin-top: 131px">Current Roaster</h1><br>
+      <p style="color:#9D9D9D;">We work with local roasters and purveyors to
+        provide you with the best possible product. Starting your morning with
+        fresh, high-quality coffee and finely crafted pastries will set the tone
+        for the rest of your day.</p>
+    </div>
+
+    <div class="current__body">
+      <div class="nested_left" id="current__highlight">
+        <div>
+          <img src="assets/media/photos/bolt.png" alt="bolt coffee logo">
+        </div>
+      </div>
+      <div class="nested_top">
+        <img src="assets/media/photos/coffees/top.png" alt="bolt coffee logo"
+             style="float:left;">
+          <div class="current__ul">
+            <ul>
+              <li><b>Espresso:</b> Colombia Consaca</li>
+              <li><b>Varietal:</b> Castillo, Colombia Variedad</li>
+              <li><b>Process:</b> Washed</li>
+              <li><b>Farmer/Coop:</b> Cafe Occidente Nariño</li>
+              <li><b>Tasting Notes:</b> Cherry, Chocolate, Orange</li>
+            </ul>
+          </div>
+      </div>
+      <div class="nested_mid">
+        <img src="assets/media/photos/coffees/mid.png" alt="bolt coffee logo"
+             style="float:left;">
+          <div class="current__ul">
+            <ul>
+              <li><b>Drip Coffee:</b> Tanzania Mara AB</li>
+              <li><b>Varietal:</b> N39 Hybrid, KP432, K7, K9</li>
+              <li><b>Altitude:</b> 2000 MASL</li>
+              <li><b>Process:</b> Washed</li>
+              <li><b>Roast Level:</b> Medium</li>
+              <li><b>Tasting Notes:</b> Lime, Malt, Floral</li>
+            </ul>
+          </div>
+      </div>
+      <div class="nested_bottem">
+        <img src="assets/media/photos/coffees/bot.png" alt="bolt coffee logo"
+             style="float:left">
+          <div class="current__ul">
+            <ul>
+              <li><b>Decaf Coffee:</b> Kenya Ngurueri AA</li>
+              <li><b>Region:</b> Embu Process: Washed</li>
+              <li><b>Farmer/Coop:</b> Murue Farmers Society</li>
+              <li><b>Tasting Notes:</b> Blackberry, Cherry, Lime, Plum</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <div class="past__header">
+      <h1 style="margin: 120px 0 25px 0; padding-bottom: 30px">Past Roasters</h1><br>
+    </div>
+
+    <div class="past__body" id="js-past__body">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="past__form"></div>
+
+    <div class="purveyors__header" id="purveyors">
+      <h1>Purveyors</h1>
+    </div>
+
+    <div class="purveyors__body">
+      <div class="one">
+        <div>
+          <img src="assets/media/photos/purveyors/one.png"
+          alt="Pain D'Avignon logo" style="width: 80%; height: auto;
+          margin: 0 auto;">
+        </div>
+      </div>
+      <div class="two">
+        <div>
+          <img src="assets/media/photos/purveyors/two.png"
+          alt="Rickaroons logo" style="width: 80%; height: auto;
+          margin: 0 auto;">
+        </div>
+      </div>
+      <div class="three">
+        <div>
+          <img src="assets/media/photos/purveyors/three.png"
+          alt="muffins on a rustic wooden table" style="width: 100%; height: 100%;
+          margin: 0 auto;">
+        </div>
+      </div>
+      <div class="four">
+        <div>
+          <img src="assets/media/photos/purveyors/four.png"
+          alt="cookies stacked on a plate on a stool" style="width: 100%; height: 100%;
+          margin: 0 auto;">
+        </div>
+      </div>
+      <div class="five">
+        <div>
+          <img src="assets/media/photos/purveyors/five.png"
+          alt="Laird Superfood logo" style="width: auto; height: 80%;
+          margin: 0 auto;">
+        </div>
+      </div>
+      <div class="six">
+        <div>
+          <img src="assets/media/photos/purveyors/six.png"
+          alt="Taza Chocolate logo" style="width: 80%; height: auto;
+          margin: 0 auto;">
+        </div>
+      </div>
+      <div class="seven">
+        <div>
+          <img src="assets/media/photos/purveyors/seven.png"
+          alt="One Cookie Nation logo" style="width: 80%; height: auto;
+          margin: 0 auto;">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="contact__header" id="contact">
+      <h1 style="margin: 63px 0 25px 0">Contact Us</h1>
+    </div>
+
+    <div class="contact__body">
+      <div style="margin-left: auto; margin-right:0;">
+        <form action="/action_page.php">
+          <input type="text" id="fname" name="firstname" placeholder="First Name"
+          style="width: 47%;">
+          <input type="text" id="lname" name="lastname" placeholder="Last Name"
+          style="width: 47%;">
+          <br>
+          <input type="text" id="email" name="email" placeholder="Email">
+          <br>
+          <input type="text" id="subject" name="subject" placeholder="Subject">
+          <br>
+          <textarea placeholder="Message"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div>
+        <div>
+          <h2 style="padding: 0.2rem 0 1rem 0; color: #2B4257;">
+            For Gift Cards, Please Click Here.</h2>
+        </div>
+        <div>
+          <img src="assets/media/photos/seabird_team.png"
+          alt="The Seabird team">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer1">
+        <h2>Caf&#233;</h2>
+        <p>24 South Main St.<br>
+        Cohasset, MA 02025<br>
+        <b>Mo-Fr</b> 6:30a-3:330px<br>
+        <b>Sa-Su</b> 7a-3:30p<br>
+        781-383-0592
+      </p>
+      <p style="padding-top: 5em;">
+        &#169;2018, Seabird Coffee Co.
+      </p>
+    </div>
+    <div class="footer2">
+        <h2>Follow</h2><p>Facebook<br>Instagram<br>Spotify</p>
+    </div>
+
 </body>
+
+
 </html>
