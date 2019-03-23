@@ -3,170 +3,141 @@ const cards = [
     "img": "speedwell",
     "title": "Speedwell Coffee",
     "dates": ["September 2017", "August 2018"],
-    "link": "https://www.google.com/"
+    "link": "https://speedwellcoffee.com/"
   },
   {
     "img": "gracenote",
     "title": "Gracenote Coffee",
     "dates": ["October 2017"],
-    "link": "https://www.google.com/"
+    "link": "https://www.gracenotecoffee.com/"
   },
   {
     "img": "georgehowell",
     "title": "George Howell",
     "dates": ["November 2017"],
-    "link": "https://www.google.com/"
+    "link": "http://www.georgehowellcoffee.com/"
   },
   {
     "img": "broadsheet",
     "title": "Broadsheet",
     "dates": ["December 2017"],
-    "link": "https://www.google.com/"
+    "link": "https://www.broadsheetcoffee.com/"
   },
   {
     "img": "wolf",
     "title": "Little Wolf",
     "dates": ["January 2018"],
-    "link": "https://www.google.com/"
+    "link": "https://littlewolf.coffee/"
   },
   {
     "img": "snowowl",
     "title": "Snow Owl",
     "dates": ["February 2018"],
-    "link": "https://www.google.com/"
+    "link": "https://www.socoffee.co/"
   },
   {
     "img": "atomic",
     "title": "Atomic",
     "dates": ["March 2018"],
-    "link": "https://www.google.com/"
+    "link": "http://www.atomicafe.com/"
   },
   {
     "img": "share",
     "title": "Share",
     "dates": ["April 2018"],
-    "link": "https://www.google.com/"
+    "link": "https://www.sharecoffeeroasters.com/"
   },
   {
     "img": "barismo",
     "title": "Barismo",
     "dates": ["May 2018"],
-    "link": "https://www.google.com/"
+    "link": "http://www.barismo.com/"
   },
   {
     "img": "barrington",
     "title": "Barrington",
     "dates": ["June 2018"],
-    "link": "https://www.google.com/"
+    "link": "https://barringtoncoffee.com/"
   },
   {
     "img": "esselon",
     "title": "Esselon",
     "dates": ["July 2018"],
-    "link": "https://www.google.com/"
+    "link": "https://www.esselon.com/"
   },
   {
     "img": "tandem",
     "title": "Tandem",
     "dates": ["September 2018"],
-    "link": "https://www.google.com/"
+    "link": "https://www.tandemcoffee.com/"
   },
   {
     "img": "flight",
     "title": "Flight",
     "dates": ["October 2018"],
-    "link": "https://www.google.com/"
+    "link": "https://flightcoffeeco.com/"
   },
   {
     "img": "bolt",
     "title": "Bolt",
     "dates": ["November 2018"],
-    "link": "https://www.google.com/"
+    "link": "http://www.boltcoffeecompany.com/#home"
   }
 ]
 
 $(document).ready(function() {
+
   $('.past__body').slick({
     dots: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    variableWidth: false,
+    adaptiveHeight: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
+          slidesToShow: 4,
+          slidesToScroll: 4,
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 640,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
         }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
       }
     ]
+  })
+.on('setPosition', function (event, slick) {
+    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
   });
 });
 
 window.onload = function(){
-  // for (let card of cards) {
-  //   let divtest = document.createElement("div");
-  //   let node = document.getElementById("js-past__body");
-  //   node.appendChild(divtest);
-  //
-  //   let flex1 = document.createElement("div");
-  //   divtest.appendChild(flex1);
-  //
-  //   let a = document.createElement("a");
-  //   a.href = `${card.link}`;
-  //   flex1.appendChild(a);
-  //
-  //   let dom_img = document.createElement("img");
-  //   dom_img.src = `assets/media/photos/past_roasters/${card.img}.png`;
-  //   a.appendChild(dom_img);
-  //
-  //   let flex2 = document.createElement("div");
-  //   flex2.setAttribute("id", "text-flex")
-  //   divtest.appendChild(flex2);
-  //
-  //   let subdiv = document.createElement("div");
-  //   flex2.appendChild(subdiv);
-  //
-  //   subdiv.innerHTML = `<b>${card.title}</b>`;
-  //
-  //   const dts = card.dates;
-  //   dts.forEach(function(d) {
-  //     subdiv.insertAdjacentHTML('beforeend', `<br>${d}`);
-  //   });
-  // }
-
-  // > nodeId
-  // > > childNode
-  // > > >
 
   for (let i = 0; i < Object.keys(cards).length; ++i) {
 
+    let divOuter = document.createElement("div");
+
     let nodeId = `${i}`.padStart((i<10) ? 2 : 3, '0');
 
-    console.log(nodeId);
-
     let childNode =  document.getElementById(`slick-slide${nodeId}`);
-    console.log(childNode);
+    childNode.appendChild(divOuter);
 
     let flex1 = document.createElement("div");
-    childNode.appendChild(flex1);
+    flex1.setAttribute("id", "img-flex");
+    divOuter.appendChild(flex1);
 
     let a = document.createElement("a");
     a.href = `${cards[i].link}`;
@@ -178,7 +149,7 @@ window.onload = function(){
 
     let flex2 = document.createElement("div");
     flex2.setAttribute("id", "text-flex");
-    childNode.appendChild(flex2);
+    divOuter.appendChild(flex2);
 
     let subdiv = document.createElement("div");
     flex2.appendChild(subdiv);

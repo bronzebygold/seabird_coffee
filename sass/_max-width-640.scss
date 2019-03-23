@@ -1,0 +1,125 @@
+@import "_variables.scss";
+
+@media screen and (max-width: 640px) {
+  p {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .header__nav {
+    font-size: 14px;
+  }
+  .social__content{
+    img {
+      max-width: 50%;
+      height: auto;
+    }
+    #facebook {
+      margin-left: 10%;
+    }
+    #spotify, #instagram {
+      justify-self: right;
+      margin-right: 0;
+      margin-left: 3%;
+    }
+  }
+  .grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(180px, 640px) minmax(180px, 640px) minmax(180px, 640px);
+    grid-template-rows:
+            /* HEADER */
+            60px
+
+              /* SOCIAL */
+            60px
+
+              /* ABOUT */
+            minmax(auto, auto)
+            minmax(auto, auto)
+            143px
+            143px
+            221px
+            minmax(auto, auto)
+
+              /*** RESIDENT ROASTER ***/
+            200px
+            minmax(auto, auto)
+            311px
+            minmax(auto, auto) minmax(auto, auto) minmax(auto, auto)
+            311px
+            311px
+
+              /*** CURRENT ROASTER ***/
+            minmax(auto, auto)
+            minmax(auto, auto)
+
+              /*** PAST ROASTERS ***/
+            211px
+            311px
+
+              /*** PURVEYORS ***/
+            60px
+            311px
+
+              /*** CONTACT ***/
+            minmax(auto, auto)
+            minmax(auto, auto)
+
+              /*** FOOTER ***/
+            260px;
+
+    grid-template-areas:
+
+            /*** HEADER ***/
+            "header header header"
+
+              /*** SOCIAL ***/
+            "social social social"
+            "video  video  video "
+            "photo1 photo1 photo1"
+            "photo2 photo2 photo2"
+            "photo3 photo3 photo3"
+
+              /*** ABOUT ***/
+            "abt_hd abt_hd abt_hd"
+            "abt_sh abt_sh abt_sh"
+            "abt_bd abt_bd abt_bd"
+            "abt_vd abt_vd abt_vd"
+
+              /*** RESIDENT ROASTER ***/
+            "res_hd res_hd res_hd"
+            "res_p1 res_p1 res_p1"
+            "res_p2 res_p2 res_p2"
+            "res_p3 res_p3 res_p3"
+            "resbd1 resbd1 resbd1"
+            "resbd2 resbd2 resbd2"
+
+              /*** CURRENT ROASTER ***/
+            "cntrst cntrst cntrst"
+            "cr_bdy cr_bdy cr_bdy"
+
+              /*** PAST ROASTERS ***/
+            "pstrst pstrst pstrst"
+            "pr_bdy pr_bdy pr_bdy"
+            "pr_frm pr_frm pr_frm"
+
+              /*** PURVEYORS ***/
+            "prvyrs prvyrs prvyrs"
+            "prv_bd prv_bd prv_bd"
+
+              /*** CONTACT ***/
+            "contct contct contct"
+            "ctctbd ctctbd ctctbd"
+
+              /*** FOOTER ***/
+            "footer1 footer2 footer2";
+  }
+  .about__video {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  #teaser {
+    font-size: 16pt;
+    margin: 40px 0 0 40px;
+  }
+}

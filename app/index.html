@@ -19,12 +19,6 @@
   <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
 
-
-  <!-- React -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
-
   <!-- JS ASSETS -->
   <script src="../assets/js/autoplayVideo.js"></script>
   <script src="../assets/js/cards.js"></script>
@@ -46,10 +40,10 @@
     <div class="header">
       <button class="header__button">APPAREL</button>
       <div class="header__nav">
-        <div>ABOUT US</div>
-        <div>ROASTTERS</div>
-        <div>PURVEYORS</div>
-        <div>CONTACT</div>
+        <div><a href="app#about">ABOUT US</a></div>
+        <div><a href="app#roasters">ROASTERS</a></div>
+        <div><a href="app#purveyors">PURVEYORS</a></div>
+        <div><a href="app#contact">CONTACT</a></div>
       </div>
     </div>
 
@@ -73,10 +67,18 @@
     </div>
 
     <div class="header__video">
+
+      <div id="teaser">
+        <span style="color: white; text-align: left;
+        font-family: 'Libre Baskerville', Baskerville, Garamond, serif;">
+          come and<br>share a<br>cup with<br>us</span>
+      </div>
+
       <video class="header__video" id="myVideo" loop autoplay muted>
         <source src="assets/media/video/video1.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
+
     </div>
 
     <div class="photo1"><img src="assets/media/photos/photo1.png"
@@ -88,7 +90,7 @@
     <div class="photo3"><img src="assets/media/photos/photo3.png"
       alt="Closeup of mug with latte art"></div>
 
-    <div class="about__header">
+    <div class="about__header" id="about">
       <h1>Community Curators of Specialty Coffee</h1>
     </div>
 
@@ -112,14 +114,14 @@
           Your browser does not support HTML5 video.
         </video>
         <div style="margin: 43px">
-          <p style="color: #9D9D9D; padding-bottom: 5em;">He started by finding the perfect spot
+          <p style="color: #9D9D9D; padding-bottom: 50px;">He started by finding the perfect spot
             perched in downtown Cohasset, MA and began assembling a team of
             people with the same love for high quality coffee and the passion to
             connect with the community.
           </p>
         </div>
     </div>
-    <div class="resident__header">
+    <div class="resident__header" id="roaster">
       <h1>Resident Roaster</h1><br>
       <h2 style="color:#9D9D9D">Why a resident roaster?</h2>
     </div>
@@ -146,12 +148,12 @@
       <h3 style="font-weight: normal; margin-bottom: 10px;
         margin-bottom: 0.4em;">
         He decided that each month, a new
-        Resident Roaster would be showcased for two reasons:</h3>
-        <h3 style="font-weight: bold; margin-bottom: 0.4em;">To keep the teams
+        Resident Roaster would be showcased for two reasons:
+      </h3>
+      <h3 style="font-weight: bold; margin-bottom: 0.4em;">To keep the teams
           ever growing curiosity alive and to bring the latest coffee
           happenings into the store.
-    </h3>
-    </h3>
+      </h3>
   </div>
 
     <div class="resident__body2">
@@ -169,7 +171,7 @@
       </div>
     </div>
 
-    <div class="current__header">
+    <div class="current__header" id="roasters">
       <h1 style="margin-top: 131px">Current Roaster</h1><br>
       <p style="color:#9D9D9D;">We work with local roasters and purveyors to
         provide you with the best possible product. Starting your morning with
@@ -225,7 +227,7 @@
     </div>
 
     <div class="past__header">
-      <h1 style="margin: 163px 0 25px 0">Past Roasters</h1><br>
+      <h1 style="margin: 120px 0 25px 0; padding-bottom: 30px">Past Roasters</h1><br>
     </div>
 
     <div class="past__body" id="js-past__body">
@@ -247,7 +249,7 @@
 
     <div class="past__form"></div>
 
-    <div class="purveyors__header">
+    <div class="purveyors__header" id="purveyors">
       <h1>Purveyors</h1>
     </div>
 
@@ -304,7 +306,7 @@
 
     </div>
 
-    <div class="contact__header">
+    <div class="contact__header" id="contact">
       <h1 style="margin: 63px 0 25px 0">Contact Us</h1>
     </div>
 
