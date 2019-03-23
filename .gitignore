@@ -1,5 +1,5 @@
-../.sass-cache
-../node_modules
-../assets/media/video/video2.mov
-../package.json
-../package-lock.json
+./.sass-cache
+./node_modules
+./assets/media/video/video2.mov
+./package.json
+./package-lock.json
