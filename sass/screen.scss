@@ -12,6 +12,11 @@
 @import "_max-width-640.scss";
 @import "_slick-slider.scss";
 @import "_variables.scss";
+@import "_iphone.scss";
+@import "_galaxy.scss";
+@import "_pixel.scss";
+@import "_htc.scss";
+@import "_windows.scss";
 
 .logo {
   position: absolute;
@@ -352,55 +357,62 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+.form {
+  grid-area: form;
+}
+.gift {
+  grid-area: gift;
 }
 
 .footer1, .footer2, .footer3 {
-  background-color: $header-blue;
+background-color: $header-blue;
 }
 
 .footer1 > p, .footer2 > p {
-  color: #FFF;
-  font-size: 10pt;
-  padding: 10px 0 0 0;
-  text-align: left;
-  align-self: flex-start;
-  justify-content: left;
-  -moz-text-align-last: left;
-  text-align-last: left;
-  line-height: 1.6em;
+color: #FFF;
+font-size: 10pt;
+padding: 10px 0 0 0;
+text-align: left;
+align-self: flex-start;
+justify-content: left;
+-moz-text-align-last: left;
+text-align-last: left;
+line-height: 1.6em;
 }
 
 .footer1 > p {
-  margin-left: 40%;
+margin-left: 40%;
 }
 
 .footer2 > p {
-  margin-left: 0;
+margin-left: 0;
 }
 
 .footer1 > h2, .footer2 > h2 {
-  color: #E8E8E8;
-  font-size: 12pt;
-  padding: 20px 0 0 0;
-  text-align: left;
-  align-self: flex-start;
-  justify-content: left;
-  -moz-text-align-last: left;
-  text-align-last: left;
+color: #E8E8E8;
+font-size: 12pt;
+padding: 20px 0 0 0;
+text-align: left;
+align-self: flex-start;
+justify-content: left;
+-moz-text-align-last: left;
+text-align-last: left;
 }
 
 .footer1 > h2 {
-  margin-left: 40%;
+margin-left: 40%;
 }
 
 .footer2 > h2 {
-  margin-left: 0;
+margin-left: 0;
 }
 
 .footer1 {
-  grid-area: footer1;
+grid-area: footer1;
 }
 
 .footer2 {
-  grid-area: footer2;
+grid-area: footer2;
 }

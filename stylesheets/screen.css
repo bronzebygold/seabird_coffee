@@ -96,6 +96,12 @@ input {
   display: inline-block;
 }
 
+/* line 92, ../sass/_selectors.scss */
+form {
+  display: inline-block;
+  margin: auto auto;
+}
+
 /* line 3, ../sass/_header.scss */
 .header__button {
   background-color: #4A4A4A;
@@ -222,17 +228,30 @@ input {
     display: grid;
     justify-content: center;
     grid-template-columns: minmax(180px, 640px) minmax(180px, 640px) minmax(180px, 640px);
-    grid-template-rows: 60px 60px minmax(auto, auto) minmax(auto, auto) 143px 143px 221px minmax(auto, auto) 200px minmax(auto, auto) 311px 221px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 143px 143px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 260px;
+    grid-template-rows: 60px 60px minmax(auto, auto) minmax(auto, auto) 143px 143px 221px 800px 200px minmax(auto, auto) 311px 221px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 143px 143px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 260px;
     grid-template-areas: "header header header" "social social social" "video  video  video" "photo1 photo2 photo3" "abt_hd abt_hd abt_hd" "abt_sh abt_sh abt_sh" "abt_bd abt_bd abt_bd" "abt_vd abt_vd abt_vd" "res_hd res_hd res_hd" "res_p1 res_p2 res_p3" "resbd1 resbd1 resbd1" "resbd2 resbd2 resbd2" "cntrst cntrst cntrst" "cr_bdy cr_bdy cr_bdy" "pstrst pstrst pstrst" "pr_bdy pr_bdy pr_bdy" "pr_frm pr_frm pr_frm" "prvyrs prvyrs prvyrs" "prv_bd prv_bd prv_bd" "contct contct contct" "ctctbd ctctbd ctctbd" "footer1 footer2 footer2";
   }
 
   /* line 110, ../sass/_min-width-1200.scss */
   .about__video {
-    max-width: 70vw;
+    width: 70vw;
+    height: 600px;
     margin: 3% auto;
   }
 
   /* line 115, ../sass/_min-width-1200.scss */
+  .form {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  /* line 120, ../sass/_min-width-1200.scss */
+  .contact__body {
+    grid-template-areas: "form gift";
+  }
+
+  /* line 124, ../sass/_min-width-1200.scss */
   #teaser {
     font-size: 60pt;
     margin: 90px 0 0 110px;
@@ -241,26 +260,52 @@ input {
 }
 @media screen and (max-width: 1199px) {
   /* line 4, ../sass/_max-width-1199.scss */
+  p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  /* line 8, ../sass/_max-width-1199.scss */
   .header__nav {
     font-size: 14px;
   }
 
-  /* line 7, ../sass/_max-width-1199.scss */
+  /* line 11, ../sass/_max-width-1199.scss */
   .grid {
     display: grid;
     justify-content: center;
     grid-template-columns: minmax(180px, 640px) minmax(180px, 640px) minmax(180px, 640px);
-    grid-template-rows: 60px 60px minmax(auto, auto) minmax(auto, auto) 143px 143px 221px minmax(auto, auto) 200px minmax(auto, auto) 311px 221px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 143px 143px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 260px;
+    grid-template-rows: 60px 60px minmax(auto, auto) minmax(auto, auto) 143px 143px 221px 650px 200px minmax(auto, auto) 311px 221px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 143px 143px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 260px;
     grid-template-areas: "header header header" "social social social" "video  video  video " "photo1 photo2 photo3" "abt_hd abt_hd abt_hd" "abt_sh abt_sh abt_sh" "abt_bd abt_bd abt_bd" "abt_vd abt_vd abt_vd" "res_hd res_hd res_hd" "res_p1 res_p2 res_p3" "resbd1 resbd1 resbd1" "resbd2 resbd2 resbd2" "cntrst cntrst cntrst" "cr_bdy cr_bdy cr_bdy" "pstrst pstrst pstrst" "pr_bdy pr_bdy pr_bdy" "pr_frm pr_frm pr_frm" "prvyrs prvyrs prvyrs" "prv_bd prv_bd prv_bd" "contct contct contct" "ctctbd ctctbd ctctbd" "footer1 footer2 footer2";
   }
 
-  /* line 93, ../sass/_max-width-1199.scss */
+  /* line 97, ../sass/_max-width-1199.scss */
   .about__video {
-    max-width: 70vw;
-    margin: 3% auto;
+    width: 70vw;
+    height: 500px;
+    margin: 2% auto;
   }
 
-  /* line 97, ../sass/_max-width-1199.scss */
+  /* line 102, ../sass/_max-width-1199.scss */
+  .contact__body {
+    grid-template-areas: "gift gift" "form form";
+  }
+
+  /* line 107, ../sass/_max-width-1199.scss */
+  .form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 112, ../sass/_max-width-1199.scss */
+  .gift {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 117, ../sass/_max-width-1199.scss */
   #teaser {
     font-size: 40pt;
     margin: 60px 0 0 60px;
@@ -298,18 +343,38 @@ input {
   .grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: minmax(180px, 640px) minmax(180px, 640px) minmax(180px, 640px);
-    grid-template-rows: 60px 60px minmax(auto, auto) minmax(auto, auto) 143px 143px 221px minmax(auto, auto) 200px minmax(auto, auto) 311px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 311px 311px minmax(auto, auto) minmax(auto, auto) 211px 311px 60px 311px minmax(auto, auto) minmax(auto, auto) 260px;
+    grid-template-columns: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
+    grid-template-rows: 60px 60px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 143px 143px 221px 600px 200px minmax(auto, auto) 311px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 311px 311px minmax(auto, auto) minmax(auto, auto) 211px 311px 60px 311px minmax(auto, auto) minmax(auto, auto) 260px;
     grid-template-areas: "header header header" "social social social" "video  video  video " "photo1 photo1 photo1" "photo2 photo2 photo2" "photo3 photo3 photo3" "abt_hd abt_hd abt_hd" "abt_sh abt_sh abt_sh" "abt_bd abt_bd abt_bd" "abt_vd abt_vd abt_vd" "res_hd res_hd res_hd" "res_p1 res_p1 res_p1" "res_p2 res_p2 res_p2" "res_p3 res_p3 res_p3" "resbd1 resbd1 resbd1" "resbd2 resbd2 resbd2" "cntrst cntrst cntrst" "cr_bdy cr_bdy cr_bdy" "pstrst pstrst pstrst" "pr_bdy pr_bdy pr_bdy" "pr_frm pr_frm pr_frm" "prvyrs prvyrs prvyrs" "prv_bd prv_bd prv_bd" "contct contct contct" "ctctbd ctctbd ctctbd" "footer1 footer2 footer2";
   }
 
   /* line 117, ../sass/_max-width-640.scss */
   .about__video {
-    max-width: 100vw;
+    width: 100vw;
+    height: 400px;
     margin: 0 auto;
   }
 
-  /* line 121, ../sass/_max-width-640.scss */
+  /* line 122, ../sass/_max-width-640.scss */
+  .form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 127, ../sass/_max-width-640.scss */
+  .gift {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 132, ../sass/_max-width-640.scss */
+  .contact__body {
+    grid-template-areas: "gift gift" "form form";
+  }
+
+  /* line 137, ../sass/_max-width-640.scss */
   #teaser {
     font-size: 16pt;
     margin: 40px 0 0 40px;
@@ -707,14 +772,25 @@ input {
   padding-top: 3rem;
   padding-bottom: 3rem;
   grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
 }
 
 /* line 357, ../sass/screen.scss */
+.form {
+  grid-area: form;
+}
+
+/* line 360, ../sass/screen.scss */
+.gift {
+  grid-area: gift;
+}
+
+/* line 364, ../sass/screen.scss */
 .footer1, .footer2, .footer3 {
   background-color: #2B4257;
 }
 
-/* line 361, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 .footer1 > p, .footer2 > p {
   color: #FFF;
   font-size: 10pt;
@@ -727,17 +803,17 @@ input {
   line-height: 1.6em;
 }
 
-/* line 373, ../sass/screen.scss */
+/* line 380, ../sass/screen.scss */
 .footer1 > p {
   margin-left: 40%;
 }
 
-/* line 377, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 .footer2 > p {
   margin-left: 0;
 }
 
-/* line 381, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 .footer1 > h2, .footer2 > h2 {
   color: #E8E8E8;
   font-size: 12pt;
@@ -749,22 +825,22 @@ input {
   text-align-last: left;
 }
 
-/* line 392, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 .footer1 > h2 {
   margin-left: 40%;
 }
 
-/* line 396, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
 .footer2 > h2 {
   margin-left: 0;
 }
 
-/* line 400, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 .footer1 {
   grid-area: footer1;
 }
 
-/* line 404, ../sass/screen.scss */
+/* line 411, ../sass/screen.scss */
 .footer2 {
   grid-area: footer2;
 }

@@ -38,7 +38,7 @@
             143px
             143px
             221px
-            minmax(auto, auto)
+            800px
 
               /*** RESIDENT ROASTER ***/
             200px
@@ -108,10 +108,19 @@
             "footer1 footer2 footer2";
   }
   .about__video {
-    max-width: 70vw;
+    width: 70vw;
+    height: 600px;
     margin: 3% auto;
   }
-
+  .form {
+    display: block;
+    margin-left: auto;
+    margin-right:0;
+  }
+  .contact__body {
+    grid-template-areas:
+            "form gift";
+  }
   #teaser {
     font-size: 60pt;
     margin: 90px 0 0 110px;
