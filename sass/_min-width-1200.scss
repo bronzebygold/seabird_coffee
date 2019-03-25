@@ -21,6 +21,17 @@
   .header__nav {
     font-size: 17px;
   }
+  .social__content__social {
+    #facebook {
+      padding-right: 40px;
+    }
+    #spotify {
+      padding-right: 25px;
+    }
+    #instagram {
+      padding-right: 40px;
+    }
+  }
   .grid {
     display: grid;
     justify-content: center;
@@ -64,7 +75,7 @@
             minmax(auto, auto)
 
               /*** FOOTER ***/
-            260px;
+            minmax(260px, auto);
 
     grid-template-areas:
             /*** HEADER ***/
@@ -105,12 +116,15 @@
             "ctctbd ctctbd ctctbd"
 
               /*** FOOTER ***/
-            "footer1 footer2 footer2";
+            "footer footer footer";
   }
   .about__video {
     width: 70vw;
     height: 600px;
     margin: 3% auto;
+  }
+  form {
+    width: 540px;
   }
   .form {
     display: block;
@@ -124,6 +138,80 @@
   #teaser {
     font-size: 60pt;
     margin: 90px 0 0 110px;
-    line-hight: 1.3em;
+    line-height: 1.3em;
+  }
+  .cafe > p, .follow > p, .copr > p, .dsign > p, .dev > p {
+    color: #FFF;
+    font-size: 10pt;
+    text-align: left;
+    padding: 0 !important;
+    justify-content: left;
+    -moz-text-align-last: left;
+    text-align-last: left;
+    line-height: 1.6em;
+  }
+  .cafe > h2, .follow > h2, .copr > h2, .mailing-list > h2 {
+    color: #E8E8E8;
+    font-size: 12pt;
+    text-align: left;
+    padding: 20px 0 15px 0 !important;
+    justify-content: left;
+    -moz-text-align-last: left;
+    text-align-last: left;
+  }
+  .foot1 {
+    grid-area: foot1;
+    display: grid;
+    justify-self: end;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto);
+    grid-template-areas:
+            "cafe follow"
+            "copr dsign";
+  }
+  .foot2 {
+    grid-area: foot2;
+    display: grid;
+    justify-items: start;
+    justify-content: start;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto);
+    grid-template-areas:
+            "mailing-list"
+            "dev";
+  }
+  .cafe {
+    grid-area: cafe;
+    width: 264.595px;
+    justify-self: end;
+  }
+  .follow {
+    grid-area: follow;
+    width: 264.595px;
+    justify-self: end;
+  }
+  .copr {
+    grid-area: copr;
+    padding-top: 20px;
+    width: 264.595px;
+    justify-self: end;
+  }
+  .dsign {
+    grid-area: dsign;
+    padding-top: 20px;
+    width: 264.595px;
+    justify-self: end;
+  }
+  .mailing-list {
+    grid-area: mailing-list;
+    height: 162px;
+  }
+  .dev {
+    grid-area: dev;
+    padding-top: 20px;
+  }
+  .footer {
+    grid-template-areas:
+            "foot1 foot2";
   }
 }

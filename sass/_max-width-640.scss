@@ -8,24 +8,28 @@
   .header__nav {
     font-size: 14px;
   }
-  .social__content{
+  .social__content__social{
     img {
-      max-width: 50%;
-      height: auto;
+      max-width: 80%;
     }
     #facebook {
-      margin-left: 10%;
+      padding-right: 20px;
     }
-    #spotify, #instagram {
-      justify-self: right;
-      margin-right: 0;
-      margin-left: 3%;
+    #spotify {
+      padding-right: 0px;
     }
+    #instagram {
+      padding-right: 20px;
+    }
+  }
+  #giftimg {
+    width: 100vw;
+    height: auto;
   }
   .grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
     grid-template-rows:
             /* HEADER */
             60px
@@ -66,7 +70,7 @@
             minmax(auto, auto)
 
               /*** FOOTER ***/
-            260px;
+            minmax(260px, auto);
 
     grid-template-areas:
 
@@ -112,12 +116,15 @@
             "ctctbd ctctbd ctctbd"
 
               /*** FOOTER ***/
-            "footer1 footer2 footer2";
+            "footer footer footer";
   }
   .about__video {
     width: 100vw;
     height: 400px;
     margin: 0 auto;
+  }
+  form {
+    width: 100vw;
   }
   .form {
     display: block;
@@ -137,5 +144,84 @@
   #teaser {
     font-size: 16pt;
     margin: 40px 0 0 40px;
+  }
+  .cafe > p, .follow > p, .copr > p, .dsign > p, .dev > p {
+    color: #FFF;
+    font-size: 10pt;
+    text-align: left;
+    padding: 0 !important;
+    justify-content: left;
+    -moz-text-align-last: left;
+    text-align-last: left;
+    line-height: 1.6em;
+  }
+  .cafe > h2, .follow > h2, .copr > h2, .mailing-list > h2 {
+    color: #E8E8E8;
+    font-size: 12pt;
+    text-align: left;
+    padding: 20px 0 15px 0 !important;
+    justify-content: left;
+    -moz-text-align-last: left;
+    text-align-last: left;
+  }
+  .foot1 {
+    grid-area: foot1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto);
+    grid-template-areas:
+            "cafe cafe"
+            "follow follow"
+            "copr dsign";
+  }
+  .foot2 {
+    grid-area: foot2;
+    display: grid;
+    justify-self: start;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto);
+    grid-template-areas:
+            "mailing-list"
+            "dev";
+  }
+  .cafe {
+    grid-area: cafe;
+    padding: 20px 0 20px 20px;
+    width: 40vw;
+  }
+  .follow {
+    grid-area: follow;
+    padding: 20px 0 20px 20px;
+    width: 40vw;
+  }
+  .copr {
+    grid-area: copr;
+    padding: 20px 0 20px 20px;
+    width: 40vw;
+  }
+  .dsign {
+    grid-area: dsign;
+    padding: 20px 0 20px 20px;
+    width: 40vw;
+  }
+  .mailing-list {
+    grid-area: mailing-list;
+    height: 162px;
+  }
+  .dev {
+    grid-area: dev;
+    padding-top: 20px;
+    align-self: baseline;
+  }
+  .footer {
+    grid-template-areas:
+            "foot1"
+            "foot2";
+  }
+  form {
+    display: inline-block;
+    margin: auto auto;
+    width: 0;
   }
 }

@@ -32,8 +32,9 @@
 
 <body>
 
-  <div class="logo"><img src="/assets/media/photos/seabird_logo.png"
-    alt="Seabird logo"></div>
+  <div class="logo">
+    <img id="logoimg" src="/assets/media/photos/seabird_logo.png" alt="Seabird logo">
+  </div>
 
   <div class="grid">
 
@@ -49,19 +50,25 @@
 
     <div class="social">
       <div class="social__content">
-        <div id="address">24 South Main St.<br>Cohasset, MA 02025</div>
-        <div id="hours"><b>Mo-Fr</b> 6:30a-3:30p<br><b>Sa-Su</b> 7a-3:30p</div>
-        <div id="facebook"><a href="http://google.com">
-          <img src="assets/media/photos/facebook.png"
-          alt="facebook social media icon"></a></img>
+
+        <div class="social__content__address">
+          <div id="address">24 South Main St.<br>Cohasset, MA 02025</div>
+          <div id="hours"><b>Mo-Fr</b> 6:30a-3:30p<br><b>Sa-Su</b> 7a-3:30p</div>
         </div>
-        <div id="instagram"><a href="http://google.com">
-          <img src="assets/media/photos/instagram.png"
-          alt="instagram social media icon"></a></img>
-        </div>
-        <div id="spotify"><a href="http://google.com">
-          <img src="assets/media/photos/spotify.png"
-          alt="spotify social media icon"></a></img>
+
+        <div class="social__content__social">
+          <div id="facebook"><a href="https://www.facebook.com/seabirdcoffee/">
+            <img src="assets/media/photos/facebook.png"
+            alt="facebook social media icon"></a></img>
+          </div>
+          <div id="instagram"><a href="https://www.instagram.com/seabird_coffee/">
+            <img src="assets/media/photos/instagram.png"
+            alt="instagram social media icon"></a></img>
+          </div>
+          <div id="spotify"><a href="https://open.spotify.com/user/seabird_coffee">
+            <img src="assets/media/photos/spotify.png"
+            alt="spotify social media icon"></a></img>
+          </div>
         </div>
       </div>
     </div>
@@ -334,26 +341,67 @@
             For Gift Cards, Please Click Here.</h2>
         </div>
         <div>
-          <img src="assets/media/photos/seabird_team.png"
+          <img id="giftimg" src="assets/media/photos/seabird_team.png"
           alt="The Seabird team">
         </div>
       </div>
     </div>
 
-    <div class="footer1">
-        <h2>Caf&#233;</h2>
-        <p>24 South Main St.<br>
-        Cohasset, MA 02025<br>
-        <b>Mo-Fr</b> 6:30a-3:330px<br>
-        <b>Sa-Su</b> 7a-3:30p<br>
-        781-383-0592
-      </p>
-      <p style="padding-top: 5em;">
-        &#169;2018, Seabird Coffee Co.
-      </p>
-    </div>
-    <div class="footer2">
-        <h2>Follow</h2><p>Facebook<br>Instagram<br>Spotify</p>
+    <div class="footer">
+
+      <div class="foot1">
+
+        <div class="cafe">
+          <h2>Caf&#233;</h2>
+          <p>
+            <span style="color: #E8E8E8;">24 South Main St.</span><br>
+            <span style="color: #E8E8E8;">Cohasset, MA 02025</span><br>
+            <b style="color: #FFFFFF;">Mo-Fr</b> <span style="color: #E8E8E8;">6:30a-3:330px</span><br>
+            <b style="color: #FFFFFF;">Sa-Su</b> <span style="color: #E8E8E8;">7a-3:30p</span><br>
+            781-383-0592
+          </p>
+        </div>
+
+        <div class="follow">
+          <h2>Follow</h2>
+
+          <p>
+            <a style="color: #E8E8E8;" href="https://www.facebook.com/seabirdcoffee/">Facebook</a><br>
+            <a style="color: #E8E8E8;" href="https://www.instagram.com/seabird_coffee/">Instagram</a><br>
+            <a style="color: #E8E8E8;" href="https://open.spotify.com/user/seabird_coffee">Spotify</a>
+          </p>
+        </div>
+
+        <div class="copr">
+          <p>
+            &#169; 2018, Seabird Coffee Co.
+          </p>
+        </div>
+
+        <div class="dsign">
+          <p>
+            Designed by <a style="color: #E8E8E8;" href="https://www.linkedin.com/in/aaron-cecchini-butler/">Aaron Cocchini-Butler</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="foot2">
+        <div class="mailing-list">
+          <h2>Join Our Mailing List</h2>
+          <form id="mailing-list-form" action="/mailing_list_page.php">
+            <input id="mailing-list-form-input" style="margin: -2px;" type="text" id="email-list" name="email" placeholder="Email">
+            <input id="mailing-list-form-submit" type="submit" value="Submit">
+          </form>
+        </div>
+
+        <div class="dev">
+          <p>
+            Developed by <a style="color: #E8E8E8;" href="https://www.danielmillerportfolio.com/">Daniel Miller</a>
+          </p>
+        </div>
+      </div>
+
     </div>
 
 </body>

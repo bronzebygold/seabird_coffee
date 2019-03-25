@@ -100,6 +100,7 @@ input {
 form {
   display: inline-block;
   margin: auto auto;
+  width: 100%;
 }
 
 /* line 3, ../sass/_header.scss */
@@ -223,39 +224,148 @@ form {
     font-size: 17px;
   }
 
-  /* line 24, ../sass/_min-width-1200.scss */
+  /* line 25, ../sass/_min-width-1200.scss */
+  .social__content__social #facebook {
+    padding-right: 40px;
+  }
+  /* line 28, ../sass/_min-width-1200.scss */
+  .social__content__social #spotify {
+    padding-right: 25px;
+  }
+  /* line 31, ../sass/_min-width-1200.scss */
+  .social__content__social #instagram {
+    padding-right: 40px;
+  }
+
+  /* line 35, ../sass/_min-width-1200.scss */
   .grid {
     display: grid;
     justify-content: center;
     grid-template-columns: minmax(180px, 640px) minmax(180px, 640px) minmax(180px, 640px);
-    grid-template-rows: 60px 60px minmax(auto, auto) minmax(auto, auto) 143px 143px 221px 800px 200px minmax(auto, auto) 311px 221px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 143px 143px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 260px;
-    grid-template-areas: "header header header" "social social social" "video  video  video" "photo1 photo2 photo3" "abt_hd abt_hd abt_hd" "abt_sh abt_sh abt_sh" "abt_bd abt_bd abt_bd" "abt_vd abt_vd abt_vd" "res_hd res_hd res_hd" "res_p1 res_p2 res_p3" "resbd1 resbd1 resbd1" "resbd2 resbd2 resbd2" "cntrst cntrst cntrst" "cr_bdy cr_bdy cr_bdy" "pstrst pstrst pstrst" "pr_bdy pr_bdy pr_bdy" "pr_frm pr_frm pr_frm" "prvyrs prvyrs prvyrs" "prv_bd prv_bd prv_bd" "contct contct contct" "ctctbd ctctbd ctctbd" "footer1 footer2 footer2";
+    grid-template-rows: 60px 60px minmax(auto, auto) minmax(auto, auto) 143px 143px 221px 800px 200px minmax(auto, auto) 311px 221px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 143px 143px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(260px, auto);
+    grid-template-areas: "header header header" "social social social" "video  video  video" "photo1 photo2 photo3" "abt_hd abt_hd abt_hd" "abt_sh abt_sh abt_sh" "abt_bd abt_bd abt_bd" "abt_vd abt_vd abt_vd" "res_hd res_hd res_hd" "res_p1 res_p2 res_p3" "resbd1 resbd1 resbd1" "resbd2 resbd2 resbd2" "cntrst cntrst cntrst" "cr_bdy cr_bdy cr_bdy" "pstrst pstrst pstrst" "pr_bdy pr_bdy pr_bdy" "pr_frm pr_frm pr_frm" "prvyrs prvyrs prvyrs" "prv_bd prv_bd prv_bd" "contct contct contct" "ctctbd ctctbd ctctbd" "footer footer footer";
   }
 
-  /* line 110, ../sass/_min-width-1200.scss */
+  /* line 121, ../sass/_min-width-1200.scss */
   .about__video {
     width: 70vw;
     height: 600px;
     margin: 3% auto;
   }
 
-  /* line 115, ../sass/_min-width-1200.scss */
+  /* line 126, ../sass/_min-width-1200.scss */
+  form {
+    width: 540px;
+  }
+
+  /* line 129, ../sass/_min-width-1200.scss */
   .form {
     display: block;
     margin-left: auto;
     margin-right: 0;
   }
 
-  /* line 120, ../sass/_min-width-1200.scss */
+  /* line 134, ../sass/_min-width-1200.scss */
   .contact__body {
     grid-template-areas: "form gift";
   }
 
-  /* line 124, ../sass/_min-width-1200.scss */
+  /* line 138, ../sass/_min-width-1200.scss */
   #teaser {
     font-size: 60pt;
     margin: 90px 0 0 110px;
-    line-hight: 1.3em;
+    line-height: 1.3em;
+  }
+
+  /* line 143, ../sass/_min-width-1200.scss */
+  .cafe > p, .follow > p, .copr > p, .dsign > p, .dev > p {
+    color: #FFF;
+    font-size: 10pt;
+    text-align: left;
+    padding: 0 !important;
+    justify-content: left;
+    -moz-text-align-last: left;
+    text-align-last: left;
+    line-height: 1.6em;
+  }
+
+  /* line 153, ../sass/_min-width-1200.scss */
+  .cafe > h2, .follow > h2, .copr > h2, .mailing-list > h2 {
+    color: #E8E8E8;
+    font-size: 12pt;
+    text-align: left;
+    padding: 20px 0 15px 0 !important;
+    justify-content: left;
+    -moz-text-align-last: left;
+    text-align-last: left;
+  }
+
+  /* line 162, ../sass/_min-width-1200.scss */
+  .foot1 {
+    grid-area: foot1;
+    display: grid;
+    justify-self: end;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto);
+    grid-template-areas: "cafe follow" "copr dsign";
+  }
+
+  /* line 172, ../sass/_min-width-1200.scss */
+  .foot2 {
+    grid-area: foot2;
+    display: grid;
+    justify-items: start;
+    justify-content: start;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto);
+    grid-template-areas: "mailing-list" "dev";
+  }
+
+  /* line 183, ../sass/_min-width-1200.scss */
+  .cafe {
+    grid-area: cafe;
+    width: 264.595px;
+    justify-self: end;
+  }
+
+  /* line 188, ../sass/_min-width-1200.scss */
+  .follow {
+    grid-area: follow;
+    width: 264.595px;
+    justify-self: end;
+  }
+
+  /* line 193, ../sass/_min-width-1200.scss */
+  .copr {
+    grid-area: copr;
+    padding-top: 20px;
+    width: 264.595px;
+    justify-self: end;
+  }
+
+  /* line 199, ../sass/_min-width-1200.scss */
+  .dsign {
+    grid-area: dsign;
+    padding-top: 20px;
+    width: 264.595px;
+    justify-self: end;
+  }
+
+  /* line 205, ../sass/_min-width-1200.scss */
+  .mailing-list {
+    grid-area: mailing-list;
+    height: 162px;
+  }
+
+  /* line 209, ../sass/_min-width-1200.scss */
+  .dev {
+    grid-area: dev;
+    padding-top: 20px;
+  }
+
+  /* line 213, ../sass/_min-width-1200.scss */
+  .footer {
+    grid-template-areas: "foot1 foot2";
   }
 }
 @media screen and (max-width: 1199px) {
@@ -270,45 +380,151 @@ form {
     font-size: 14px;
   }
 
-  /* line 11, ../sass/_max-width-1199.scss */
+  /* line 12, ../sass/_max-width-1199.scss */
+  .social__content__social #facebook {
+    padding-right: 40px;
+  }
+  /* line 15, ../sass/_max-width-1199.scss */
+  .social__content__social #spotify {
+    padding-right: 25px;
+  }
+  /* line 18, ../sass/_max-width-1199.scss */
+  .social__content__social #instagram {
+    padding-right: 40px;
+  }
+
+  /* line 22, ../sass/_max-width-1199.scss */
   .grid {
     display: grid;
     justify-content: center;
     grid-template-columns: minmax(180px, 640px) minmax(180px, 640px) minmax(180px, 640px);
-    grid-template-rows: 60px 60px minmax(auto, auto) minmax(auto, auto) 143px 143px 221px 650px 200px minmax(auto, auto) 311px 221px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 143px 143px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 260px;
-    grid-template-areas: "header header header" "social social social" "video  video  video " "photo1 photo2 photo3" "abt_hd abt_hd abt_hd" "abt_sh abt_sh abt_sh" "abt_bd abt_bd abt_bd" "abt_vd abt_vd abt_vd" "res_hd res_hd res_hd" "res_p1 res_p2 res_p3" "resbd1 resbd1 resbd1" "resbd2 resbd2 resbd2" "cntrst cntrst cntrst" "cr_bdy cr_bdy cr_bdy" "pstrst pstrst pstrst" "pr_bdy pr_bdy pr_bdy" "pr_frm pr_frm pr_frm" "prvyrs prvyrs prvyrs" "prv_bd prv_bd prv_bd" "contct contct contct" "ctctbd ctctbd ctctbd" "footer1 footer2 footer2";
+    grid-template-rows: 60px 60px minmax(auto, auto) minmax(auto, auto) 143px 143px 221px 650px 200px minmax(auto, auto) 311px 221px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 143px 143px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(260px, auto);
+    grid-template-areas: "header header header" "social social social" "video  video  video " "photo1 photo2 photo3" "abt_hd abt_hd abt_hd" "abt_sh abt_sh abt_sh" "abt_bd abt_bd abt_bd" "abt_vd abt_vd abt_vd" "res_hd res_hd res_hd" "res_p1 res_p2 res_p3" "resbd1 resbd1 resbd1" "resbd2 resbd2 resbd2" "cntrst cntrst cntrst" "cr_bdy cr_bdy cr_bdy" "pstrst pstrst pstrst" "pr_bdy pr_bdy pr_bdy" "pr_frm pr_frm pr_frm" "prvyrs prvyrs prvyrs" "prv_bd prv_bd prv_bd" "contct contct contct" "ctctbd ctctbd ctctbd" "footer footer footer";
   }
 
-  /* line 97, ../sass/_max-width-1199.scss */
+  /* line 108, ../sass/_max-width-1199.scss */
   .about__video {
     width: 70vw;
     height: 500px;
     margin: 2% auto;
   }
 
-  /* line 102, ../sass/_max-width-1199.scss */
+  /* line 113, ../sass/_max-width-1199.scss */
   .contact__body {
     grid-template-areas: "gift gift" "form form";
   }
 
-  /* line 107, ../sass/_max-width-1199.scss */
+  /* line 118, ../sass/_max-width-1199.scss */
+  form {
+    width: 540px;
+  }
+
+  /* line 121, ../sass/_max-width-1199.scss */
   .form {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 112, ../sass/_max-width-1199.scss */
+  /* line 126, ../sass/_max-width-1199.scss */
   .gift {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 117, ../sass/_max-width-1199.scss */
+  /* line 131, ../sass/_max-width-1199.scss */
   #teaser {
     font-size: 40pt;
     margin: 60px 0 0 60px;
+  }
+
+  /* line 135, ../sass/_max-width-1199.scss */
+  .cafe > p, .follow > p, .copr > p, .dsign > p, .dev > p {
+    color: #FFF;
+    font-size: 10pt;
+    text-align: left;
+    padding: 0 !important;
+    justify-content: left;
+    -moz-text-align-last: left;
+    text-align-last: left;
+    line-height: 1.6em;
+  }
+
+  /* line 145, ../sass/_max-width-1199.scss */
+  .cafe > h2, .follow > h2, .copr > h2, .mailing-list > h2 {
+    color: #E8E8E8;
+    font-size: 12pt;
+    text-align: left;
+    padding: 20px 0 15px 0 !important;
+    justify-content: left;
+    -moz-text-align-last: left;
+    text-align-last: left;
+  }
+
+  /* line 154, ../sass/_max-width-1199.scss */
+  .foot1 {
+    grid-area: foot1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto);
+    grid-template-areas: "cafe follow" "copr dsign";
+  }
+
+  /* line 163, ../sass/_max-width-1199.scss */
+  .foot2 {
+    grid-area: foot2;
+    display: grid;
+    justify-self: start;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto);
+    grid-template-areas: "mailing-list" "dev";
+  }
+
+  /* line 173, ../sass/_max-width-1199.scss */
+  .cafe {
+    grid-area: cafe;
+    padding: 20px 0 20px 20px;
+    width: 200px;
+  }
+
+  /* line 178, ../sass/_max-width-1199.scss */
+  .follow {
+    grid-area: follow;
+    padding: 20px 0 20px 20px;
+    width: 200px;
+  }
+
+  /* line 183, ../sass/_max-width-1199.scss */
+  .copr {
+    grid-area: copr;
+    padding: 20px 0 20px 20px;
+    width: 200px;
+  }
+
+  /* line 188, ../sass/_max-width-1199.scss */
+  .dsign {
+    grid-area: dsign;
+    padding: 20px 0 20px 20px;
+    width: 200px;
+  }
+
+  /* line 193, ../sass/_max-width-1199.scss */
+  .mailing-list {
+    grid-area: mailing-list;
+    height: 162px;
+  }
+
+  /* line 197, ../sass/_max-width-1199.scss */
+  .dev {
+    grid-area: dev;
+    padding-top: 20px;
+    align-self: baseline;
+  }
+
+  /* line 202, ../sass/_max-width-1199.scss */
+  .footer {
+    grid-template-areas: "foot1 foot2";
   }
 }
 @media screen and (max-width: 640px) {
@@ -324,60 +540,168 @@ form {
   }
 
   /* line 12, ../sass/_max-width-640.scss */
-  .social__content img {
-    max-width: 50%;
-    height: auto;
+  .social__content__social img {
+    max-width: 80%;
   }
-  /* line 16, ../sass/_max-width-640.scss */
-  .social__content #facebook {
-    margin-left: 10%;
+  /* line 15, ../sass/_max-width-640.scss */
+  .social__content__social #facebook {
+    padding-right: 20px;
   }
-  /* line 19, ../sass/_max-width-640.scss */
-  .social__content #spotify, .social__content #instagram {
-    justify-self: right;
-    margin-right: 0;
-    margin-left: 3%;
+  /* line 18, ../sass/_max-width-640.scss */
+  .social__content__social #spotify {
+    padding-right: 0px;
+  }
+  /* line 21, ../sass/_max-width-640.scss */
+  .social__content__social #instagram {
+    padding-right: 20px;
   }
 
   /* line 25, ../sass/_max-width-640.scss */
+  #giftimg {
+    width: 100vw;
+    height: auto;
+  }
+
+  /* line 29, ../sass/_max-width-640.scss */
   .grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: minmax(auto, auto) minmax(auto, auto) minmax(auto, auto);
-    grid-template-rows: 60px 60px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 143px 143px 221px 600px 200px minmax(auto, auto) 311px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 311px 311px minmax(auto, auto) minmax(auto, auto) 211px 311px 60px 311px minmax(auto, auto) minmax(auto, auto) 260px;
-    grid-template-areas: "header header header" "social social social" "video  video  video " "photo1 photo1 photo1" "photo2 photo2 photo2" "photo3 photo3 photo3" "abt_hd abt_hd abt_hd" "abt_sh abt_sh abt_sh" "abt_bd abt_bd abt_bd" "abt_vd abt_vd abt_vd" "res_hd res_hd res_hd" "res_p1 res_p1 res_p1" "res_p2 res_p2 res_p2" "res_p3 res_p3 res_p3" "resbd1 resbd1 resbd1" "resbd2 resbd2 resbd2" "cntrst cntrst cntrst" "cr_bdy cr_bdy cr_bdy" "pstrst pstrst pstrst" "pr_bdy pr_bdy pr_bdy" "pr_frm pr_frm pr_frm" "prvyrs prvyrs prvyrs" "prv_bd prv_bd prv_bd" "contct contct contct" "ctctbd ctctbd ctctbd" "footer1 footer2 footer2";
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 60px 60px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 143px 143px 221px 600px 200px minmax(auto, auto) 311px minmax(auto, auto) minmax(auto, auto) minmax(auto, auto) 311px 311px minmax(auto, auto) minmax(auto, auto) 211px 311px 60px 311px minmax(auto, auto) minmax(auto, auto) minmax(260px, auto);
+    grid-template-areas: "header header header" "social social social" "video  video  video " "photo1 photo1 photo1" "photo2 photo2 photo2" "photo3 photo3 photo3" "abt_hd abt_hd abt_hd" "abt_sh abt_sh abt_sh" "abt_bd abt_bd abt_bd" "abt_vd abt_vd abt_vd" "res_hd res_hd res_hd" "res_p1 res_p1 res_p1" "res_p2 res_p2 res_p2" "res_p3 res_p3 res_p3" "resbd1 resbd1 resbd1" "resbd2 resbd2 resbd2" "cntrst cntrst cntrst" "cr_bdy cr_bdy cr_bdy" "pstrst pstrst pstrst" "pr_bdy pr_bdy pr_bdy" "pr_frm pr_frm pr_frm" "prvyrs prvyrs prvyrs" "prv_bd prv_bd prv_bd" "contct contct contct" "ctctbd ctctbd ctctbd" "footer footer footer";
   }
 
-  /* line 117, ../sass/_max-width-640.scss */
+  /* line 121, ../sass/_max-width-640.scss */
   .about__video {
     width: 100vw;
     height: 400px;
     margin: 0 auto;
   }
 
-  /* line 122, ../sass/_max-width-640.scss */
+  /* line 126, ../sass/_max-width-640.scss */
+  form {
+    width: 100vw;
+  }
+
+  /* line 129, ../sass/_max-width-640.scss */
   .form {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 127, ../sass/_max-width-640.scss */
+  /* line 134, ../sass/_max-width-640.scss */
   .gift {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 132, ../sass/_max-width-640.scss */
+  /* line 139, ../sass/_max-width-640.scss */
   .contact__body {
     grid-template-areas: "gift gift" "form form";
   }
 
-  /* line 137, ../sass/_max-width-640.scss */
+  /* line 144, ../sass/_max-width-640.scss */
   #teaser {
     font-size: 16pt;
     margin: 40px 0 0 40px;
+  }
+
+  /* line 148, ../sass/_max-width-640.scss */
+  .cafe > p, .follow > p, .copr > p, .dsign > p, .dev > p {
+    color: #FFF;
+    font-size: 10pt;
+    text-align: left;
+    padding: 0 !important;
+    justify-content: left;
+    -moz-text-align-last: left;
+    text-align-last: left;
+    line-height: 1.6em;
+  }
+
+  /* line 158, ../sass/_max-width-640.scss */
+  .cafe > h2, .follow > h2, .copr > h2, .mailing-list > h2 {
+    color: #E8E8E8;
+    font-size: 12pt;
+    text-align: left;
+    padding: 20px 0 15px 0 !important;
+    justify-content: left;
+    -moz-text-align-last: left;
+    text-align-last: left;
+  }
+
+  /* line 167, ../sass/_max-width-640.scss */
+  .foot1 {
+    grid-area: foot1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto);
+    grid-template-areas: "cafe cafe" "follow follow" "copr dsign";
+  }
+
+  /* line 177, ../sass/_max-width-640.scss */
+  .foot2 {
+    grid-area: foot2;
+    display: grid;
+    justify-self: start;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto, auto) minmax(auto, auto);
+    grid-template-areas: "mailing-list" "dev";
+  }
+
+  /* line 188, ../sass/_max-width-640.scss */
+  .cafe {
+    grid-area: cafe;
+    padding: 20px 0 20px 20px;
+    width: 40vw;
+  }
+
+  /* line 193, ../sass/_max-width-640.scss */
+  .follow {
+    grid-area: follow;
+    padding: 20px 0 20px 20px;
+    width: 40vw;
+  }
+
+  /* line 198, ../sass/_max-width-640.scss */
+  .copr {
+    grid-area: copr;
+    padding: 20px 0 20px 20px;
+    width: 40vw;
+  }
+
+  /* line 203, ../sass/_max-width-640.scss */
+  .dsign {
+    grid-area: dsign;
+    padding: 20px 0 20px 20px;
+    width: 40vw;
+  }
+
+  /* line 208, ../sass/_max-width-640.scss */
+  .mailing-list {
+    grid-area: mailing-list;
+    height: 162px;
+  }
+
+  /* line 212, ../sass/_max-width-640.scss */
+  .dev {
+    grid-area: dev;
+    padding-top: 20px;
+    align-self: baseline;
+  }
+
+  /* line 217, ../sass/_max-width-640.scss */
+  .footer {
+    grid-template-areas: "foot1" "foot2";
+  }
+
+  /* line 222, ../sass/_max-width-640.scss */
+  form {
+    display: inline-block;
+    margin: auto auto;
+    width: 0;
   }
 }
 /* line 3, ../sass/_slick-slider.scss */
@@ -422,7 +746,145 @@ form {
   margin-top: 20px;
 }
 
-/* line 16, ../sass/screen.scss */
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 8, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  /* line 19, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  /* line 30, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 42, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  /* line 53, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  /* line 64, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 76, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  /* line 87, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  /* line 98, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  /* line 110, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  /* line 121, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  /* line 132, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  /* line 144, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  /* line 156, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  /* line 167, ../sass/_iphone.scss */
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+/* ----------- Galaxy S3 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Galaxy S6 ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Google Pixel ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Google Pixel XL ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- HTC One ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- Windows Phone ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* line 21, ../sass/screen.scss */
 .logo {
   position: absolute;
   left: 50%;
@@ -430,34 +892,52 @@ form {
 }
 
 /******* Grid Areas *******/
-/* line 24, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 .header {
   grid-area: header;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 .social {
   grid-area: social;
   background: #F3F2F2;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 .social__content {
   display: flex;
+  width: 100%;
   flex-wrap: nowrap;
-  margin-left: 5%;
   position: relative;
-  line-height: 1.5em;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 200;
-  font-size: 11pt;
-  color: #0A2845;
   white-space: nowrap;
-  align-items: center;
-  align-self: center;
+  justify-content: space-between;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
+.social__content__address {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-items: start;
+  justify-self: start;
+  font-size: 11pt;
+  color: #0A2845;
+  font-weight: 200;
+  line-height: 1.5em;
+  padding-top: 8px;
+  padding-left: 5%;
+}
+
+/* line 59, ../sass/screen.scss */
+.social__content__social {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-items: end;
+  justify-self: end;
+  padding-right: 5%;
+}
+
+/* line 67, ../sass/screen.scss */
 .header__video {
   grid-area: video;
   right: 0;
@@ -469,40 +949,40 @@ form {
   z-index: -100;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .photo1, .photo2, .photo3 {
   margin-top: -6px;
   min-height: 180px;
 }
-/* line 62, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .photo1 img, .photo2 img, .photo3 img {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .photo1 {
   grid-area: photo1;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .photo2 {
   grid-area: photo2;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .photo3 {
   grid-area: photo3;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .about__header {
   grid-area: abt_hd;
   align-self: center;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .about__subheader {
   grid-area: abt_sh;
   background: #F3F2F2;
@@ -510,52 +990,52 @@ form {
   padding-bottom: 62px;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .about__body {
   grid-area: abt_bd;
   background-image: url("/assets/media/photos/stone.png");
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .about__video {
   grid-area: abt_vd;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .resident__header {
   grid-area: res_hd;
   align-self: center;
   text-align: center;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .resident__photo1, .resident__photo2, .resident__photo3 {
   margin-top: -6px;
   min-height: 180px;
 }
-/* line 112, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .resident__photo1 img, .resident__photo2 img, .resident__photo3 img {
   object-fit: cover;
   width: 100%;
   max-height: 100%;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .resident__photo1 {
   grid-area: res_p1;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .resident__photo2 {
   grid-area: res_p2;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .resident__photo3 {
   grid-area: res_p3;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .resident__body1 {
   grid-area: resbd1;
   align-self: center;
@@ -564,19 +1044,19 @@ form {
   margin-right: 10%;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .resident__body2 {
   grid-area: resbd2;
   background-image: url("/assets/media/photos/stone.png");
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .current__header {
   grid-area: cntrst;
   margin-bottom: 99px;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .current__ul {
   display: flex;
   justify-content: center;
@@ -586,7 +1066,7 @@ form {
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 158, ../sass/screen.scss */
+  /* line 177, ../sass/screen.scss */
   .current__body {
     grid-area: cr_bdy;
     display: grid;
@@ -601,7 +1081,7 @@ form {
   }
 }
 @media screen and (max-width: 1199px) {
-  /* line 176, ../sass/screen.scss */
+  /* line 195, ../sass/screen.scss */
   .current__body {
     grid-area: cr_bdy;
     display: grid;
@@ -615,13 +1095,13 @@ form {
     grid-template-areas: "left left left left left" ".    top top top top" ".    mid mid mid mid" ".    btm btm btm btm";
   }
 
-  /* line 192, ../sass/screen.scss */
+  /* line 211, ../sass/screen.scss */
   #current__highlight {
     justify-self: center;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 198, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   .current__body {
     grid-area: cr_bdy;
     display: grid;
@@ -635,36 +1115,36 @@ form {
     grid-template-areas: "left left left left left" "top top top top top" "mid mid mid mid mid" "btm btm btm btm btm";
   }
 }
-/* line 216, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .nested_left {
   grid-area: left;
   align-self: center;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .nested_top {
   grid-area: top;
   display: inline-block;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .nested_mid {
   grid-area: mid;
   display: inline-block;
 }
 
-/* line 231, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .nested_bottem {
   grid-area: btm;
   display: inline-block;
 }
 
-/* line 236, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .past__header {
   grid-area: pstrst;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .past__body {
   grid-area: pr_bdy;
   font-size: 12pt;
@@ -675,18 +1155,18 @@ form {
   margin: 0 auto;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .past__form {
   grid-area: pr_frm;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .purveyors__header {
   grid-area: prvyrs;
   margin-top: 2.5em;
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .purveyors__body {
   grid-area: prv_bd;
   display: grid;
@@ -697,7 +1177,7 @@ form {
   text-align: center;
   vertical-align: middle;
 }
-/* line 268, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .purveyors__body > div {
   box-shadow: 0 1px 30px 1px rgba(0, 0, 0, 0.3);
   display: flex;
@@ -705,65 +1185,65 @@ form {
   justify-content: space-evenly;
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .one {
   grid-area: one;
 }
 
-/* line 280, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .two {
   grid-area: two;
 }
 
-/* line 284, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 .three {
   grid-area: three;
 }
 
-/* line 288, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 .four {
   grid-area: four;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .five {
   grid-area: five;
 }
 
-/* line 296, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .six {
   grid-area: six;
 }
 
-/* line 300, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 .seven {
   grid-area: seven;
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 305, ../sass/screen.scss */
+  /* line 324, ../sass/screen.scss */
   .purveyors__body {
     grid-template-areas: "one one three three" "two two three three" "four four five five" "four four six seven";
   }
 }
 @media screen and (max-width: 1199px) {
-  /* line 315, ../sass/screen.scss */
+  /* line 334, ../sass/screen.scss */
   .purveyors__body {
     grid-template-areas: ". one one     ." ". two two     ." ". three three ." ". three three ." ". four four   ." ". four four   ." ". five five   ." ". six seven   .";
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 329, ../sass/screen.scss */
+  /* line 348, ../sass/screen.scss */
   .purveyors__body {
     grid-template-areas: "one one" "two two" "three three" "three three" "four four" "four four" "five five" "six six" "seven seven";
   }
 }
-/* line 343, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 .contact__header {
   grid-area: contct;
 }
 
-/* line 347, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
 .contact__body {
   grid-area: ctctbd;
   display: grid;
@@ -775,72 +1255,55 @@ form {
   grid-row-gap: 2rem;
 }
 
-/* line 357, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 .form {
   grid-area: form;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .gift {
   grid-area: gift;
 }
 
-/* line 364, ../sass/screen.scss */
-.footer1, .footer2, .footer3 {
+/* line 382, ../sass/screen.scss */
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-column-gap: 2rem;
+  padding: 0 !important;
   background-color: #2B4257;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(auto, auto);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-/* line 368, ../sass/screen.scss */
-.footer1 > p, .footer2 > p {
-  color: #FFF;
-  font-size: 10pt;
-  padding: 10px 0 0 0;
-  text-align: left;
-  align-self: flex-start;
-  justify-content: left;
-  -moz-text-align-last: left;
-  text-align-last: left;
-  line-height: 1.6em;
+/* line 396, ../sass/screen.scss */
+#mailing-list-form {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-/* line 380, ../sass/screen.scss */
-.footer1 > p {
-  margin-left: 40%;
+/* line 400, ../sass/screen.scss */
+#mailing-list-form-input {
+  height: 54px;
+  width: 20vw;
+  border-width: 1px;
+  border-color: black;
 }
 
-/* line 384, ../sass/screen.scss */
-.footer2 > p {
-  margin-left: 0;
-}
-
-/* line 388, ../sass/screen.scss */
-.footer1 > h2, .footer2 > h2 {
-  color: #E8E8E8;
-  font-size: 12pt;
-  padding: 20px 0 0 0;
-  text-align: left;
-  align-self: flex-start;
-  justify-content: left;
-  -moz-text-align-last: left;
-  text-align-last: left;
-}
-
-/* line 399, ../sass/screen.scss */
-.footer1 > h2 {
-  margin-left: 40%;
-}
-
-/* line 403, ../sass/screen.scss */
-.footer2 > h2 {
-  margin-left: 0;
-}
-
-/* line 407, ../sass/screen.scss */
-.footer1 {
-  grid-area: footer1;
-}
-
-/* line 411, ../sass/screen.scss */
-.footer2 {
-  grid-area: footer2;
+/* line 406, ../sass/screen.scss */
+#mailing-list-form-submit {
+  border-width: 2px;
+  border-color: black;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  font-size: 14pt;
+  border-radius: 54px;
+  height: 54px;
+  width: 12vw;
+  font-weight: 100;
+  margin-top: -2px;
+  margin-left: -30px;
 }

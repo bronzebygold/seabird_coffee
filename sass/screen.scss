@@ -37,17 +37,31 @@
 
 .social__content {
   display: flex;
+  width: 100%;
   flex-wrap: nowrap;
-  margin-left: 5%;
   position: relative;
-  line-height: 1.5em;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 200;
+  white-space: nowrap;
+  justify-content: space-between;
+}
+.social__content__address {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-items: start;
+  justify-self: start;
   font-size: 11pt;
   color: #0A2845;
-  white-space: nowrap;
-  align-items: center;
-  align-self: center;
+  font-weight: 200;
+  line-height: 1.5em;
+  padding-top: 8px;
+  padding-left: 5%;
+}
+.social__content__social {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-items: end;
+  justify-self: end;
+  padding-right: 5%;
 }
 
 .header__video {
@@ -365,54 +379,41 @@
 .gift {
   grid-area: gift;
 }
-
-.footer1, .footer2, .footer3 {
-background-color: $header-blue;
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-column-gap: 2rem;
+  padding: 0 !important;
+  background-color: $header-blue;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(auto, auto);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
+#email-list {
 
-.footer1 > p, .footer2 > p {
-color: #FFF;
-font-size: 10pt;
-padding: 10px 0 0 0;
-text-align: left;
-align-self: flex-start;
-justify-content: left;
--moz-text-align-last: left;
-text-align-last: left;
-line-height: 1.6em;
 }
-
-.footer1 > p {
-margin-left: 40%;
+#mailing-list-form {
+  display: flex;
+  flex-wrap: nowrap;
 }
-
-.footer2 > p {
-margin-left: 0;
+#mailing-list-form-input {
+  height: 54px;
+  width: 20vw;
+  border-width: 1px;
+  border-color: black;
 }
-
-.footer1 > h2, .footer2 > h2 {
-color: #E8E8E8;
-font-size: 12pt;
-padding: 20px 0 0 0;
-text-align: left;
-align-self: flex-start;
-justify-content: left;
--moz-text-align-last: left;
-text-align-last: left;
-}
-
-.footer1 > h2 {
-margin-left: 40%;
-}
-
-.footer2 > h2 {
-margin-left: 0;
-}
-
-.footer1 {
-grid-area: footer1;
-}
-
-.footer2 {
-grid-area: footer2;
+#mailing-list-form-submit {
+  border-width: 2px;
+  border-color: black;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  font-size: 14pt;
+  border-radius: 54px;
+  height: 54px;
+  width: 12vw;
+  font-weight: 100;
+  margin-top: -2px;
+  margin-left: -30px;
 }
