@@ -131,6 +131,12 @@
     margin-left: auto;
     margin-right:0;
   }
+  #fname {
+    width: 47%;
+  }
+  #lname {
+    width: 47%;
+  }
   .contact__body {
     grid-template-areas:
             "form gift";

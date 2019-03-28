@@ -47,8 +47,6 @@
 
               /*** RESIDENT ROASTER ***/
             200px
-            minmax(auto, auto)
-            311px
             minmax(auto, auto) minmax(auto, auto) minmax(auto, auto)
             311px
             311px
@@ -222,6 +220,12 @@
   form {
     display: inline-block;
     margin: auto auto;
-    width: 0;
+    width: 100vw;
+  }
+  #fname {
+    width: 98%;
+  }
+  #lname {
+    width: 98%;
   }
 }
