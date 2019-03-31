@@ -61,10 +61,13 @@
 
               /*** PURVEYORS ***/
             60px
-            311px
+            143px
 
               /*** CONTACT ***/
             minmax(auto, auto)
+            minmax(auto, auto)
+
+              /*** INSTAGRAM ***/
             minmax(auto, auto)
 
               /*** FOOTER ***/
@@ -112,6 +115,9 @@
               /*** CONTACT ***/
             "contct contct contct"
             "ctctbd ctctbd ctctbd"
+
+              /*** INSTAGRAM ***/
+            "instag instag instag"
 
               /*** FOOTER ***/
             "footer footer footer";
@@ -161,6 +167,9 @@
     justify-content: left;
     -moz-text-align-last: left;
     text-align-last: left;
+  }
+  .instagram_img {
+    height: calc(100vw / 3) !important;
   }
   .foot1 {
     grid-area: foot1;

@@ -347,15 +347,14 @@
 @media screen and (max-width: 640px) {
   .purveyors__body {
     grid-template-areas:
-    "one one"
-    "two two"
-    "three three"
-    "three three"
-    "four four"
-    "four four"
-    "five five"
-    "six six"
-    "seven seven";
+            ". one one     ."
+            ". two two     ."
+            ". three three ."
+            ". three three ."
+            ". four four   ."
+            ". four four   ."
+            ". five five   ."
+            ". six seven   .";
   }
 }
 
@@ -378,6 +377,20 @@
 }
 .gift {
   grid-area: gift;
+}
+.instagram_feed {
+  grid-area: instag;
+  display: grid;
+  width: 100vw;
+  grid-template-columns: calc(100vw / 3) calc(100vw / 3) calc(100vw / 3);
+  grid-auto-flow: dense;
+  overflow: hidden;
+}
+.instagram_img {
+  object-fit: cover;
+  margin: -4px 0 -4px 0;
+  height: calc(100vw / 4);
+  width: calc(100vw / 3);
 }
 .footer {
   grid-area: footer;

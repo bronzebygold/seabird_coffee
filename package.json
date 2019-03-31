@@ -9,6 +9,7 @@
   "author": "Daniel Miller",
   "license": "ISC",
   "dependencies": {
+    "instafeed.js": "^1.4.1",
     "node-sass": "^4.11.0"
   }
 }
