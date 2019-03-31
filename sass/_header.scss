@@ -16,6 +16,9 @@
   margin-left: 5%;
   float: left;
   transition-duration: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
   &:hover {
     // background-color: #313131;
     box-shadow: 0px 1px 16px 1px rgba(255, 195, 60, 0.5);
