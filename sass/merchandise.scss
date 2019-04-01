@@ -44,10 +44,14 @@
 .merchandise__content {
   grid-area: mlogo;
   padding: 150px 0 100px 0;
+}
+
+#mcontent {
   display: grid;
   justify-content: center;
   grid-gap: 30px;
   grid-auto-rows: 325px;
+
   > div > div:first-child {
     height: 255px;
     display: flex;
@@ -67,25 +71,25 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .merchandise__logo {
+  #mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px) minmax(0, 255px) minmax(0, 255px);
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .merchandise__logo {
+  #mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px) minmax(0, 255px);
   }
 }
 
 @media screen and (max-width: 900px) {
-  .merchandise__logo {
+  #mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px);
   }
 }
 
 @media screen and (max-width: 640px) {
-  .merchandise__logo {
+  #mcontent {
     grid-template-columns: minmax(0, 255px);
   }
 }

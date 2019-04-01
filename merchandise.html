@@ -26,6 +26,9 @@
     <script type="text/babel" src="assets/js/main.jsx"></script>
     <script type="text/javascript" src="assets/js/merchandise.js"></script>
 
+    <!--ANIMATE CSS GRID-->
+    <script src="https://unpkg.com/animate-css-grid@latest"></script>
+
     <title>Seabird Coffee Co.</title>
 </head>
 <body>
@@ -73,50 +76,51 @@
     </div>
 
     <div class="merchandise__content">
+        <div id="mcontent">
 
-        <!--<div id="m1">-->
-            <!--<div>-->
-                <!--<img src="assets/media/photos/m1.png" alt="Seabird Crewneck Sweatshirt">-->
+            <!--<div id="m1">-->
+                <!--<div>-->
+                    <!--<img src="assets/media/photos/m1.png" alt="Seabird Crewneck Sweatshirt">-->
+                <!--</div>-->
+                <!--<div>Seabird Crewneck Sweatshirt<br>$50</div>-->
             <!--</div>-->
-            <!--<div>Seabird Crewneck Sweatshirt<br>$50</div>-->
-        <!--</div>-->
-        <!--<div id="m2">-->
-            <!--<div>-->
-                <!--<img src="assets/media/photos/m2.png" alt="Seabird Hoodie">-->
+            <!--<div id="m2">-->
+                <!--<div>-->
+                    <!--<img src="assets/media/photos/m2.png" alt="Seabird Hoodie">-->
+                <!--</div>-->
+                <!--<div>Seabird Hoodie<br>$40</div>-->
             <!--</div>-->
-            <!--<div>Seabird Hoodie<br>$40</div>-->
-        <!--</div>-->
-        <!--<div id="m3">-->
-            <!--<div>-->
-                <!--<img src="assets/media/photos/m3.png" alt="Seabird Adult T-Shirt">-->
+            <!--<div id="m3">-->
+                <!--<div>-->
+                    <!--<img src="assets/media/photos/m3.png" alt="Seabird Adult T-Shirt">-->
+                <!--</div>-->
+                <!--<div>Seabird Adult T-Shirt<br>$20</div>-->
             <!--</div>-->
-            <!--<div>Seabird Adult T-Shirt<br>$20</div>-->
-        <!--</div>-->
-        <!--<div id="m4">-->
-            <!--<div>-->
-                <!--<img src="assets/media/photos/m4.png" alt="Seabird Toddler T-Shirt">-->
+            <!--<div id="m4">-->
+                <!--<div>-->
+                    <!--<img src="assets/media/photos/m4.png" alt="Seabird Toddler T-Shirt">-->
+                <!--</div>-->
+                <!--<div>Seabird Toddler T-Shirt<br>$18</div>-->
             <!--</div>-->
-            <!--<div>Seabird Toddler T-Shirt<br>$18</div>-->
-        <!--</div>-->
-        <!--<div id="m5">-->
-            <!--<div>-->
-                <!--<img src="assets/media/photos/m5.png" alt="Seabird Youth T-Shirt">-->
+            <!--<div id="m5">-->
+                <!--<div>-->
+                    <!--<img src="assets/media/photos/m5.png" alt="Seabird Youth T-Shirt">-->
+                <!--</div>-->
+                <!--<div>Seabird Youth T-Shirt<br>$18</div>-->
             <!--</div>-->
-            <!--<div>Seabird Youth T-Shirt<br>$18</div>-->
-        <!--</div>-->
-        <!--<div id="m6">-->
-            <!--<div>-->
-                <!--<img src="assets/media/photos/m6.png" alt="Mexican Blanket">-->
+            <!--<div id="m6">-->
+                <!--<div>-->
+                    <!--<img src="assets/media/photos/m6.png" alt="Mexican Blanket">-->
+                <!--</div>-->
+                <!--<div>Mexican Blanket<br>$20</div>-->
             <!--</div>-->
-            <!--<div>Mexican Blanket<br>$20</div>-->
-        <!--</div>-->
-        <!--<div id="m7">-->
-            <!--<div>-->
-                <!--<img src="assets/media/photos/m7.png" alt="Seabird Gift Card">-->
+            <!--<div id="m7">-->
+                <!--<div>-->
+                    <!--<img src="assets/media/photos/m7.png" alt="Seabird Gift Card">-->
+                <!--</div>-->
+                <!--<div>Seabird Gift Card<br>$20</div>-->
             <!--</div>-->
-            <!--<div>Seabird Gift Card<br>$20</div>-->
-        <!--</div>-->
-
+        </div>
     </div>
 
     <div class="footer">
@@ -176,6 +180,11 @@
 
     </div>
 </div>
+
+<script>
+    const grid = document.querySelector(".merchandise__content");
+    animateCSSGrid.wrapGrid(grid, {duration : 600});
+</script>
 
 </body>
 </html>

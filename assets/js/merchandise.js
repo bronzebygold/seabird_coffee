@@ -52,9 +52,5 @@ window.onload = function(){
 
         ];
 
-    // for (var i = 0; i < 10; i++) {
-    //     a.push("<div class=\"test-div\"></div>");
-    // }
-    console.log(a.join(""))
-    document.querySelector(".merchandise__content").innerHTML = a.join("");
+    document.getElementById("mcontent").innerHTML = a.join("");
 }
