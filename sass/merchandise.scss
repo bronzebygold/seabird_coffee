@@ -33,4 +33,59 @@
 
                   /*** FOOTER ***/
                   minmax(260px, auto);
+
+  grid-template-areas:
+                  "header"
+                  "social"
+                  "mcontent"
+                  "footer";
+}
+
+.merchandise__content {
+  grid-area: mlogo;
+  padding: 150px 0 100px 0;
+  display: grid;
+  justify-content: center;
+  grid-gap: 30px;
+  grid-auto-rows: 325px;
+  > div > div:first-child {
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    box-shadow: 0 1px 30px 1px rgba(0, 0, 0, 0.1);
+  }
+  > div > div:first-child > img {
+    margin: 0 auto;
+  }
+  > div > div:last-child {
+    padding: 20px 0 0 0;
+    line-height: 1.4em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #D8D8D8;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .merchandise__logo {
+    grid-template-columns: minmax(0, 255px) minmax(0, 255px) minmax(0, 255px) minmax(0, 255px);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .merchandise__logo {
+    grid-template-columns: minmax(0, 255px) minmax(0, 255px) minmax(0, 255px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .merchandise__logo {
+    grid-template-columns: minmax(0, 255px) minmax(0, 255px);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .merchandise__logo {
+    grid-template-columns: minmax(0, 255px);
+  }
 }

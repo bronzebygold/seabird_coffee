@@ -225,22 +225,23 @@ form {
   /* line 21, ../sass/_min-width-1200.scss */
   .header__nav {
     font-size: 17px;
+    height: 60px;
   }
 
-  /* line 25, ../sass/_min-width-1200.scss */
+  /* line 26, ../sass/_min-width-1200.scss */
   .social__content__social #facebook {
     padding-right: 40px;
   }
-  /* line 28, ../sass/_min-width-1200.scss */
+  /* line 29, ../sass/_min-width-1200.scss */
   .social__content__social #spotify {
     padding-right: 25px;
   }
-  /* line 31, ../sass/_min-width-1200.scss */
+  /* line 32, ../sass/_min-width-1200.scss */
   .social__content__social #instagram {
     padding-right: 40px;
   }
 
-  /* line 35, ../sass/_min-width-1200.scss */
+  /* line 36, ../sass/_min-width-1200.scss */
   .grid {
     display: grid;
     justify-content: center;
@@ -249,48 +250,48 @@ form {
     grid-template-areas: "header header header" "social social social" "video  video  video" "photo1 photo2 photo3" "abt_hd abt_hd abt_hd" "abt_sh abt_sh abt_sh" "abt_bd abt_bd abt_bd" "abt_vd abt_vd abt_vd" "res_hd res_hd res_hd" "res_p1 res_p2 res_p3" "resbd1 resbd1 resbd1" "resbd2 resbd2 resbd2" "cntrst cntrst cntrst" "cr_bdy cr_bdy cr_bdy" "pstrst pstrst pstrst" "pr_bdy pr_bdy pr_bdy" "pr_frm pr_frm pr_frm" "prvyrs prvyrs prvyrs" "prv_bd prv_bd prv_bd" "contct contct contct" "ctctbd ctctbd ctctbd" "instag instag instag" "footer footer footer";
   }
 
-  /* line 127, ../sass/_min-width-1200.scss */
+  /* line 128, ../sass/_min-width-1200.scss */
   .about__video {
     width: 70vw;
     height: 600px;
     margin: 3% auto;
   }
 
-  /* line 132, ../sass/_min-width-1200.scss */
+  /* line 133, ../sass/_min-width-1200.scss */
   form {
     width: 540px;
   }
 
-  /* line 135, ../sass/_min-width-1200.scss */
+  /* line 136, ../sass/_min-width-1200.scss */
   .form {
     display: block;
     margin-left: auto;
     margin-right: 0;
   }
 
-  /* line 140, ../sass/_min-width-1200.scss */
+  /* line 141, ../sass/_min-width-1200.scss */
   #fname {
     width: 47%;
   }
 
-  /* line 143, ../sass/_min-width-1200.scss */
+  /* line 144, ../sass/_min-width-1200.scss */
   #lname {
     width: 47%;
   }
 
-  /* line 146, ../sass/_min-width-1200.scss */
+  /* line 147, ../sass/_min-width-1200.scss */
   .contact__body {
     grid-template-areas: "form gift";
   }
 
-  /* line 150, ../sass/_min-width-1200.scss */
+  /* line 151, ../sass/_min-width-1200.scss */
   #teaser {
     font-size: 60pt;
     margin: 90px 0 0 110px;
     line-height: 1.3em;
   }
 
-  /* line 155, ../sass/_min-width-1200.scss */
+  /* line 156, ../sass/_min-width-1200.scss */
   .cafe > p, .follow > p, .copr > p, .dsign > p, .dev > p {
     color: #FFF;
     font-size: 10pt;
@@ -302,7 +303,7 @@ form {
     line-height: 1.6em;
   }
 
-  /* line 165, ../sass/_min-width-1200.scss */
+  /* line 166, ../sass/_min-width-1200.scss */
   .cafe > h2, .follow > h2, .copr > h2, .mailing-list > h2 {
     color: #E8E8E8;
     font-size: 12pt;
@@ -313,7 +314,7 @@ form {
     text-align-last: left;
   }
 
-  /* line 174, ../sass/_min-width-1200.scss */
+  /* line 175, ../sass/_min-width-1200.scss */
   .foot1 {
     grid-area: foot1;
     display: grid;
@@ -323,7 +324,7 @@ form {
     grid-template-areas: "cafe follow" "copr dsign";
   }
 
-  /* line 184, ../sass/_min-width-1200.scss */
+  /* line 185, ../sass/_min-width-1200.scss */
   .foot2 {
     grid-area: foot2;
     display: grid;
@@ -334,21 +335,21 @@ form {
     grid-template-areas: "mailing-list" "dev";
   }
 
-  /* line 195, ../sass/_min-width-1200.scss */
+  /* line 196, ../sass/_min-width-1200.scss */
   .cafe {
     grid-area: cafe;
     width: 264.595px;
     justify-self: end;
   }
 
-  /* line 200, ../sass/_min-width-1200.scss */
+  /* line 201, ../sass/_min-width-1200.scss */
   .follow {
     grid-area: follow;
     width: 264.595px;
     justify-self: end;
   }
 
-  /* line 205, ../sass/_min-width-1200.scss */
+  /* line 206, ../sass/_min-width-1200.scss */
   .copr {
     grid-area: copr;
     padding-top: 20px;
@@ -356,7 +357,7 @@ form {
     justify-self: end;
   }
 
-  /* line 211, ../sass/_min-width-1200.scss */
+  /* line 212, ../sass/_min-width-1200.scss */
   .dsign {
     grid-area: dsign;
     padding-top: 20px;
@@ -364,19 +365,19 @@ form {
     justify-self: end;
   }
 
-  /* line 217, ../sass/_min-width-1200.scss */
+  /* line 218, ../sass/_min-width-1200.scss */
   .mailing-list {
     grid-area: mailing-list;
     height: 162px;
   }
 
-  /* line 221, ../sass/_min-width-1200.scss */
+  /* line 222, ../sass/_min-width-1200.scss */
   .dev {
     grid-area: dev;
     padding-top: 20px;
   }
 
-  /* line 225, ../sass/_min-width-1200.scss */
+  /* line 226, ../sass/_min-width-1200.scss */
   .footer {
     grid-template-areas: "foot1 foot2";
   }
@@ -391,22 +392,23 @@ form {
   /* line 8, ../sass/_max-width-1199.scss */
   .header__nav {
     font-size: 14px;
+    height: 60px;
   }
 
-  /* line 12, ../sass/_max-width-1199.scss */
+  /* line 13, ../sass/_max-width-1199.scss */
   .social__content__social #facebook {
     padding-right: 40px;
   }
-  /* line 15, ../sass/_max-width-1199.scss */
+  /* line 16, ../sass/_max-width-1199.scss */
   .social__content__social #spotify {
     padding-right: 25px;
   }
-  /* line 18, ../sass/_max-width-1199.scss */
+  /* line 19, ../sass/_max-width-1199.scss */
   .social__content__social #instagram {
     padding-right: 40px;
   }
 
-  /* line 22, ../sass/_max-width-1199.scss */
+  /* line 23, ../sass/_max-width-1199.scss */
   .grid {
     display: grid;
     justify-content: center;
@@ -415,54 +417,54 @@ form {
     grid-template-areas: "header header header" "social social social" "video  video  video " "photo1 photo2 photo3" "abt_hd abt_hd abt_hd" "abt_sh abt_sh abt_sh" "abt_bd abt_bd abt_bd" "abt_vd abt_vd abt_vd" "res_hd res_hd res_hd" "res_p1 res_p2 res_p3" "resbd1 resbd1 resbd1" "resbd2 resbd2 resbd2" "cntrst cntrst cntrst" "cr_bdy cr_bdy cr_bdy" "pstrst pstrst pstrst" "pr_bdy pr_bdy pr_bdy" "pr_frm pr_frm pr_frm" "prvyrs prvyrs prvyrs" "prv_bd prv_bd prv_bd" "contct contct contct" "ctctbd ctctbd ctctbd" "instag instag instag" "footer footer footer";
   }
 
-  /* line 114, ../sass/_max-width-1199.scss */
+  /* line 115, ../sass/_max-width-1199.scss */
   .about__video {
     width: 70vw;
     height: 500px;
     margin: 2% auto;
   }
 
-  /* line 119, ../sass/_max-width-1199.scss */
+  /* line 120, ../sass/_max-width-1199.scss */
   .contact__body {
     grid-template-areas: "gift gift" "form form";
   }
 
-  /* line 124, ../sass/_max-width-1199.scss */
+  /* line 125, ../sass/_max-width-1199.scss */
   form {
     width: 540px;
   }
 
-  /* line 127, ../sass/_max-width-1199.scss */
+  /* line 128, ../sass/_max-width-1199.scss */
   .form {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 132, ../sass/_max-width-1199.scss */
+  /* line 133, ../sass/_max-width-1199.scss */
   #fname {
     width: 98%;
   }
 
-  /* line 135, ../sass/_max-width-1199.scss */
+  /* line 136, ../sass/_max-width-1199.scss */
   #lname {
     width: 98%;
   }
 
-  /* line 138, ../sass/_max-width-1199.scss */
+  /* line 139, ../sass/_max-width-1199.scss */
   .gift {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 143, ../sass/_max-width-1199.scss */
+  /* line 144, ../sass/_max-width-1199.scss */
   #teaser {
     font-size: 40pt;
     margin: 60px 0 0 60px;
   }
 
-  /* line 147, ../sass/_max-width-1199.scss */
+  /* line 148, ../sass/_max-width-1199.scss */
   .cafe > p, .follow > p, .copr > p, .dsign > p, .dev > p {
     color: #FFF;
     font-size: 10pt;
@@ -474,7 +476,7 @@ form {
     line-height: 1.6em;
   }
 
-  /* line 157, ../sass/_max-width-1199.scss */
+  /* line 158, ../sass/_max-width-1199.scss */
   .cafe > h2, .follow > h2, .copr > h2, .mailing-list > h2 {
     color: #E8E8E8;
     font-size: 12pt;
@@ -485,7 +487,7 @@ form {
     text-align-last: left;
   }
 
-  /* line 166, ../sass/_max-width-1199.scss */
+  /* line 167, ../sass/_max-width-1199.scss */
   .foot1 {
     grid-area: foot1;
     display: grid;
@@ -494,7 +496,7 @@ form {
     grid-template-areas: "cafe follow" "copr dsign";
   }
 
-  /* line 175, ../sass/_max-width-1199.scss */
+  /* line 176, ../sass/_max-width-1199.scss */
   .foot2 {
     grid-area: foot2;
     display: grid;
@@ -504,48 +506,48 @@ form {
     grid-template-areas: "mailing-list" "dev";
   }
 
-  /* line 185, ../sass/_max-width-1199.scss */
+  /* line 186, ../sass/_max-width-1199.scss */
   .cafe {
     grid-area: cafe;
     padding: 20px 0 20px 20px;
     width: 200px;
   }
 
-  /* line 190, ../sass/_max-width-1199.scss */
+  /* line 191, ../sass/_max-width-1199.scss */
   .follow {
     grid-area: follow;
     padding: 20px 0 20px 20px;
     width: 200px;
   }
 
-  /* line 195, ../sass/_max-width-1199.scss */
+  /* line 196, ../sass/_max-width-1199.scss */
   .copr {
     grid-area: copr;
     padding: 20px 0 20px 20px;
     width: 200px;
   }
 
-  /* line 200, ../sass/_max-width-1199.scss */
+  /* line 201, ../sass/_max-width-1199.scss */
   .dsign {
     grid-area: dsign;
     padding: 20px 0 20px 20px;
     width: 200px;
   }
 
-  /* line 205, ../sass/_max-width-1199.scss */
+  /* line 206, ../sass/_max-width-1199.scss */
   .mailing-list {
     grid-area: mailing-list;
     height: 162px;
   }
 
-  /* line 209, ../sass/_max-width-1199.scss */
+  /* line 210, ../sass/_max-width-1199.scss */
   .dev {
     grid-area: dev;
     padding-top: 20px;
     align-self: baseline;
   }
 
-  /* line 214, ../sass/_max-width-1199.scss */
+  /* line 215, ../sass/_max-width-1199.scss */
   .footer {
     grid-template-areas: "foot1 foot2";
   }
@@ -560,32 +562,33 @@ form {
   /* line 8, ../sass/_max-width-640.scss */
   .header__nav {
     font-size: 14px;
+    height: 60px;
   }
 
-  /* line 12, ../sass/_max-width-640.scss */
+  /* line 13, ../sass/_max-width-640.scss */
   .social__content__social img {
     max-width: 80%;
   }
-  /* line 15, ../sass/_max-width-640.scss */
+  /* line 16, ../sass/_max-width-640.scss */
   .social__content__social #facebook {
     padding-right: 20px;
   }
-  /* line 18, ../sass/_max-width-640.scss */
+  /* line 19, ../sass/_max-width-640.scss */
   .social__content__social #spotify {
     padding-right: 0px;
   }
-  /* line 21, ../sass/_max-width-640.scss */
+  /* line 22, ../sass/_max-width-640.scss */
   .social__content__social #instagram {
     padding-right: 20px;
   }
 
-  /* line 25, ../sass/_max-width-640.scss */
+  /* line 26, ../sass/_max-width-640.scss */
   #giftimg {
     width: 100vw;
     height: auto;
   }
 
-  /* line 29, ../sass/_max-width-640.scss */
+  /* line 30, ../sass/_max-width-640.scss */
   .grid {
     display: grid;
     justify-content: center;
@@ -594,44 +597,44 @@ form {
     grid-template-areas: "header header header" "social social social" "video  video  video " "photo1 photo1 photo1" "photo2 photo2 photo2" "photo3 photo3 photo3" "abt_hd abt_hd abt_hd" "abt_sh abt_sh abt_sh" "abt_bd abt_bd abt_bd" "abt_vd abt_vd abt_vd" "res_hd res_hd res_hd" "res_p1 res_p1 res_p1" "res_p2 res_p2 res_p2" "res_p3 res_p3 res_p3" "resbd1 resbd1 resbd1" "resbd2 resbd2 resbd2" "cntrst cntrst cntrst" "cr_bdy cr_bdy cr_bdy" "pstrst pstrst pstrst" "pr_bdy pr_bdy pr_bdy" "pr_frm pr_frm pr_frm" "prvyrs prvyrs prvyrs" "prv_bd prv_bd prv_bd" "contct contct contct" "ctctbd ctctbd ctctbd" "instag instag instag" "footer footer footer";
   }
 
-  /* line 125, ../sass/_max-width-640.scss */
+  /* line 126, ../sass/_max-width-640.scss */
   .about__video {
     width: 100vw;
     height: 400px;
     margin: 0 auto;
   }
 
-  /* line 130, ../sass/_max-width-640.scss */
+  /* line 131, ../sass/_max-width-640.scss */
   form {
     width: 100vw;
   }
 
-  /* line 133, ../sass/_max-width-640.scss */
+  /* line 134, ../sass/_max-width-640.scss */
   .form {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 138, ../sass/_max-width-640.scss */
+  /* line 139, ../sass/_max-width-640.scss */
   .gift {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 143, ../sass/_max-width-640.scss */
+  /* line 144, ../sass/_max-width-640.scss */
   .contact__body {
     grid-template-areas: "gift gift" "form form";
   }
 
-  /* line 148, ../sass/_max-width-640.scss */
+  /* line 149, ../sass/_max-width-640.scss */
   #teaser {
     font-size: 16pt;
     margin: 40px 0 0 40px;
   }
 
-  /* line 152, ../sass/_max-width-640.scss */
+  /* line 153, ../sass/_max-width-640.scss */
   .cafe > p, .follow > p, .copr > p, .dsign > p, .dev > p {
     color: #FFF;
     font-size: 10pt;
@@ -643,7 +646,7 @@ form {
     line-height: 1.6em;
   }
 
-  /* line 162, ../sass/_max-width-640.scss */
+  /* line 163, ../sass/_max-width-640.scss */
   .cafe > h2, .follow > h2, .copr > h2, .mailing-list > h2 {
     color: #E8E8E8;
     font-size: 12pt;
@@ -654,12 +657,12 @@ form {
     text-align-last: left;
   }
 
-  /* line 171, ../sass/_max-width-640.scss */
+  /* line 172, ../sass/_max-width-640.scss */
   .instagram_img {
     height: calc(100vw / 3) !important;
   }
 
-  /* line 174, ../sass/_max-width-640.scss */
+  /* line 175, ../sass/_max-width-640.scss */
   .foot1 {
     grid-area: foot1;
     display: grid;
@@ -668,7 +671,7 @@ form {
     grid-template-areas: "cafe cafe" "follow follow" "copr dsign";
   }
 
-  /* line 184, ../sass/_max-width-640.scss */
+  /* line 185, ../sass/_max-width-640.scss */
   .foot2 {
     grid-area: foot2;
     display: grid;
@@ -679,65 +682,65 @@ form {
     grid-template-areas: "mailing-list" "dev";
   }
 
-  /* line 195, ../sass/_max-width-640.scss */
+  /* line 196, ../sass/_max-width-640.scss */
   .cafe {
     grid-area: cafe;
     padding: 20px 0 20px 20px;
     width: 40vw;
   }
 
-  /* line 200, ../sass/_max-width-640.scss */
+  /* line 201, ../sass/_max-width-640.scss */
   .follow {
     grid-area: follow;
     padding: 20px 0 20px 20px;
     width: 40vw;
   }
 
-  /* line 205, ../sass/_max-width-640.scss */
+  /* line 206, ../sass/_max-width-640.scss */
   .copr {
     grid-area: copr;
     padding: 20px 0 20px 20px;
     width: 40vw;
   }
 
-  /* line 210, ../sass/_max-width-640.scss */
+  /* line 211, ../sass/_max-width-640.scss */
   .dsign {
     grid-area: dsign;
     padding: 20px 0 20px 20px;
     width: 40vw;
   }
 
-  /* line 215, ../sass/_max-width-640.scss */
+  /* line 216, ../sass/_max-width-640.scss */
   .mailing-list {
     grid-area: mailing-list;
     height: 162px;
   }
 
-  /* line 219, ../sass/_max-width-640.scss */
+  /* line 220, ../sass/_max-width-640.scss */
   .dev {
     grid-area: dev;
     padding-top: 20px;
     align-self: baseline;
   }
 
-  /* line 224, ../sass/_max-width-640.scss */
+  /* line 225, ../sass/_max-width-640.scss */
   .footer {
     grid-template-areas: "foot1" "foot2";
   }
 
-  /* line 229, ../sass/_max-width-640.scss */
+  /* line 230, ../sass/_max-width-640.scss */
   form {
     display: inline-block;
     margin: auto auto;
     width: 100vw;
   }
 
-  /* line 234, ../sass/_max-width-640.scss */
+  /* line 235, ../sass/_max-width-640.scss */
   #fname {
     width: 98%;
   }
 
-  /* line 237, ../sass/_max-width-640.scss */
+  /* line 238, ../sass/_max-width-640.scss */
   #lname {
     width: 98%;
   }
