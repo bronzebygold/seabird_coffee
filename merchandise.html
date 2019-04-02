@@ -21,43 +21,39 @@
     <!-- JS ASSETS -->
     <script type="text/javascript" src="assets/js/autoplayVideo.js"></script>
     <script type="text/javascript" src="assets/js/cards.js"></script>
-    <script type="text/javascript" src="assets/js/instagram.js"></script>
-    <script src="//cdn.rawgit.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
     <script type="text/babel" src="assets/js/main.jsx"></script>
     <script type="text/javascript" src="assets/js/merchandise.js"></script>
 
     <!--ANIMATE CSS GRID-->
     <script src="https://unpkg.com/animate-css-grid@latest"></script>
 
+    <!--ANIMATE.CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
     <title>Seabird Coffee Co.</title>
 </head>
 <body>
 
+<div class="logo">
+    <img id="logoimg" src="assets/media/photos/seabird_logo.png" alt="Seabird logo">
+</div>
+
 <div class=merchandise__grid">
 
-    <div class="logo">
-        <img id="logoimg" src="assets/media/photos/seabird_logo.png" alt="Seabird logo">
-    </div>
-
     <div class="header">
-
         <div class="header__nav">
             <div><a href="../#about">ABOUT US</a></div>
             <div><a href="../#roasters">ROASTERS</a></div>
             <div><a href="../#purveyors">PURVEYORS</a></div>
             <div><a href="../#contact">CONTACT</a></div>
         </div>
-
     </div>
-
     <div class="social">
         <div class="social__content">
-
             <div class="social__content__address">
                 <div id="address">24 South Main St.<br>Cohasset, MA 02025</div>
                 <div id="hours"><b>Mo-Fr</b> 6:30a-3:30p<br><b>Sa-Su</b> 7a-3:30p</div>
             </div>
-
             <div class="social__content__social">
                 <div id="facebook"><a href="https://www.facebook.com/seabirdcoffee/">
                     <img src="assets/media/photos/facebook.png"
@@ -74,59 +70,13 @@
             </div>
         </div>
     </div>
-
     <div class="merchandise__content">
-        <div id="mcontent">
+        <div class="mcontent">
 
-            <!--<div id="m1">-->
-                <!--<div>-->
-                    <!--<img src="assets/media/photos/m1.png" alt="Seabird Crewneck Sweatshirt">-->
-                <!--</div>-->
-                <!--<div>Seabird Crewneck Sweatshirt<br>$50</div>-->
-            <!--</div>-->
-            <!--<div id="m2">-->
-                <!--<div>-->
-                    <!--<img src="assets/media/photos/m2.png" alt="Seabird Hoodie">-->
-                <!--</div>-->
-                <!--<div>Seabird Hoodie<br>$40</div>-->
-            <!--</div>-->
-            <!--<div id="m3">-->
-                <!--<div>-->
-                    <!--<img src="assets/media/photos/m3.png" alt="Seabird Adult T-Shirt">-->
-                <!--</div>-->
-                <!--<div>Seabird Adult T-Shirt<br>$20</div>-->
-            <!--</div>-->
-            <!--<div id="m4">-->
-                <!--<div>-->
-                    <!--<img src="assets/media/photos/m4.png" alt="Seabird Toddler T-Shirt">-->
-                <!--</div>-->
-                <!--<div>Seabird Toddler T-Shirt<br>$18</div>-->
-            <!--</div>-->
-            <!--<div id="m5">-->
-                <!--<div>-->
-                    <!--<img src="assets/media/photos/m5.png" alt="Seabird Youth T-Shirt">-->
-                <!--</div>-->
-                <!--<div>Seabird Youth T-Shirt<br>$18</div>-->
-            <!--</div>-->
-            <!--<div id="m6">-->
-                <!--<div>-->
-                    <!--<img src="assets/media/photos/m6.png" alt="Mexican Blanket">-->
-                <!--</div>-->
-                <!--<div>Mexican Blanket<br>$20</div>-->
-            <!--</div>-->
-            <!--<div id="m7">-->
-                <!--<div>-->
-                    <!--<img src="assets/media/photos/m7.png" alt="Seabird Gift Card">-->
-                <!--</div>-->
-                <!--<div>Seabird Gift Card<br>$20</div>-->
-            <!--</div>-->
         </div>
     </div>
-
     <div class="footer">
-
         <div class="foot1">
-
             <div class="cafe">
                 <h2>Caf&#233;</h2>
                 <p>
@@ -137,31 +87,25 @@
                     781-383-0592
                 </p>
             </div>
-
             <div class="follow">
                 <h2>Follow</h2>
-
                 <p>
                     <a style="color: #E8E8E8;" href="https://www.facebook.com/seabirdcoffee/">Facebook</a><br>
                     <a style="color: #E8E8E8;" href="https://www.instagram.com/seabird_coffee/">Instagram</a><br>
                     <a style="color: #E8E8E8;" href="https://open.spotify.com/user/seabird_coffee">Spotify</a>
                 </p>
             </div>
-
             <div class="copr">
                 <p>
                     &#169; 2018, Seabird Coffee Co.
                 </p>
             </div>
-
             <div class="dsign">
                 <p>
                     Designed by <a style="color: #E8E8E8;" href="https://www.linkedin.com/in/aaron-cecchini-butler/">Aaron Cocchini-Butler</a>
                 </p>
             </div>
-
         </div>
-
         <div class="foot2">
             <div class="mailing-list">
                 <h2>Join Our Mailing List</h2>
@@ -170,20 +114,56 @@
                     <input id="mailing-list-form-submit" type="submit" value="Submit">
                 </form>
             </div>
-
             <div class="dev">
                 <p>
                     Developed by <a style="color: #E8E8E8;" href="https://www.danielmillerportfolio.com/">Daniel Miller</a>
                 </p>
             </div>
         </div>
-
     </div>
 </div>
 
 <script>
-    const grid = document.querySelector(".merchandise__content");
-    animateCSSGrid.wrapGrid(grid, {duration : 600});
+    const grid = document.querySelector('.mcontent');
+    animateCSSGrid.wrapGrid(grid, {duration : 1600, easing : 'easeInOut'});
+
+    function deleteNode(node) {
+        const childNodeIDs = Array.from(grid.children, node => node.id);
+        const thisNodeID = node.id;
+        for (n of childNodeIDs) {
+            if (n !== thisNodeID) {
+                document.getElementById(n).classList.add("animated", "fadeOut");
+            }
+        }
+        setTimeout(function(){
+            for (n of childNodeIDs) {
+                if (new RegExp('/' + n + '$/') < new RegExp('/' + thisNodeID + '$/')) {
+                    console.log("before: " + n)
+                    document.getElementById(n).remove();
+                    grid.classList.add("morph");
+                }
+                else {
+                    break;
+                }
+            }
+        }, 600);
+        setTimeout(function(){
+            for (n of childNodeIDs) {
+                if (new RegExp('/' + n + '$/') > new RegExp('/' + thisNodeID + '$/')) {
+                    console.log("after: " + n)
+                    document.getElementById(n).remove();
+                }
+                grid.classList.add("morph");
+            }
+            // document.getElementById("m3").remove();
+            // document.getElementById("m4").remove();
+            // document.getElementById("m5").remove();
+            // document.getElementById("m6").remove();
+            // document.getElementById("m7").remove();
+            // grid.classList.add("morph");
+        }, 2500);
+    }
+
 </script>
 
 </body>

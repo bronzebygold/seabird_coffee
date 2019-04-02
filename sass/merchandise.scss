@@ -43,26 +43,26 @@
 
 .merchandise__content {
   grid-area: mlogo;
-  padding: 150px 0 100px 0;
+  padding: 150px 0 150px 0;
 }
 
-#mcontent {
+.mcontent {
   display: grid;
   justify-content: center;
   grid-gap: 30px;
+  grid-template-columns: 255px;
   grid-auto-rows: 325px;
 
-  > div > div:first-child {
-    height: 255px;
+  > div > div > div:first-child {
     display: flex;
     flex-direction: column;
     justify-content: center !important;
     box-shadow: 0 1px 30px 1px rgba(0, 0, 0, 0.1);
   }
-  > div > div:first-child > img {
+  > div > div > div:first-child > img {
     margin: 0 auto;
   }
-  > div > div:last-child {
+  > div > div > div:last-child {
     padding: 20px 0 0 0;
     line-height: 1.4em;
     font-family: 'Source Sans Pro', sans-serif;
@@ -70,26 +70,65 @@
   }
 }
 
+.morph {
+  grid-template-rows: 445px;
+  animation: scalein_set 0.6s;
+  animation-fill-mode: forwards !important;
+  animation-direction: normal;
+  #m2 > div > div:first-child > img {
+    animation: scalein 0.6s;
+    animation-fill-mode: forwards !important;
+    animation-direction: normal;
+  }
+  #m2 > div > div:first-child {
+    animation: scalein 0.6s;
+    animation-fill-mode: forwards !important;
+    animation-direction: normal;
+  }
+}
+
+@keyframes scalein {
+  0% {
+    width: 255px;
+    height: 255px;
+  }
+  99.99% {
+    width: 445px;
+    height: 445px;
+  }
+  100% {
+    width: 445px;
+    height: 445px;
+  }
+}
+@keyframes scalein_after {
+  100% {
+    grid-template-columns: 445px 7fr !important;
+    margin: 0 auto !important;
+    width: 1100px !important;
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  #mcontent {
+  .mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px) minmax(0, 255px) minmax(0, 255px);
   }
 }
 
 @media screen and (max-width: 1199px) {
-  #mcontent {
+  .mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px) minmax(0, 255px);
   }
 }
 
 @media screen and (max-width: 900px) {
-  #mcontent {
+  .mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px);
   }
 }
 
 @media screen and (max-width: 640px) {
-  #mcontent {
+  .mcontent {
     grid-template-columns: minmax(0, 255px);
   }
 }
