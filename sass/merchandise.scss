@@ -1,3 +1,4 @@
+@import "_close.scss";
 @import "_selectors.scss";
 @import "_header.scss";
 @import "_social.scss";
@@ -57,6 +58,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center !important;
+    height: 255px;
     box-shadow: 0 1px 30px 1px rgba(0, 0, 0, 0.1);
   }
   > div > div > div:first-child > img {
@@ -68,6 +70,30 @@
     font-family: 'Source Sans Pro', sans-serif;
     color: #D8D8D8;
   }
+}
+
+#product__description__header {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  position: relative;
+  width: auto;
+  > div {
+    float: left;
+    padding: 0;
+    box-shadow: none;
+    width: auto;
+    height: auto
+  }
+}
+#product__description__header_h3 {
+  padding: 0;
+  width: auto;
 }
 
 // Each "morph" class is used for animating a separate cell in the merch grid

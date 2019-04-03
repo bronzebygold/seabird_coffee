@@ -1,0 +1,27 @@
+#close {
+  position: absolute;
+  top: 270px;
+  left: calc(100vw - 100px);
+  font-size: 26pt;
+  opacity: 0.3;
+  text-decoration: none;
+  color: black;
+}
+#close:hover {
+  opacity: 1;
+}
+
+//.close:before, .close:after {
+//  position: absolute;
+//  left: 15px;
+//  content: ' ';
+//  height: 33px;
+//  width: 2px;
+//  background-color: #333;
+//}
+//.close:before {
+//  transform: rotate(45deg);
+//}
+//.close:after {
+//  transform: rotate(-45deg);
+//}

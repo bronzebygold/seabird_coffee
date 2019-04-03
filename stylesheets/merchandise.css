@@ -1,3 +1,19 @@
+/* line 1, ../sass/_close.scss */
+#close {
+  position: absolute;
+  top: 270px;
+  left: calc(100vw - 100px);
+  font-size: 26pt;
+  opacity: 0.3;
+  text-decoration: none;
+  color: black;
+}
+
+/* line 10, ../sass/_close.scss */
+#close:hover {
+  opacity: 1;
+}
+
 /* line 3, ../sass/_selectors.scss */
 * {
   margin: 0;
@@ -1367,7 +1383,7 @@ form {
   margin-left: -30px;
 }
 
-/* line 16, ../sass/merchandise.scss */
+/* line 17, ../sass/merchandise.scss */
 .merchandise__grid {
   display: grid;
   justify-content: center;
@@ -1376,13 +1392,13 @@ form {
   grid-template-areas: "header" "social" "mcontent" "footer";
 }
 
-/* line 44, ../sass/merchandise.scss */
+/* line 45, ../sass/merchandise.scss */
 .merchandise__content {
   grid-area: mlogo;
   padding: 150px 0 150px 0;
 }
 
-/* line 49, ../sass/merchandise.scss */
+/* line 50, ../sass/merchandise.scss */
 .mcontent {
   display: grid;
   justify-content: center;
@@ -1390,18 +1406,19 @@ form {
   grid-template-columns: 255px;
   grid-auto-rows: 325px;
 }
-/* line 56, ../sass/merchandise.scss */
+/* line 57, ../sass/merchandise.scss */
 .mcontent > div > div > div:first-child {
   display: flex;
   flex-direction: column;
   justify-content: center !important;
+  height: 255px;
   box-shadow: 0 1px 30px 1px rgba(0, 0, 0, 0.1);
 }
-/* line 62, ../sass/merchandise.scss */
+/* line 64, ../sass/merchandise.scss */
 .mcontent > div > div > div:first-child > img {
   margin: 0 auto;
 }
-/* line 65, ../sass/merchandise.scss */
+/* line 67, ../sass/merchandise.scss */
 .mcontent > div > div > div:last-child {
   padding: 20px 0 0 0;
   line-height: 1.4em;
@@ -1409,140 +1426,168 @@ form {
   color: #D8D8D8;
 }
 
-/* line 92, ../sass/merchandise.scss */
+/* line 75, ../sass/merchandise.scss */
+#product__description__header {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+/* line 86, ../sass/merchandise.scss */
+#product__description__header > div {
+  float: left;
+  padding: 0;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+}
+
+/* line 94, ../sass/merchandise.scss */
+#product__description__header_h3 {
+  padding: 0;
+  width: auto;
+}
+
+/* line 121, ../sass/merchandise.scss */
 .morph1 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 94, ../sass/merchandise.scss */
+/* line 123, ../sass/merchandise.scss */
 .morph1 #m1 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 97, ../sass/merchandise.scss */
+/* line 126, ../sass/merchandise.scss */
 .morph1 #m1 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
 
-/* line 102, ../sass/merchandise.scss */
+/* line 131, ../sass/merchandise.scss */
 .morph2 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 104, ../sass/merchandise.scss */
+/* line 133, ../sass/merchandise.scss */
 .morph2 #m2 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 107, ../sass/merchandise.scss */
+/* line 136, ../sass/merchandise.scss */
 .morph2 #m2 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
 
-/* line 112, ../sass/merchandise.scss */
+/* line 141, ../sass/merchandise.scss */
 .morph3 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 114, ../sass/merchandise.scss */
+/* line 143, ../sass/merchandise.scss */
 .morph3 #m3 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 117, ../sass/merchandise.scss */
+/* line 146, ../sass/merchandise.scss */
 .morph3 #m3 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
 
-/* line 122, ../sass/merchandise.scss */
+/* line 151, ../sass/merchandise.scss */
 .morph4 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 124, ../sass/merchandise.scss */
+/* line 153, ../sass/merchandise.scss */
 .morph4 #m4 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 127, ../sass/merchandise.scss */
+/* line 156, ../sass/merchandise.scss */
 .morph4 #m4 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
 
-/* line 132, ../sass/merchandise.scss */
+/* line 161, ../sass/merchandise.scss */
 .morph5 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 134, ../sass/merchandise.scss */
+/* line 163, ../sass/merchandise.scss */
 .morph5 #m5 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 137, ../sass/merchandise.scss */
+/* line 166, ../sass/merchandise.scss */
 .morph5 #m5 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
 
-/* line 142, ../sass/merchandise.scss */
+/* line 171, ../sass/merchandise.scss */
 .morph6 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 144, ../sass/merchandise.scss */
+/* line 173, ../sass/merchandise.scss */
 .morph6 #m6 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 147, ../sass/merchandise.scss */
+/* line 176, ../sass/merchandise.scss */
 .morph6 #m6 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
 
-/* line 152, ../sass/merchandise.scss */
+/* line 181, ../sass/merchandise.scss */
 .morph7 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 154, ../sass/merchandise.scss */
+/* line 183, ../sass/merchandise.scss */
 .morph7 #m7 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 157, ../sass/merchandise.scss */
+/* line 186, ../sass/merchandise.scss */
 .morph7 #m7 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
@@ -1571,25 +1616,25 @@ form {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 187, ../sass/merchandise.scss */
+  /* line 216, ../sass/merchandise.scss */
   .mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px) minmax(0, 255px) minmax(0, 255px);
   }
 }
 @media screen and (max-width: 1199px) {
-  /* line 193, ../sass/merchandise.scss */
+  /* line 222, ../sass/merchandise.scss */
   .mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px) minmax(0, 255px);
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 199, ../sass/merchandise.scss */
+  /* line 228, ../sass/merchandise.scss */
   .mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px);
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 205, ../sass/merchandise.scss */
+  /* line 234, ../sass/merchandise.scss */
   .mcontent {
     grid-template-columns: minmax(0, 255px);
   }

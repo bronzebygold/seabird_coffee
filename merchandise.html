@@ -151,7 +151,75 @@
                     document.getElementById(n).remove();
                 }
             }
-        }, 2500);
+        }, 1300);
+
+        const product_description_html =
+            `<div>
+
+                <div id=\"close\">&#10005</div>
+
+                <div style="display: flex; flex-direction: column;">
+
+                    <h3 style="display: block; text-align-last: left; float: left;" id=\"product__description__header_h3\">Seabird Crewneck Sweatshirt</h3><br>
+
+                    <div style="text-indent: 0; display: block; color: #D8D8D8; padding: 15px 0 0 0; box-shadow: none; height: auto; width: auto; font-family: 'Source Sans Pro', sans-serif;">$50</div><br>
+                    <div style="text-indent: 0; display: block; color: #D8D8D8; padding: 15px 0 0 0; box-shadow: none; height: auto; width: auto; font-family: 'Source Sans Pro', sans-serif;">You WILL live in this. It's ok. No one will judge you.</div><br>
+                    <br><br>
+                    <ul style=\"list-style-type: disc; list-style-position: inside; text-indent: 0px;\">
+                        <li>Grey Acid fleece is 6.5 oz., 52/48 combed and ringspun cotton/poly</li>
+                        <li>Pre-laundered sponge fleece</li>
+                    </ul>
+
+                    <div class=\"product__description__form\">
+                        <form action=\"/action_page.php\">
+                            <select>
+                              <option value="xs">Size XS</option>
+                              <option value="s">Size S</option>
+                              <option value="m">Size M</option>
+                              <option value="l">Size L</option>
+                              <option value="xl">Size XL</option>
+                            </select>
+
+                            <select>
+                              <option value=\"Qty 1\">1</option>
+                              <option value=\"Qty 2\">2</option>
+                              <option value=\"Qty 3\">3</option>
+                              <option value=\"Qty 4\">4</option>
+                              <option value=\"Qty 5\">5</option>
+                              <option value=\"Qty 6\">6</option>
+                              <option value=\"Qty 7\">7</option>
+                              <option value=\"Qty 8\">8</option>
+                              <option value=\"Qty 9\">9</option>
+                              <option value=\"Qty 10\">10</option>
+                              <option value=\"Qty 11\">11</option>
+                              <option value=\"Qty 12\">12</option>
+                              <option value=\"Qty 13\">13</option>
+                              <option value=\"Qty 14\">14</option>
+                              <option value=\"Qty 15\">15</option>
+                              <option value=\"Qty 16\">16</option>
+                              <option value=\"Qty 17\">17</option>
+                              <option value=\"Qty 18\">18</option>
+                              <option value=\"Qty 19\">19</option>
+                              <option value=\"Qty 20\">20</option>
+                            </select>
+                            <input type=\"submit\">
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>`;
+
+        setTimeout(function() {
+            grid.insertAdjacentHTML('beforeend', product_description_html);
+        }, 1500);
+
+        document.getElementById("close").addEventListener("click", () => {
+            document.querySelector(".mcontent").remove();
+            document.querySelector(".mcontent").innerHTML = a.join("");
+        });
+
     }
 
 </script>
