@@ -4,7 +4,6 @@
     <list default="true" id="855f51f8-c56f-4952-8299-0a3406a6952a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/e00f309e60a8dfa046700cce38cc62493cff250b/merchandise.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/e00f309e60a8dfa046700cce38cc62493cff250b/merchandise.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/merchandise.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/merchandise.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/merchandise.html" beforeDir="false" afterPath="$PROJECT_DIR$/merchandise.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/merchandise.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/merchandise.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/merchandise.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/merchandise.css" afterDir="false" />
@@ -31,14 +30,16 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/merchandise.css">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-29108" />
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/merchandise.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="152" column="38" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+            <state relative-caret-position="685">
+              <caret line="131" column="34" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -87,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/merchandise.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+            <state relative-caret-position="172">
+              <caret line="73" column="61" lean-forward="true" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -118,7 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>10%</find>
       <find>font-size</find>
       <find>about__body</find>
       <find>name</find>
@@ -148,6 +148,7 @@
       <find>&lt;/img&gt;</find>
       <find>force</find>
       <find>inst</find>
+      <find>set</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,8 +182,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/merchandise.js" />
-        <option value="$PROJECT_DIR$/sass/merchandise.scss" />
         <option value="$PROJECT_DIR$/merchandise.html" />
+        <option value="$PROJECT_DIR$/sass/merchandise.scss" />
       </list>
     </option>
   </component>
@@ -190,7 +191,7 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-23" />
+    <option name="x" value="38" />
     <option name="y" value="23" />
     <option name="width" value="1545" />
     <option name="height" value="1027" />
@@ -283,12 +284,12 @@
       <workItem from="1553521186974" duration="836000" />
       <workItem from="1553813135934" duration="1101000" />
       <workItem from="1553900023470" duration="32641000" />
-      <workItem from="1554226934190" duration="9125000" />
+      <workItem from="1554226934190" duration="11543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128179000" />
+    <option name="totallyTimeSpent" value="130597000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -300,10 +301,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-23" y="23" width="1545" height="1027" extended-state="0" />
+    <frame x="38" y="23" width="1545" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24475065" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24475065" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -315,7 +316,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -596,20 +597,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/merchandise.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/merchandise.scss">
+    <entry file="file://$PROJECT_DIR$/merchandise.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        <state relative-caret-position="685">
+          <caret line="131" column="34" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/merchandise.html">
+    <entry file="file://$PROJECT_DIR$/stylesheets/merchandise.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="152" column="38" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+        <state relative-caret-position="-29108" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/merchandise.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="73" column="61" lean-forward="true" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
         </state>
       </provider>
     </entry>

@@ -70,20 +70,95 @@
   }
 }
 
-.morph {
+// Each "morph" class is used for animating a separate cell in the merch grid
+// SCSS mixins are used to avoid a lot of ugly repetitions of CSS
+
+@mixin morph_class_mixin {
   grid-template-rows: 445px;
-  animation: scalein_set 0.6s;
+  animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
+}
+
+@mixin submorph_id_mixin1 {
+  animation: scalein 0.6s;
+  animation-fill-mode: forwards !important;
+  animation-direction: normal;
+}
+
+@mixin submorph_id_mixin2 {
+  animation: scalein 0.6s;
+  animation-fill-mode: forwards !important;
+  animation-direction: normal;
+}
+
+.morph1 {
+  @include morph_class_mixin;
+  #m1 > div > div:first-child > img {
+    @include submorph_id_mixin1;
+  }
+  #m1 > div > div:first-child {
+    @include submorph_id_mixin2
+  }
+}
+
+.morph2 {
+  @include morph_class_mixin;
   #m2 > div > div:first-child > img {
-    animation: scalein 0.6s;
-    animation-fill-mode: forwards !important;
-    animation-direction: normal;
+    @include submorph_id_mixin1;
   }
   #m2 > div > div:first-child {
-    animation: scalein 0.6s;
-    animation-fill-mode: forwards !important;
-    animation-direction: normal;
+    @include submorph_id_mixin2
+  }
+}
+
+.morph3 {
+  @include morph_class_mixin;
+  #m3 > div > div:first-child > img {
+    @include submorph_id_mixin1;
+  }
+  #m3 > div > div:first-child {
+    @include submorph_id_mixin2
+  }
+}
+
+.morph4 {
+  @include morph_class_mixin;
+  #m4 > div > div:first-child > img {
+    @include submorph_id_mixin1;
+  }
+  #m4 > div > div:first-child {
+    @include submorph_id_mixin2
+  }
+}
+
+.morph5 {
+  @include morph_class_mixin;
+  #m5 > div > div:first-child > img {
+    @include submorph_id_mixin1;
+  }
+  #m5 > div > div:first-child {
+    @include submorph_id_mixin2
+  }
+}
+
+.morph6 {
+  @include morph_class_mixin;
+  #m6 > div > div:first-child > img {
+    @include submorph_id_mixin1;
+  }
+  #m6 > div > div:first-child {
+    @include submorph_id_mixin2
+  }
+}
+
+.morph7 {
+  @include morph_class_mixin;
+  #m7 > div > div:first-child > img {
+    @include submorph_id_mixin1;
+  }
+  #m7 > div > div:first-child {
+    @include submorph_id_mixin2
   }
 }
 
@@ -102,10 +177,12 @@
   }
 }
 @keyframes scalein_after {
+  0% {
+  }
   100% {
-    grid-template-columns: 445px 7fr !important;
-    margin: 0 auto !important;
-    width: 1100px !important;
+    grid-template-columns: 445px 7fr;
+    margin: 0 auto;
+    width: 1100px;
   }
 }
 

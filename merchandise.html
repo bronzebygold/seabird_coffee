@@ -125,7 +125,7 @@
 
 <script>
     const grid = document.querySelector('.mcontent');
-    animateCSSGrid.wrapGrid(grid, {duration : 1600, easing : 'easeInOut'});
+    animateCSSGrid.wrapGrid(grid, {duration : 600, easing : 'easeInOut'});
 
     function deleteNode(node) {
         const childNodeIDs = Array.from(grid.children, node => node.id);
@@ -140,12 +140,9 @@
                 if (new RegExp('/' + n + '$/') < new RegExp('/' + thisNodeID + '$/')) {
                     console.log("before: " + n)
                     document.getElementById(n).remove();
-                    grid.classList.add("morph");
-                }
-                else {
-                    break;
                 }
             }
+            grid.classList.add("morph" + thisNodeID.slice(-1));
         }, 600);
         setTimeout(function(){
             for (n of childNodeIDs) {
@@ -153,14 +150,7 @@
                     console.log("after: " + n)
                     document.getElementById(n).remove();
                 }
-                grid.classList.add("morph");
             }
-            // document.getElementById("m3").remove();
-            // document.getElementById("m4").remove();
-            // document.getElementById("m5").remove();
-            // document.getElementById("m6").remove();
-            // document.getElementById("m7").remove();
-            // grid.classList.add("morph");
         }, 2500);
     }
 
