@@ -937,6 +937,33 @@ form {
 /* Portrait and Landscape */
 /* Portrait */
 /* Landscape */
+/* line 1, ../sass/_select.scss */
+.select-style {
+  border: 1px solid #000;
+  width: 120px;
+  height: 30px !important;
+  overflow: hidden;
+  border-radius: 0 !important;
+  background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+}
+
+/* line 10, ../sass/_select.scss */
+.select-style select {
+  padding: 10px 8px;
+  width: 130%;
+  border: none;
+  border-radius: 0 !important;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+}
+
+/* line 21, ../sass/_select.scss */
+.select-style select:focus {
+  outline: none;
+}
+
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -1383,7 +1410,7 @@ form {
   margin-left: -30px;
 }
 
-/* line 17, ../sass/merchandise.scss */
+/* line 18, ../sass/merchandise.scss */
 .merchandise__grid {
   display: grid;
   justify-content: center;
@@ -1392,13 +1419,13 @@ form {
   grid-template-areas: "header" "social" "mcontent" "footer";
 }
 
-/* line 45, ../sass/merchandise.scss */
+/* line 46, ../sass/merchandise.scss */
 .merchandise__content {
   grid-area: mlogo;
   padding: 150px 0 150px 0;
 }
 
-/* line 50, ../sass/merchandise.scss */
+/* line 51, ../sass/merchandise.scss */
 .mcontent {
   display: grid;
   justify-content: center;
@@ -1406,7 +1433,7 @@ form {
   grid-template-columns: 255px;
   grid-auto-rows: 325px;
 }
-/* line 57, ../sass/merchandise.scss */
+/* line 58, ../sass/merchandise.scss */
 .mcontent > div > div > div:first-child {
   display: flex;
   flex-direction: column;
@@ -1414,11 +1441,11 @@ form {
   height: 255px;
   box-shadow: 0 1px 30px 1px rgba(0, 0, 0, 0.1);
 }
-/* line 64, ../sass/merchandise.scss */
+/* line 65, ../sass/merchandise.scss */
 .mcontent > div > div > div:first-child > img {
   margin: 0 auto;
 }
-/* line 67, ../sass/merchandise.scss */
+/* line 68, ../sass/merchandise.scss */
 .mcontent > div > div > div:last-child {
   padding: 20px 0 0 0;
   line-height: 1.4em;
@@ -1426,7 +1453,7 @@ form {
   color: #D8D8D8;
 }
 
-/* line 75, ../sass/merchandise.scss */
+/* line 76, ../sass/merchandise.scss */
 #product__description__header {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1439,7 +1466,7 @@ form {
   position: relative;
   width: auto;
 }
-/* line 86, ../sass/merchandise.scss */
+/* line 87, ../sass/merchandise.scss */
 #product__description__header > div {
   float: left;
   padding: 0;
@@ -1448,146 +1475,146 @@ form {
   height: auto;
 }
 
-/* line 94, ../sass/merchandise.scss */
+/* line 95, ../sass/merchandise.scss */
 #product__description__header_h3 {
   padding: 0;
   width: auto;
 }
 
-/* line 121, ../sass/merchandise.scss */
+/* line 122, ../sass/merchandise.scss */
 .morph1 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 123, ../sass/merchandise.scss */
+/* line 124, ../sass/merchandise.scss */
 .morph1 #m1 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 126, ../sass/merchandise.scss */
+/* line 127, ../sass/merchandise.scss */
 .morph1 #m1 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
 
-/* line 131, ../sass/merchandise.scss */
+/* line 132, ../sass/merchandise.scss */
 .morph2 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 133, ../sass/merchandise.scss */
+/* line 134, ../sass/merchandise.scss */
 .morph2 #m2 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 136, ../sass/merchandise.scss */
+/* line 137, ../sass/merchandise.scss */
 .morph2 #m2 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
 
-/* line 141, ../sass/merchandise.scss */
+/* line 142, ../sass/merchandise.scss */
 .morph3 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 143, ../sass/merchandise.scss */
+/* line 144, ../sass/merchandise.scss */
 .morph3 #m3 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 146, ../sass/merchandise.scss */
+/* line 147, ../sass/merchandise.scss */
 .morph3 #m3 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
 
-/* line 151, ../sass/merchandise.scss */
+/* line 152, ../sass/merchandise.scss */
 .morph4 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 153, ../sass/merchandise.scss */
+/* line 154, ../sass/merchandise.scss */
 .morph4 #m4 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 156, ../sass/merchandise.scss */
+/* line 157, ../sass/merchandise.scss */
 .morph4 #m4 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
 
-/* line 161, ../sass/merchandise.scss */
+/* line 162, ../sass/merchandise.scss */
 .morph5 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 163, ../sass/merchandise.scss */
+/* line 164, ../sass/merchandise.scss */
 .morph5 #m5 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 166, ../sass/merchandise.scss */
+/* line 167, ../sass/merchandise.scss */
 .morph5 #m5 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
 
-/* line 171, ../sass/merchandise.scss */
+/* line 172, ../sass/merchandise.scss */
 .morph6 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 173, ../sass/merchandise.scss */
+/* line 174, ../sass/merchandise.scss */
 .morph6 #m6 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 176, ../sass/merchandise.scss */
+/* line 177, ../sass/merchandise.scss */
 .morph6 #m6 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
 
-/* line 181, ../sass/merchandise.scss */
+/* line 182, ../sass/merchandise.scss */
 .morph7 {
   grid-template-rows: 445px;
   animation: scalein_after 0.6s !important;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 183, ../sass/merchandise.scss */
+/* line 184, ../sass/merchandise.scss */
 .morph7 #m7 > div > div:first-child > img {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
   animation-direction: normal;
 }
-/* line 186, ../sass/merchandise.scss */
+/* line 187, ../sass/merchandise.scss */
 .morph7 #m7 > div > div:first-child {
   animation: scalein 0.6s;
   animation-fill-mode: forwards !important;
@@ -1608,34 +1635,60 @@ form {
     height: 445px;
   }
 }
-@keyframes scalein_after {
-  100% {
-    grid-template-columns: 445px 7fr;
-    margin: 0 auto;
-    width: 1100px;
-  }
-}
 @media screen and (min-width: 1200px) {
-  /* line 216, ../sass/merchandise.scss */
+  /* line 208, ../sass/merchandise.scss */
   .mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px) minmax(0, 255px) minmax(0, 255px);
   }
+
+  @keyframes scalein_after {
+    100% {
+      grid-template-columns: 445px 7fr;
+      margin: 0 auto;
+      width: 1100px;
+    }
+  }
 }
 @media screen and (max-width: 1199px) {
-  /* line 222, ../sass/merchandise.scss */
+  /* line 224, ../sass/merchandise.scss */
   .mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px) minmax(0, 255px);
   }
+
+  @keyframes scalein_after {
+    100% {
+      grid-template-columns: 445px 7fr;
+      margin: 0 auto;
+      width: 1100px;
+    }
+  }
 }
 @media screen and (max-width: 900px) {
-  /* line 228, ../sass/merchandise.scss */
+  /* line 240, ../sass/merchandise.scss */
   .mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px);
+    width: 100vw;
+  }
+
+  @keyframes scalein_after {
+    100% {
+      grid-template-columns: 1fr;
+      padding-left: 20vw;
+    }
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 234, ../sass/merchandise.scss */
+  /* line 256, ../sass/merchandise.scss */
   .mcontent {
     grid-template-columns: minmax(0, 255px);
+    width: 100vw;
+  }
+
+  @keyframes scalein_after {
+    100% {
+      grid-template-columns: 1fr;
+      padding-left: 10vw;
+      padding-right: 10vw;
+    }
   }
 }

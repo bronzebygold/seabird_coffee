@@ -12,6 +12,7 @@
 @import "_pixel.scss";
 @import "_htc.scss";
 @import "_windows.scss";
+@import "_select.scss";
 @import "screen.scss";
 
 .merchandise__grid {
@@ -202,19 +203,20 @@
     height: 445px;
   }
 }
-@keyframes scalein_after {
-  0% {
-  }
-  100% {
-    grid-template-columns: 445px 7fr;
-    margin: 0 auto;
-    width: 1100px;
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px) minmax(0, 255px) minmax(0, 255px);
+  }
+
+  @keyframes scalein_after {
+    0% {
+    }
+    100% {
+      grid-template-columns: 445px 7fr;
+      margin: 0 auto;
+      width: 1100px;
+    }
   }
 }
 
@@ -222,16 +224,47 @@
   .mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px) minmax(0, 255px);
   }
+
+  @keyframes scalein_after {
+    0% {
+    }
+    100% {
+      grid-template-columns: 445px 7fr;
+      margin: 0 auto;
+      width: 1100px;
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {
   .mcontent {
     grid-template-columns: minmax(0, 255px) minmax(0, 255px);
+    width: 100vw;
+  }
+
+  @keyframes scalein_after {
+    0% {
+    }
+    100% {
+      grid-template-columns: 1fr;
+      padding-left: 20vw;
+    }
   }
 }
 
 @media screen and (max-width: 640px) {
   .mcontent {
     grid-template-columns: minmax(0, 255px);
+    width: 100vw;
+  }
+
+  @keyframes scalein_after {
+    0% {
+    }
+    100% {
+      grid-template-columns: 1fr;
+      padding-left: 10vw;
+      padding-right: 10vw;
+    }
   }
 }
