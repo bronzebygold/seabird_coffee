@@ -1052,7 +1052,7 @@ form {
 /* line 112, ../sass/screen.scss */
 .about__body {
   grid-area: abt_bd;
-  background-image: url("/assets/media/photos/stone.png");
+  background-image: url("https://pleatherstarfish.github.io/seabird_coffee/assets/media/photos/stone.png");
 }
 
 /* line 117, ../sass/screen.scss */
@@ -1106,7 +1106,7 @@ form {
 /* line 158, ../sass/screen.scss */
 .resident__body2 {
   grid-area: resbd2;
-  background-image: url("/assets/media/photos/stone.png");
+  background-image: url("https://pleatherstarfish.github.io/seabird_coffee/assets/media/photos/stone.png");
 }
 
 /* line 163, ../sass/screen.scss */
