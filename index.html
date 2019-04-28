@@ -51,11 +51,14 @@
       </div>
     </a>
 
-    <div class="header__nav">
+    <div class="header__nav" id="headerNav">
       <div><a href="#about">ABOUT US</a></div>
       <div><a href="#roasters">ROASTERS</a></div>
       <div><a href="#purveyors">PURVEYORS</a></div>
       <div><a href="#contact">CONTACT</a></div>
+<!--      <a href="javascript:void(0);" class="icon" onclick="myFunction()">-->
+<!--        <i class="fa fa-bars"></i>-->
+<!--      </a>-->
     </div>
   </div>
 
@@ -86,11 +89,11 @@
 
   <div class="header__video">
 
-    <div id="teaser">
-        <span style="color: white; text-align: left;
-        font-family: 'Libre Baskerville', Baskerville, Garamond, serif;">
-          come and<br>share a<br>cup with<br>us</span>
-    </div>
+<!--    <div id="teaser">-->
+<!--        <span style="color: white; text-align: left;-->
+<!--        font-family: 'Libre Baskerville', Baskerville, Garamond, serif;">-->
+<!--          come and<br>share a<br>cup with<br>us</span>-->
+<!--    </div>-->
 
     <video class="header__video" id="myVideo" loop autoplay muted>
       <source src="assets/media/video/video1.mp4" type="video/mp4">
@@ -131,10 +134,12 @@
     <!--<source src="assets/media/video/video2.mov" type="video/mp4">-->
     <!--Your browser does not support HTML5 video.-->
     <!--</video>-->
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nbyeC3hUExQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="about__vid__iframe">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nbyeC3hUExQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
     <div style="margin: 43px">
-      <p style="color: #9D9D9D; padding-bottom: 50px;">He started by finding the perfect spot
+      <p style="color: #9D9D9D; padding: 50px 10% 0 10%;">He started by finding the perfect spot
         perched in downtown Cohasset, MA and began assembling a team of
         people with the same love for high quality coffee and the passion to
         connect with the community.
@@ -147,17 +152,17 @@
   </div>
 
   <div class="resident__photo1">
-    <img src="assets/media/photos/photo1.png"
+    <img src="assets/media/photos/photo4.png"
          alt="Coffee beans spilling out of a bag">
   </div>
 
   <div class="resident__photo2">
-    <img src="assets/media/photos/photo2.png"
+    <img src="assets/media/photos/photo5.png"
          alt="Mug with latte art">
   </div>
 
   <div class="resident__photo3">
-    <img src="assets/media/photos/photo3.png"
+    <img src="assets/media/photos/photo6.png"
          alt="Closeup of mug with latte art">
   </div>
 
@@ -189,7 +194,7 @@
   </div>
 
   <div class="current__header" id="roasters">
-    <h1 style="margin-top: 131px">Current Roaster</h1><br>
+    <h1 style="margin-top: 75px">Current Roaster</h1><br>
     <p style="color:#9D9D9D;">We work with local roasters and purveyors to
       provide you with the best possible product. Starting your morning with
       fresh, high-quality coffee and finely crafted pastries will set the tone
@@ -388,7 +393,7 @@
 
       <div class="dsign">
         <p>
-          Designed by <a style="color: #E8E8E8;" href="https://www.linkedin.com/in/aaron-cecchini-butler/">Aaron Cocchini-Butler</a>
+          Designed by <a style="color: #E8E8E8;" href="https://www.aaroncecchinibutler.com/">Aaron Cecchini-Butler</a>
         </p>
       </div>
 
@@ -417,6 +422,17 @@
 <script>
   const grid = document.querySelector(".merchandise__content");
   animateCSSGrid.wrapGrid(grid, {duration : 600});
+</script>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("headerNav");
+    if (x.className === "header__nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "header__nav";
+    }
+  }
 </script>
 
 </body>
