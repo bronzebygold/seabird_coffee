@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="855f51f8-c56f-4952-8299-0a3406a6952a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/media/photos/photo4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/media/photos/photo5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/media/photos/photo6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e00f309e60a8dfa046700cce38cc62493cff250b/_max-width-1199.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/e00f309e60a8dfa046700cce38cc62493cff250b/_max-width-1199.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e00f309e60a8dfa046700cce38cc62493cff250b/_max-width-640.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/e00f309e60a8dfa046700cce38cc62493cff250b/_max-width-640.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e00f309e60a8dfa046700cce38cc62493cff250b/_min-width-1200.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/e00f309e60a8dfa046700cce38cc62493cff250b/_min-width-1200.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e00f309e60a8dfa046700cce38cc62493cff250b/_selectors.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/e00f309e60a8dfa046700cce38cc62493cff250b/_selectors.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/e00f309e60a8dfa046700cce38cc62493cff250b/screen.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/e00f309e60a8dfa046700cce38cc62493cff250b/screen.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/merchandise.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/merchandise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merchandise.html" beforeDir="false" afterPath="$PROJECT_DIR$/merchandise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_max-width-1199.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_max-width-1199.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_max-width-640.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_max-width-640.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_min-width-1200.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_min-width-1200.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_selectors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_selectors.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/screen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/merchandise.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/merchandise.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/screen.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/screen.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,32 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/merchandise.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1152">
-              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="52" selection-end-column="22" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#1;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#1;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/_max-width-640.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="245" selection-start-line="245" selection-start-column="2" selection-end-line="262" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="360" column="38" selection-start-line="360" selection-start-column="29" selection-end-line="360" selection-end-column="38" />
+            <state relative-caret-position="272">
+              <caret line="123" column="14" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#div#10;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -103,46 +60,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/instagram.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="9" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/screen.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2204">
-              <caret line="116" column="8" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="8" />
+            <state relative-caret-position="173">
+              <caret line="113" column="74" selection-start-line="113" selection-start-column="74" selection-end-line="113" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -160,8 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>grid-column</find>
-      <find>logo</find>
       <find>ins</find>
       <find>header__</find>
       <find>header__button</find>
@@ -190,6 +109,8 @@
       <find>textarea</find>
       <find>aaron</find>
       <find>instagram</find>
+      <find>brian</find>
+      <find>stone</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -219,7 +140,6 @@
         <option value="$PROJECT_DIR$/sass/_select.scss" />
         <option value="$PROJECT_DIR$/sass/merchandise.scss" />
         <option value="$PROJECT_DIR$/assets/js/merchandise.js" />
-        <option value="$PROJECT_DIR$/sass/screen.scss" />
         <option value="$PROJECT_DIR$/sass/_min-width-1200.scss" />
         <option value="$PROJECT_DIR$/sass/_max-width-1199.scss" />
         <option value="$PROJECT_DIR$/sass/_selectors.scss" />
@@ -227,6 +147,7 @@
         <option value="$PROJECT_DIR$/sass/_max-width-640.scss" />
         <option value="$PROJECT_DIR$/merchandise.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/sass/screen.scss" />
       </list>
     </option>
   </component>
@@ -234,7 +155,7 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="119" />
+    <option name="x" value="-97" />
     <option name="y" value="23" />
     <option name="width" value="1849" />
     <option name="height" value="1027" />
@@ -256,13 +177,7 @@
             <path>
               <item name="seabird" type="b2602c69:ProjectViewProjectNode" />
               <item name="seabird" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="seabird" type="b2602c69:ProjectViewProjectNode" />
-              <item name="seabird" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,12 +244,12 @@
       <workItem from="1554475847587" duration="69000" />
       <workItem from="1554755716771" duration="16000" />
       <workItem from="1556327335999" duration="5224000" />
-      <workItem from="1556420705116" duration="2502000" />
+      <workItem from="1556420705116" duration="3002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155607000" />
+    <option name="totallyTimeSpent" value="156107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,7 +261,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="119" y="23" width="1849" height="1027" extended-state="0" />
+    <frame x="-97" y="23" width="1849" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25124517" />
@@ -612,13 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/screen.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2204">
-          <caret line="116" column="8" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_max-width-640.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -637,17 +545,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -658,10 +566,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/media/photos/stone.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/instagram.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="360" column="38" selection-start-line="360" selection-start-column="29" selection-end-line="360" selection-end-column="38" />
+        <state relative-caret-position="272">
+          <caret line="123" column="14" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#div#10;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -700,10 +618,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/instagram.js">
+    <entry file="file://$PROJECT_DIR$/sass/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="173">
+          <caret line="113" column="74" selection-start-line="113" selection-start-column="74" selection-end-line="113" selection-end-column="74" />
         </state>
       </provider>
     </entry>
