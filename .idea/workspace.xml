@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="855f51f8-c56f-4952-8299-0a3406a6952a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sass/screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -62,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/screen.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="113" column="74" selection-start-line="113" selection-start-column="74" selection-end-line="113" selection-end-column="74" />
+            <state relative-caret-position="340">
+              <caret line="113" column="104" selection-start-line="113" selection-start-column="104" selection-end-line="113" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -155,7 +155,6 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-97" />
     <option name="y" value="23" />
     <option name="width" value="1849" />
     <option name="height" value="1027" />
@@ -244,12 +243,12 @@
       <workItem from="1554475847587" duration="69000" />
       <workItem from="1554755716771" duration="16000" />
       <workItem from="1556327335999" duration="5224000" />
-      <workItem from="1556420705116" duration="3002000" />
+      <workItem from="1556420705116" duration="3191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156107000" />
+    <option name="totallyTimeSpent" value="156296000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -261,7 +260,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-97" y="23" width="1849" height="1027" extended-state="0" />
+    <frame x="0" y="23" width="1849" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25124517" />
@@ -620,8 +619,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="113" column="74" selection-start-line="113" selection-start-column="74" selection-end-line="113" selection-end-column="74" />
+        <state relative-caret-position="340">
+          <caret line="113" column="104" selection-start-line="113" selection-start-column="104" selection-end-line="113" selection-end-column="104" />
         </state>
       </provider>
     </entry>
