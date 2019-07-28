@@ -65,14 +65,16 @@ const a = [
 
 ];
 
+let grid = '';
+
 window.onload = function() {
 
     document.querySelector(".mcontent").innerHTML = a.join("");
-
-}
-
-const grid = document.querySelector('.mcontent');
-animateCSSGrid.wrapGrid(grid, {duration: 600, easing: 'easeInOut'});
+    grid = document.querySelector('.mcontent');
+    animateCSSGrid.wrapGrid(grid, {duration: 600, easing: 'easeInOut'});
+    console.log(grid)
+    console.log(animateCSSGrid)
+};
 
 function deleteNode(node) {
     $("div.productTitle").html("");
@@ -86,7 +88,7 @@ function deleteNode(node) {
     setTimeout(function () {
         for (n of childNodeIDs) {
             if (new RegExp('/' + n + '$/') < new RegExp('/' + thisNodeID + '$/')) {
-                console.log("before: " + n)
+                console.log("before: " + n);
                 document.getElementById(n).remove();
             }
         }
@@ -95,7 +97,7 @@ function deleteNode(node) {
     setTimeout(function () {
         for (n of childNodeIDs) {
             if (new RegExp('/' + n + '$/') > new RegExp('/' + thisNodeID + '$/')) {
-                console.log("after: " + n)
+                console.log("after: " + n);
                 document.getElementById(n).remove();
             }
         }
