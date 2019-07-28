@@ -68,12 +68,9 @@ const a = [
 let grid = '';
 
 window.onload = function() {
-
     document.querySelector(".mcontent").innerHTML = a.join("");
     grid = document.querySelector('.mcontent');
     animateCSSGrid.wrapGrid(grid, {duration: 600, easing: 'easeInOut'});
-    console.log(grid)
-    console.log(animateCSSGrid)
 };
 
 function deleteNode(node) {
